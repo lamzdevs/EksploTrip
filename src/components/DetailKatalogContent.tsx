@@ -18,7 +18,7 @@ export default function DetailKatalogContent({
 }: DetailKatalogContentProps) {
   const [ticketQty, setTicketQty] = useState<number>(1);
   const [parkingQty, setParkingQty] = useState<number>(1);
-  const [showStaticMap, setShowStaticMap] = useState<boolean>(true);
+  const [showStaticMap, setShowStaticMap] = useState<boolean>(false);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
   const isVerified =
@@ -773,11 +773,93 @@ export default function DetailKatalogContent({
               </div>
 
               <div className="crowd-gauge-box">
-                <img
-                  src="/assets/images/detail_katalog/gauge_keramaian_clean.png"
-                  alt="Indikator Keramaian"
-                  className="crowd-gauge-img"
-                />
+                <div
+                  style={{
+                    position: 'relative',
+                    width: 260,
+                    height: 145,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'flex-end',
+                  }}
+                >
+                  <svg
+                    viewBox="0 0 260 145"
+                    width="260"
+                    height="145"
+                    style={{ position: 'absolute', top: 0, left: 0 }}
+                    aria-hidden="true"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="crowdGaugeGrad"
+                        x1="0%"
+                        y1="100%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop offset="0%" stopColor="#568942" />
+                        <stop offset="55%" stopColor="#8ABC43" />
+                        <stop offset="100%" stopColor="#F1C40F" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M 24 130 A 106 106 0 0 1 236 130"
+                      fill="none"
+                      stroke="#7A7A7A"
+                      strokeWidth="22"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M 24 130 A 106 106 0 0 1 82 36"
+                      fill="none"
+                      stroke="url(#crowdGaugeGrad)"
+                      strokeWidth="22"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                  <div
+                    style={{
+                      position: 'relative',
+                      zIndex: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      marginBottom: 4,
+                    }}
+                  >
+                    <span
+                      className="material-symbols-outlined"
+                      style={{
+                        fontSize: 42,
+                        color: '#568942',
+                        fontVariationSettings: "'FILL' 1",
+                        lineHeight: 1,
+                      }}
+                    >
+                      groups
+                    </span>
+                    <span
+                      style={{
+                        fontSize: 15,
+                        fontWeight: 700,
+                        color: '#040811',
+                        marginTop: 2,
+                      }}
+                    >
+                      {destination.tingkat_keramaian || 'Sedang'}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: 11.5,
+                        color: '#444444',
+                      }}
+                    >
+                      16% - 79%
+                    </span>
+                  </div>
+                </div>
               </div>
 
               <div className="best-time-box">
