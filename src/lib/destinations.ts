@@ -22,11 +22,37 @@ const DEFAULT_FASILTAS: FasilitasItem[] = [
   { nama: 'Toilet & Kamar Bilas', status: 'Belum tersedia', ikon: 'wc' },
   { nama: 'Mushola', status: 'Belum tersedia', ikon: 'mosque' },
   { nama: 'Warung Makan', status: 'Belum tersedia', ikon: 'restaurant' },
-  { nama: 'Penyewaan Pelampung', status: 'Belum tersedia', ikon: 'Support' },
+  { nama: 'Penyewaan Pelampung', status: 'Belum tersedia', ikon: 'support' },
   { nama: 'Pos Kesehatan / P3K', status: 'Belum tersedia', ikon: 'medical_services' },
   { nama: 'Spot Foto', status: 'Belum tersedia', ikon: 'photo_camera' },
   { nama: 'Area Camping', status: 'Belum tersedia', ikon: 'camping' },
 ];
+
+/**
+ * Memformat nama lokasi agar ringkas tanpa kata "Kecamatan" maupun "Kabupaten/Kota",
+ * langsung menjadi "<Nama Kecamatan>, Bogor" (contoh: "Cisarua, Bogor").
+ */
+export function formatBogorLocation(raw?: string | null): string {
+  if (!raw) return 'Belum tersedia';
+  const trimmed = raw.trim();
+  if (!trimmed || trimmed.toLowerCase() === 'belum tersedia') {
+    return 'Belum tersedia';
+  }
+  const firstPart = trimmed
+    .split(',')[0]
+    .replace(/^(kecamatan|kec\.?)\s+/i, '')
+    .replace(/\b(kabupaten|kab\.?|kota)\s+bogor\b/gi, '')
+    .trim();
+
+  if (!firstPart) return 'Bogor';
+  if (
+    /\bbogor\b$/i.test(firstPart) &&
+    !/bogor\s+(barat|timur|utara|selatan|tengah)/i.test(firstPart)
+  ) {
+    return firstPart;
+  }
+  return `${firstPart}, Bogor`;
+}
 
 function mapTipeLabel(tipe: TipeWisata): string {
   switch (tipe) {
@@ -62,7 +88,9 @@ function normalizeRowToDestination(row: Record<string, unknown>): Destination {
     slug: String(row.slug ?? ''),
     tipe_wisata: tipe,
     label_tipe: mapTipeLabel(tipe),
-    kecamatan: String(row.kecamatan ?? 'Belum tersedia'),
+    kecamatan: formatBogorLocation(
+      row.kecamatan ? String(row.kecamatan) : null
+    ),
     alamat: row.alamat ? String(row.alamat) : null,
     deskripsi: row.deskripsi ? String(row.deskripsi) : null,
     kondisi: kondisiRaw,

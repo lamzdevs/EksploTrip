@@ -2,6 +2,7 @@
 
 import React, { useMemo, useState } from 'react';
 import { Destination } from '@/types/destination';
+import { formatBogorLocation } from '@/lib/destinations';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -52,10 +53,8 @@ export default function DetailVisualContent({
   const isVerified =
     !destination.is_dummy && destination.status_verifikasi === 'terverifikasi';
 
-  const shortKecamatan = destination.kecamatan
-    .replace(/^Kecamatan\s+/i, '')
-    .split(',')[0]
-    .trim();
+  const formattedLocation = formatBogorLocation(destination.kecamatan);
+  const shortKecamatan = formattedLocation.split(',')[0].trim();
 
   const filteredItems = useMemo(() => {
     return DEFAULT_20_VISUAL_SLOTS.filter((item) => {
@@ -95,9 +94,7 @@ export default function DetailVisualContent({
 
           <div className="hero-detail-content">
             <div className="hero-verified-badge">
-              <span className="material-symbols-outlined">
-                {isVerified ? 'verified' : 'info'}
-              </span>
+              <span className="material-symbols-outlined">eco</span>
               <span>
                 {isVerified
                   ? 'Destinasi Terverifikasi'
@@ -123,7 +120,7 @@ export default function DetailVisualContent({
             <div className="hero-meta-row">
               <div className="hero-meta-item">
                 <span className="material-symbols-outlined">location_on</span>
-                <span>{destination.kecamatan || 'Belum tersedia'}</span>
+                <span>{formattedLocation}</span>
               </div>
               <div className="hero-meta-item">
                 <span className="material-symbols-outlined">landscape</span>

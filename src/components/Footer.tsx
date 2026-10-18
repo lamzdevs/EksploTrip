@@ -30,7 +30,7 @@ export default function Footer() {
             <div className="footer-col footer-col-brand">
               <Link href="/" aria-label="EksploTrip Beranda">
                 <img
-                  src="/assets/images/beranda/logo_eksplotrip_footer.png"
+                  src="/assets/images/detail_katalog/logo_eksplotrip_footer.png"
                   alt="EksploTrip Logo"
                   className="footer-logo"
                 />

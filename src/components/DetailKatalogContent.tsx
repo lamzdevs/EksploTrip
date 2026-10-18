@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Destination } from '@/types/destination';
+import { formatBogorLocation } from '@/lib/destinations';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -51,10 +52,8 @@ export default function DetailKatalogContent({
     document.body.removeChild(a);
   };
 
-  const shortKecamatan = destination.kecamatan
-    .replace(/^Kecamatan\s+/i, '')
-    .split(',')[0]
-    .trim();
+  const formattedLocation = formatBogorLocation(destination.kecamatan);
+  const shortKecamatan = formattedLocation.split(',')[0].trim();
 
   const visualSummaryItems = [
     {
@@ -120,9 +119,7 @@ export default function DetailKatalogContent({
 
           <div className="hero-detail-content">
             <div className="hero-verified-badge">
-              <span className="material-symbols-outlined">
-                {isVerified ? 'verified' : 'info'}
-              </span>
+              <span className="material-symbols-outlined">eco</span>
               <span>
                 {isVerified
                   ? 'Destinasi Terverifikasi'
@@ -158,7 +155,7 @@ export default function DetailKatalogContent({
             <div className="hero-meta-row">
               <div className="hero-meta-item">
                 <span className="material-symbols-outlined">location_on</span>
-                <span>{destination.kecamatan || 'Belum tersedia'}</span>
+                <span>{formattedLocation}</span>
               </div>
               <div className="hero-meta-item">
                 <span className="material-symbols-outlined">landscape</span>
@@ -809,7 +806,7 @@ export default function DetailKatalogContent({
               <div className="header-left-group">
                 <div className="header-icon-box">
                   <span className="material-symbols-outlined">
-                    contact_phone
+                    contact_page
                   </span>
                 </div>
                 <div>
@@ -842,32 +839,24 @@ export default function DetailKatalogContent({
                   <span className="contact-phone-num">
                     {destination.kontak_pic?.telepon || 'Belum tersedia'}
                   </span>
-                  {destination.kontak_pic?.telepon ? (
-                    <button
-                      type="button"
-                      className={`btn-copy-contact ${
-                        copiedKey === 'pic' ? 'copied' : ''
-                      }`}
-                      onClick={() =>
-                        handleCopy('pic', destination.kontak_pic!.telepon!)
-                      }
-                    >
-                      <span className="material-symbols-outlined">
-                        {copiedKey === 'pic' ? 'check' : 'content_copy'}
-                      </span>
-                      <span>{copiedKey === 'pic' ? 'Tersalin!' : 'Salin'}</span>
-                    </button>
-                  ) : (
-                    <span
-                      style={{
-                        fontSize: 11,
-                        color: '#888080',
-                        fontWeight: 500,
-                      }}
-                    >
-                      Menunggu Survei
+                  <button
+                    type="button"
+                    className={`btn-copy-contact ${
+                      copiedKey === 'pic' ? 'copied' : ''
+                    }`}
+                    onClick={() =>
+                      handleCopy(
+                        'pic',
+                        destination.kontak_pic?.telepon || 'Belum tersedia'
+                      )
+                    }
+                    aria-label="Salin kontak Pokdarwis"
+                  >
+                    <span className="material-symbols-outlined">
+                      {copiedKey === 'pic' ? 'check' : 'content_copy'}
                     </span>
-                  )}
+                    <span>{copiedKey === 'pic' ? 'Tersalin!' : 'Salin'}</span>
+                  </button>
                 </div>
               </div>
 
@@ -879,12 +868,12 @@ export default function DetailKatalogContent({
                       className="material-symbols-outlined"
                       style={{ fontVariationSettings: "'FILL' 1" }}
                     >
-                      shield
+                      verified_user
                     </span>
                   </div>
                   <div>
-                    <h3 className="contact-info-title">SAR / Basarnas</h3>
-                    <p className="contact-info-role">Pertolongan Darurat</p>
+                    <h3 className="contact-info-title">Pos Ranger / SAR</h3>
+                    <p className="contact-info-role">PJLH / Perhutani</p>
                   </div>
                 </div>
                 <div className="contact-footer-row">
@@ -957,15 +946,19 @@ export default function DetailKatalogContent({
                 </div>
                 <div className="contact-footer-row">
                   <span className="contact-phone-num">Belum tersedia</span>
-                  <span
-                    style={{
-                      fontSize: 11,
-                      color: '#888080',
-                      fontWeight: 500,
-                    }}
+                  <button
+                    type="button"
+                    className={`btn-copy-contact ${
+                      copiedKey === 'guide' ? 'copied' : ''
+                    }`}
+                    onClick={() => handleCopy('guide', 'Belum tersedia')}
+                    aria-label="Salin kontak Pemandu Lokal"
                   >
-                    Menunggu Survei
-                  </span>
+                    <span className="material-symbols-outlined">
+                      {copiedKey === 'guide' ? 'check' : 'content_copy'}
+                    </span>
+                    <span>{copiedKey === 'guide' ? 'Tersalin!' : 'Salin'}</span>
+                  </button>
                 </div>
               </div>
             </div>

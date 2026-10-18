@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Destination } from '@/types/destination';
+import { formatBogorLocation } from '@/lib/destinations';
 
 interface DestinationCardProps {
   destination: Destination;
@@ -49,7 +50,7 @@ export function DestinationCard({ destination }: DestinationCardProps) {
           <h3 className="card-title">{destination.nama_wisata}</h3>
           <span className="card-location">
             <span className="material-symbols-outlined">location_on</span>
-            <span>{destination.kecamatan || 'Belum tersedia'}</span>
+            <span>{formatBogorLocation(destination.kecamatan)}</span>
           </span>
         </div>
 
