@@ -73,15 +73,8 @@ export default function Footer() {
                 <li>
                   <button
                     type="button"
+                    className="footer-link-btn"
                     onClick={() => setActiveDoc('privasi')}
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      padding: 0,
-                      color: 'inherit',
-                      font: 'inherit',
-                      cursor: 'pointer',
-                    }}
                   >
                     Kebijakan Privasi
                   </button>
@@ -89,15 +82,8 @@ export default function Footer() {
                 <li>
                   <button
                     type="button"
+                    className="footer-link-btn"
                     onClick={() => setActiveDoc('syarat')}
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      padding: 0,
-                      color: 'inherit',
-                      font: 'inherit',
-                      cursor: 'pointer',
-                    }}
                   >
                     Syarat &amp; Ketentuan
                   </button>
