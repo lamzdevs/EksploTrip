@@ -44,7 +44,7 @@ supabase/dump*.sql
 
 # Supabase Local Environment & State
 .supabase/
-supabase/.temp/
+supabase/
 
 # Legacy static folder & notes
 /Eksplotrip/
