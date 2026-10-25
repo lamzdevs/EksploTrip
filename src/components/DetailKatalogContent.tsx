@@ -1,33 +1,116 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Destination } from '@/types/destination';
-import { formatBogorLocation } from '@/lib/destinations';
+import {
+  formatBogorLocation,
+  formatKondisiTag,
+  getLiveCrowdStatus,
+} from '@/lib/destinations';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 interface DetailKatalogContentProps {
   destination: Destination;
   allDestinations?: Destination[];
+  fromOrigin?: string;
 }
 
 export default function DetailKatalogContent({
   destination,
-  allDestinations = [],
+  fromOrigin,
 }: DetailKatalogContentProps) {
-  const [ticketQty, setTicketQty] = useState<number>(1);
-  const [parkingQty, setParkingQty] = useState<number>(1);
-  const [showStaticMap, setShowStaticMap] = useState<boolean>(false);
+  const [resolvedFrom, setResolvedFrom] = useState<string | undefined>(fromOrigin);
+  const [ticket1Qty, setTicket1Qty] = useState<number>(0);
+  const [ticket2Qty, setTicket2Qty] = useState<number>(0);
+  const [parkingMotorQty, setParkingMotorQty] = useState<number>(0);
+  const [parkingMobilQty, setParkingMobilQty] = useState<number>(0);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!resolvedFrom && typeof window !== 'undefined') {
+      const sp = new URLSearchParams(window.location.search);
+      const f = sp.get('from');
+      if (f) {
+        setResolvedFrom(f);
+      } else if (document.referrer) {
+        try {
+          const refUrl = new URL(document.referrer);
+          if (refUrl.origin === window.location.origin) {
+            if (refUrl.pathname === '/' || refUrl.pathname === '/beranda.html') {
+              setResolvedFrom('beranda');
+            } else if (refUrl.pathname.startsWith('/search')) {
+              setResolvedFrom('search');
+            } else if (refUrl.pathname.startsWith('/eksplorasi')) {
+              setResolvedFrom('eksplorasi');
+            }
+          }
+        } catch {
+          // ignore
+        }
+      }
+    }
+  }, [resolvedFrom]);
+
+  const effectiveFrom = resolvedFrom || fromOrigin;
+  const backHref =
+    effectiveFrom === 'beranda'
+      ? '/'
+      : effectiveFrom === 'search'
+      ? '/search'
+      : '/eksplorasi';
 
   const isVerified =
     !destination.is_dummy && destination.status_verifikasi === 'terverifikasi';
 
-  const hasVerifiedPricing = destination.harga_tiket !== null;
-  const ticketPrice = destination.harga_tiket ?? 0;
-  const parkingPrice = destination.harga_parkir_motor ?? 0;
-  const totalEstimated = ticketQty * ticketPrice + parkingQty * parkingPrice;
+  const hasVerifiedPricing =
+    destination.harga_tiket !== null ||
+    (isVerified && Boolean(destination.catatan_tiket?.toLowerCase().includes('tidak ada tiket')));
+
+  // Tiket 1 (Tiket Masuk / Kunjungan / Trekking)
+  const ticket1Title =
+    destination.tiket_kunjungan !== undefined && destination.tiket_kunjungan !== null
+      ? 'Tiket Kunjungan'
+      : destination.tiket_trekking !== undefined && destination.tiket_trekking !== null
+      ? 'Tiket Trekking'
+      : 'Tiket Masuk';
+
+  const ticket1Price =
+    destination.tiket_kunjungan ?? destination.tiket_trekking ?? destination.harga_tiket ?? 0;
+
+  // Tiket 2 (Tiket Berenang + Pelampung / Camping / Tambahan)
+  const hasTicket2 =
+    Boolean(destination.tiket_berenang_pelampung || destination.tiket_camping);
+
+  const ticket2Title = destination.tiket_berenang_pelampung
+    ? 'Tiket + Berenang + Pelampung'
+    : destination.tiket_camping
+    ? 'Tiket Camping'
+    : 'Tiket Tambahan';
+
+  const ticket2Price =
+    destination.tiket_berenang_pelampung ?? destination.tiket_camping ?? 0;
+
+  // Parkir Motor & Mobil
+  const motorPrice = destination.harga_parkir_motor ?? 0;
+  const mobilPrice =
+    destination.harga_parkir_mobil ?? destination.harga_parkir_motor ?? 0;
+
+  const totalEstimated =
+    ticket1Qty * ticket1Price +
+    ticket2Qty * ticket2Price +
+    parkingMotorQty * motorPrice +
+    parkingMobilQty * mobilPrice;
+
+  const totalPersons = ticket1Qty + ticket2Qty;
+  const totalVehicles = parkingMotorQty + parkingMobilQty;
+
+  const liveCrowd = getLiveCrowdStatus(destination);
+  const keramaianText = liveCrowd.level;
+  const keramaianPercent = liveCrowd.percentage;
+  const keramaianDash = liveCrowd.dashLength;
+  const keramaianColor = liveCrowd.themeColor;
 
   const handleCopy = async (key: string, value: string) => {
     try {
@@ -39,17 +122,6 @@ export default function DetailKatalogContent({
     setTimeout(() => {
       setCopiedKey((prev) => (prev === key ? null : prev));
     }, 2000);
-  };
-
-  const handleDownloadOfflineMap = () => {
-    const a = document.createElement('a');
-    a.href =
-      destination.peta_jalur_url ||
-      '/assets/images/detail_katalog/peta_jalur_cibulao.png';
-    a.download = `Peta_Jalur_${destination.slug}_EksploTrip.png`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
   };
 
   const formattedLocation = formatBogorLocation(destination.kecamatan);
@@ -92,13 +164,31 @@ export default function DetailKatalogContent({
         ? 'Kondisi sanitasi dan kamar bilas telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
     },
+    {
+      title: 'Mushola & Ibadah',
+      desc: isVerified
+        ? 'Kondisi mushola dan fasilitas ibadah telah diverifikasi.'
+        : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+    },
+    {
+      title: 'Warung & Logistik',
+      desc: isVerified
+        ? 'Ketersediaan warung makan dan logistik telah diverifikasi.'
+        : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+    },
+    {
+      title: 'Spot Foto & Panorama',
+      desc: isVerified
+        ? 'Kondisi spot foto dan panorama alam telah diverifikasi.'
+        : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+    },
   ];
 
   return (
     <div className="view-transition-wrapper">
       <Navbar
         variant="detail-back"
-        backHref="/eksplorasi"
+        backHref={backHref}
         backLabel="Kembali"
       />
 
@@ -109,7 +199,7 @@ export default function DetailKatalogContent({
             <img
               src={
                 destination.foto_banner ||
-                '/assets/images/detail_katalog/banner_atas.png'
+                '/assets/visual/curug_cibulao/banner_curug_cibulao.png'
               }
               alt={`${destination.nama_wisata} ${shortKecamatan}`}
               className="hero-detail-img"
@@ -140,7 +230,7 @@ export default function DetailKatalogContent({
               {isVerified && destination.kondisi.length > 0 ? (
                 destination.kondisi.map((tag, idx) => (
                   <span key={idx} className="hero-tag-pill">
-                    {tag}
+                    {formatKondisiTag(tag)}
                   </span>
                 ))
               ) : (
@@ -165,48 +255,53 @@ export default function DetailKatalogContent({
                     : 'Ketinggian: Belum tersedia'}
                 </span>
               </div>
-              <div className="hero-meta-item">
-                <span className="material-symbols-outlined">hiking</span>
+              <div
+                className="hero-meta-item"
+                title={`Jam Operasional: ${destination.jam_buka_weekday || 'Belum tersedia'}`}
+              >
+                <span className="material-symbols-outlined">schedule</span>
                 <span>
-                  {destination.waktu_tempuh_parkir ||
-                    'Waktu tempuh: Belum tersedia'}
+                  {destination.jam_buka_weekday
+                    ? destination.jam_buka_weekday === destination.jam_buka_weekend ||
+                      !destination.jam_buka_weekend
+                      ? destination.jam_buka_weekday
+                      : `${destination.jam_buka_weekday} (Wd) | ${destination.jam_buka_weekend} (We)`
+                    : 'Operasional: Belum tersedia'}
                 </span>
               </div>
-            </div>
+              {(() => {
+                const travelTime =
+                  destination.waktu_tempuh && destination.waktu_tempuh.trim() !== '-'
+                    ? destination.waktu_tempuh.trim()
+                    : destination.waktu_tempuh_parkir && destination.waktu_tempuh_parkir.trim() !== '-'
+                      ? destination.waktu_tempuh_parkir.trim()
+                      : null;
 
-            {allDestinations.length > 1 && (
-              <div
-                style={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  gap: 8,
-                  marginTop: 14,
-                }}
+                if (!travelTime) return null;
+
+                return (
+                  <div className="hero-meta-item">
+                    <span className="material-symbols-outlined">hiking</span>
+                    <span>{travelTime}</span>
+                  </div>
+                );
+              })()}
+              <a
+                href={
+                  destination.akun_instagram
+                    ? `https://www.instagram.com/${destination.akun_instagram.replace('@', '')}/`
+                    : "https://www.instagram.com/eksplotrip/?utm_source=ig_web_button_share_sheet"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-meta-item hero-meta-link"
+                title={`Kunjungi Instagram ${destination.akun_instagram || '@eksplotrip'}`}
+                aria-label={`Instagram ${destination.akun_instagram || '@eksplotrip'}`}
               >
-                {allDestinations.map((item) => {
-                  const active = item.slug === destination.slug;
-                  return (
-                    <Link
-                      key={item.id}
-                      href={`/destinasi/${item.slug}`}
-                      style={{
-                        padding: '4px 12px',
-                        borderRadius: 999,
-                        fontSize: 11.5,
-                        fontWeight: 600,
-                        backgroundColor: active
-                          ? '#8ABC43'
-                          : 'rgba(255, 255, 255, 0.2)',
-                        color: '#FFFFFF',
-                        border: '1px solid rgba(255, 255, 255, 0.35)',
-                      }}
-                    >
-                      {item.nama_wisata}
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
+                <i className="fa-brands fa-instagram"></i>
+                <span>{destination.akun_instagram || '@eksplotrip'}</span>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -248,15 +343,9 @@ export default function DetailKatalogContent({
               <div>
                 <h2 className="overview-info-title">Kondisi Rute</h2>
                 <p className="overview-info-desc">
-                  {isVerified && destination.kondisi.length > 0 ? (
-                    destination.kondisi.slice(0, 2).join(' / ')
-                  ) : (
-                    <>
-                      Belum tersedia
-                      <br />
-                      (Menunggu Survei)
-                    </>
-                  )}
+                  {isVerified && destination.kondisi.length > 0
+                    ? destination.kondisi.slice(0, 2).map(formatKondisiTag).join(' / ')
+                    : 'Belum tersedia (Menunggu Survei)'}
                 </p>
               </div>
             </div>
@@ -271,17 +360,9 @@ export default function DetailKatalogContent({
                 <h2 className="overview-info-title">Status Verifikasi</h2>
                 <p className="overview-info-desc">
                   {isVerified ? (
-                    <>
-                      Terverifikasi
-                      <br />
-                      Survei Lapangan
-                    </>
+                    'Terverifikasi Survei Lapangan'
                   ) : (
-                    <>
-                      Data Dummy
-                      <br />
-                      Belum Diverifikasi
-                    </>
+                    'Data Dummy (Belum Diverifikasi)'
                   )}
                 </p>
               </div>
@@ -323,20 +404,24 @@ export default function DetailKatalogContent({
                 onSubmit={(e) => e.preventDefault()}
               >
                 <div className="calc-stepper-row">
-                  {/* Box Tiket Masuk */}
-                  <div className="calc-item-box">
-                    <span className="calc-item-title">Tiket Masuk</span>
+                  {/* Box 1: Tiket Utama / Kunjungan / Trekking */}
+                  <div
+                    className="calc-item-box"
+                    style={!hasTicket2 ? { gridColumn: '1 / -1' } : undefined}
+                  >
+                    <span className="calc-item-title">{ticket1Title}</span>
                     <span className="calc-item-price">
                       {hasVerifiedPricing
-                        ? `Rp. ${ticketPrice.toLocaleString('id-ID')}`
+                        ? ticket1Price === 0
+                          ? 'Gratis'
+                          : `Rp. ${ticket1Price.toLocaleString('id-ID')}`
                         : 'Belum tersedia'}
-                    </span>
-                    <span className="calc-item-badge">
-                      {hasVerifiedPricing ? 'Tarif Resmi' : 'Data Dummy'}
                     </span>
                     <span className="calc-item-sub">
                       {hasVerifiedPricing
-                        ? '(Per Pengunjung)'
+                        ? ticket1Price === 0
+                          ? '(Tanpa Biaya Masuk)'
+                          : '(Per Orang)'
                         : '(Menunggu Survei)'}
                     </span>
 
@@ -344,35 +429,35 @@ export default function DetailKatalogContent({
                       <button
                         type="button"
                         className="btn-step"
-                        id="btn-dec-ticket"
-                        aria-label="Kurangi jumlah tiket"
+                        id="btn-dec-ticket1"
+                        aria-label={`Kurangi jumlah ${ticket1Title}`}
                         onClick={() =>
-                          setTicketQty((prev) => Math.max(1, prev - 1))
+                          setTicket1Qty((prev) => Math.max(0, prev - 1))
                         }
                       >
                         &minus;
                       </button>
                       <input
                         type="number"
-                        id="input-ticket-qty"
+                        id="input-ticket1-qty"
                         className="step-input"
-                        value={ticketQty}
-                        min={1}
+                        value={ticket1Qty}
+                        min={0}
                         max={99}
                         onChange={(e) =>
-                          setTicketQty(
-                            Math.max(1, parseInt(e.target.value, 10) || 1)
+                          setTicket1Qty(
+                            Math.max(0, parseInt(e.target.value, 10) || 0)
                           )
                         }
-                        aria-label="Jumlah tiket pengunjung"
+                        aria-label={`Jumlah ${ticket1Title}`}
                       />
                       <button
                         type="button"
                         className="btn-step"
-                        id="btn-inc-ticket"
-                        aria-label="Tambah jumlah tiket"
+                        id="btn-inc-ticket1"
+                        aria-label={`Tambah jumlah ${ticket1Title}`}
                         onClick={() =>
-                          setTicketQty((prev) => Math.min(99, prev + 1))
+                          setTicket1Qty((prev) => Math.min(99, prev + 1))
                         }
                       >
                         +
@@ -380,17 +465,67 @@ export default function DetailKatalogContent({
                     </div>
                   </div>
 
-                  {/* Box Parkir */}
+                  {/* Box 2: Tiket Tambahan (Berenang + Pelampung / Camping jika ada) */}
+                  {hasTicket2 && (
+                    <div className="calc-item-box">
+                      <span className="calc-item-title">{ticket2Title}</span>
+                      <span className="calc-item-price">
+                        Rp. {ticket2Price.toLocaleString('id-ID')}
+                      </span>
+                      <span className="calc-item-sub">(Per Orang)</span>
+
+                      <div className="calc-stepper">
+                        <button
+                          type="button"
+                          className="btn-step"
+                          id="btn-dec-ticket2"
+                          aria-label={`Kurangi jumlah ${ticket2Title}`}
+                          onClick={() =>
+                            setTicket2Qty((prev) => Math.max(0, prev - 1))
+                          }
+                        >
+                          &minus;
+                        </button>
+                        <input
+                          type="number"
+                          id="input-ticket2-qty"
+                          className="step-input"
+                          value={ticket2Qty}
+                          min={0}
+                          max={99}
+                          onChange={(e) =>
+                            setTicket2Qty(
+                              Math.max(0, parseInt(e.target.value, 10) || 0)
+                            )
+                          }
+                          aria-label={`Jumlah ${ticket2Title}`}
+                        />
+                        <button
+                          type="button"
+                          className="btn-step"
+                          id="btn-inc-ticket2"
+                          aria-label={`Tambah jumlah ${ticket2Title}`}
+                          onClick={() =>
+                            setTicket2Qty((prev) => Math.min(99, prev + 1))
+                          }
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Box 3: Parkir Motor */}
                   <div className="calc-item-box">
-                    <span className="calc-item-title">Parkir</span>
+                    <span className="calc-item-title">Parkir Motor</span>
                     <span className="calc-item-price">
                       {destination.harga_parkir_motor !== null
-                        ? `Rp. ${parkingPrice.toLocaleString('id-ID')}`
+                        ? `Rp. ${motorPrice.toLocaleString('id-ID')}`
                         : 'Belum tersedia'}
                     </span>
                     <span className="calc-item-sub">
                       {destination.harga_parkir_motor !== null
-                        ? '(Area Parkir Resmi)'
+                        ? '(Per Motor)'
                         : '(Menunggu Survei)'}
                     </span>
 
@@ -398,35 +533,89 @@ export default function DetailKatalogContent({
                       <button
                         type="button"
                         className="btn-step"
-                        id="btn-dec-parking"
-                        aria-label="Kurangi jumlah kendaraan"
+                        id="btn-dec-motor"
+                        aria-label="Kurangi jumlah motor"
                         onClick={() =>
-                          setParkingQty((prev) => Math.max(0, prev - 1))
+                          setParkingMotorQty((prev) => Math.max(0, prev - 1))
                         }
                       >
                         &minus;
                       </button>
                       <input
                         type="number"
-                        id="input-parking-qty"
+                        id="input-motor-qty"
                         className="step-input"
-                        value={parkingQty}
+                        value={parkingMotorQty}
                         min={0}
                         max={99}
                         onChange={(e) =>
-                          setParkingQty(
+                          setParkingMotorQty(
                             Math.max(0, parseInt(e.target.value, 10) || 0)
                           )
                         }
-                        aria-label="Jumlah kendaraan parkir"
+                        aria-label="Jumlah kendaraan motor"
                       />
                       <button
                         type="button"
                         className="btn-step"
-                        id="btn-inc-parking"
-                        aria-label="Tambah jumlah kendaraan"
+                        id="btn-inc-motor"
+                        aria-label="Tambah jumlah motor"
                         onClick={() =>
-                          setParkingQty((prev) => Math.min(99, prev + 1))
+                          setParkingMotorQty((prev) => Math.min(99, prev + 1))
+                        }
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Box 4: Parkir Mobil */}
+                  <div className="calc-item-box">
+                    <span className="calc-item-title">Parkir Mobil</span>
+                    <span className="calc-item-price">
+                      {destination.harga_parkir_mobil !== null || destination.harga_parkir_motor !== null
+                        ? `Rp. ${mobilPrice.toLocaleString('id-ID')}`
+                        : 'Belum tersedia'}
+                    </span>
+                    <span className="calc-item-sub">
+                      {destination.harga_parkir_mobil !== null || destination.harga_parkir_motor !== null
+                        ? '(Per Mobil)'
+                        : '(Menunggu Survei)'}
+                    </span>
+
+                    <div className="calc-stepper">
+                      <button
+                        type="button"
+                        className="btn-step"
+                        id="btn-dec-mobil"
+                        aria-label="Kurangi jumlah mobil"
+                        onClick={() =>
+                          setParkingMobilQty((prev) => Math.max(0, prev - 1))
+                        }
+                      >
+                        &minus;
+                      </button>
+                      <input
+                        type="number"
+                        id="input-mobil-qty"
+                        className="step-input"
+                        value={parkingMobilQty}
+                        min={0}
+                        max={99}
+                        onChange={(e) =>
+                          setParkingMobilQty(
+                            Math.max(0, parseInt(e.target.value, 10) || 0)
+                          )
+                        }
+                        aria-label="Jumlah kendaraan mobil"
+                      />
+                      <button
+                        type="button"
+                        className="btn-step"
+                        id="btn-inc-mobil"
+                        aria-label="Tambah jumlah mobil"
+                        onClick={() =>
+                          setParkingMobilQty((prev) => Math.min(99, prev + 1))
                         }
                       >
                         +
@@ -444,8 +633,7 @@ export default function DetailKatalogContent({
                   </div>
                   <div>
                     <span className="calc-total-title">
-                      Total Estimasi Biaya ({ticketQty} Tiket, {parkingQty}{' '}
-                      Kendaraan)
+                      Total Estimasi Biaya ({totalPersons} Orang, {totalVehicles} Kendaraan)
                     </span>
                     <div className="calc-total-price" id="calc-total-display">
                       {hasVerifiedPricing
@@ -461,8 +649,10 @@ export default function DetailKatalogContent({
                   className="btn-recalc"
                   id="btn-recalc"
                   onClick={() => {
-                    setTicketQty(1);
-                    setParkingQty(1);
+                    setTicket1Qty(0);
+                    setTicket2Qty(0);
+                    setParkingMotorQty(0);
+                    setParkingMobilQty(0);
                   }}
                 >
                   <span className="material-symbols-outlined">restart_alt</span>
@@ -497,7 +687,9 @@ export default function DetailKatalogContent({
                 </div>
 
                 <Link
-                  href={`/destinasi/${destination.slug}/visual`}
+                  href={`/destinasi/${destination.slug}/visual${
+                    effectiveFrom ? `?from=${effectiveFrom}` : ''
+                  }`}
                   className="btn-see-all-visual"
                 >
                   <span>Lihat Semua Visual</span>
@@ -509,7 +701,14 @@ export default function DetailKatalogContent({
 
               <div className="visual-items-grid">
                 {visualSummaryItems.map((item, idx) => (
-                  <div key={idx} className="visual-card-item">
+                  <Link
+                    key={idx}
+                    href={`/destinasi/${destination.slug}/visual${
+                      effectiveFrom ? `?from=${effectiveFrom}` : ''
+                    }`}
+                    className="visual-card-item"
+                    style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+                  >
                     <div className="visual-thumb-wrapper">
                       <img
                         src="/assets/images/detail_katalog/list_visual_katalog.png"
@@ -521,7 +720,7 @@ export default function DetailKatalogContent({
                       <h3 className="visual-item-title">{item.title}</h3>
                       <p className="visual-item-desc">{item.desc}</p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </article>
@@ -546,213 +745,100 @@ export default function DetailKatalogContent({
                     </p>
                   </div>
                 </div>
-
-                <div className="map-header-actions">
-                  <button
-                    type="button"
-                    className={`btn-map-action ${
-                      showStaticMap ? 'teal' : 'outline'
-                    }`}
-                    id="btn-toggle-map"
-                    onClick={() => setShowStaticMap((prev) => !prev)}
-                    title="Ganti antara Google Maps & Peta Rute Resmi"
-                  >
-                    <span className="material-symbols-outlined">layers</span>
-                    <span id="toggle-map-label">
-                      {showStaticMap ? 'Google Maps' : 'Peta Rute'}
-                    </span>
-                  </button>
-                  <button
-                    type="button"
-                    className="btn-map-action teal"
-                    id="btn-download-map"
-                    onClick={handleDownloadOfflineMap}
-                    title="Unduh panduan rute offline"
-                  >
-                    <span className="material-symbols-outlined">download</span>
-                    <span>Unduh Peta Offline</span>
-                  </button>
-                </div>
               </div>
 
               {/* Map Container */}
               <div
-                className={`map-canvas-container ${
-                  showStaticMap ? 'show-static' : ''
-                }`}
+                className="map-canvas-container"
                 id="map-container"
               >
-                {destination.koordinat_lat !== null &&
-                destination.koordinat_lng !== null ? (
-                  <iframe
-                    src={`https://maps.google.com/maps?q=${destination.koordinat_lat},${destination.koordinat_lng}&t=k&z=16&ie=UTF8&iwloc=B&output=embed`}
-                    className="google-maps-iframe"
-                    title={`Google Maps ${destination.nama_wisata}`}
-                    loading="lazy"
-                    allowFullScreen
-                  />
-                ) : (
-                  <iframe
-                    src={`https://maps.google.com/maps?q=${encodeURIComponent(
-                      `${destination.nama_wisata} ${destination.kecamatan}`
-                    )}&t=k&z=14&ie=UTF8&iwloc=B&output=embed`}
-                    className="google-maps-iframe"
-                    title={`Peta Area ${destination.nama_wisata}`}
-                    loading="lazy"
-                    allowFullScreen
-                  />
-                )}
+                {(() => {
+                  const isMyMaps =
+                    destination.google_maps_url &&
+                    destination.google_maps_url.includes('/maps/d/');
 
-                <img
-                  src={
-                    destination.peta_jalur_url ||
-                    '/assets/images/detail_katalog/peta_jalur_cibulao.png'
-                  }
-                  alt={`Peta Jalur Rute ${destination.nama_wisata}`}
-                  className="static-map-img"
-                  id="static-map-img"
-                />
+                  const mapSrc =
+                    isMyMaps && destination.google_maps_url
+                      ? destination.google_maps_url
+                        .replace('/viewer', '/embed')
+                        .replace('/edit', '/embed')
+                    : destination.koordinat_lat !== null &&
+                      destination.koordinat_lng !== null
+                    ? `https://maps.google.com/maps?q=${destination.koordinat_lat},${destination.koordinat_lng}&t=k&z=16&ie=UTF8&iwloc=B&output=embed`
+                    : `https://maps.google.com/maps?q=${encodeURIComponent(
+                        `${destination.nama_wisata} ${destination.kecamatan}`
+                      )}&t=k&z=14&ie=UTF8&iwloc=B&output=embed`;
 
-                {/* Floating Official Legend Panel on Left */}
-                <div className="map-legend-overlay">
-                  <ul className="legend-list">
-                    <li className="legend-item">
-                      <span
-                        className="legend-line-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span>Rute resmi</span>
-                    </li>
-                    <li className="legend-item">
-                      <span className="legend-p-box" aria-hidden="true">
-                        P
-                      </span>
-                      <span>Parkir</span>
-                    </li>
-                    <li className="legend-item">
-                      <span
-                        className="legend-badge-icon"
-                        style={{ color: '#E24438' }}
-                      >
-                        <span
-                          className="material-symbols-outlined"
-                          style={{
-                            fontSize: 18,
-                            fontVariationSettings: "'FILL' 1",
-                          }}
-                        >
-                          location_on
-                        </span>
-                      </span>
-                      <span>{destination.nama_wisata}</span>
-                    </li>
-                    <li className="legend-item">
-                      <span
-                        className="legend-badge-icon"
-                        style={{ color: '#0D6EFD' }}
-                      >
-                        <span
-                          className="material-symbols-outlined"
-                          style={{
-                            fontSize: 18,
-                            fontVariationSettings: "'FILL' 1",
-                          }}
-                        >
-                          directions_walk
-                        </span>
-                      </span>
-                      <span>Pos registrasi</span>
-                    </li>
-                    <li className="legend-item">
-                      <span
-                        className="legend-badge-icon"
-                        style={{ color: '#E6A700' }}
-                      >
-                        <span
-                          className="material-symbols-outlined"
-                          style={{
-                            fontSize: 18,
-                            fontVariationSettings: "'FILL' 1",
-                          }}
-                        >
-                          warning
-                        </span>
-                      </span>
-                      <span>Titik licin (waspada)</span>
-                    </li>
-                    <li className="legend-divider" aria-hidden="true"></li>
-                    <li className="legend-item">
-                      <span
-                        className="legend-badge-icon"
-                        style={{ color: '#E24438' }}
-                      >
-                        <span
-                          className="material-symbols-outlined"
-                          style={{
-                            fontSize: 16,
-                            fontVariationSettings: "'FILL' 1",
-                          }}
-                        >
-                          report
-                        </span>
-                      </span>
-                      <div>
-                        <span>Titik pungli</span>
-                        <small>(hanya di kotak petunjuk)</small>
-                      </div>
-                    </li>
-                    <li className="legend-item">
-                      <span
-                        className="legend-badge-icon"
-                        style={{ color: '#795548' }}
-                      >
-                        <span
-                          className="material-symbols-outlined"
-                          style={{
-                            fontSize: 16,
-                            fontVariationSettings: "'FILL' 1",
-                          }}
-                        >
-                          pets
-                        </span>
-                      </span>
-                      <div>
-                        <span>Hewan buas</span>
-                        <small>(hanya di kotak petunjuk)</small>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                  return (
+                    <iframe
+                      src={mapSrc}
+                      className={`google-maps-iframe ${
+                        isMyMaps ? 'is-mymaps' : ''
+                      }`}
+                      title={`Peta Rute & Jalur ${destination.nama_wisata}`}
+                      loading="lazy"
+                      allowFullScreen
+                    />
+                  );
+                })()}
 
-                {/* Floating Travel Time Pill on Map */}
-                <div className="map-time-pill">
-                  <span className="material-symbols-outlined">hiking</span>
-                  <div>
-                    <div className="map-time-text">
-                      {destination.waktu_tempuh_parkir || 'Belum tersedia'}
+                {/* Floating Travel Time Pill on Map (Hanya tampil jika ada data estimasi waktu tempuh dan bukan '-') */}
+                {(() => {
+                  const travelTime =
+                    destination.waktu_tempuh && destination.waktu_tempuh.trim() !== '-'
+                      ? destination.waktu_tempuh.trim()
+                      : destination.waktu_tempuh_parkir && destination.waktu_tempuh_parkir.trim() !== '-'
+                        ? destination.waktu_tempuh_parkir.trim()
+                        : null;
+
+                  if (!travelTime) return null;
+
+                  return (
+                    <div className="map-time-pill">
+                      <span className="material-symbols-outlined">hiking</span>
+                      <span className="map-time-text">{travelTime}</span>
                     </div>
-                    <div className="map-time-sub">
-                      ({destination.jarak_trek || 'Menunggu Survei'})
-                    </div>
-                  </div>
-                </div>
+                  );
+                })()}
 
-                {/* Direct Link to Google Maps */}
-                <a
-                  href={
-                    destination.google_maps_url ||
-                    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                      `${destination.nama_wisata} ${destination.kecamatan}`
-                    )}`
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="map-direct-link"
-                  title="Buka di aplikasi Google Maps"
-                >
-                  <span>Buka di Google Maps</span>
-                  <span className="material-symbols-outlined">open_in_new</span>
-                </a>
+                {/* Floating Direct Action Links on Bottom Right */}
+                <div className="map-direct-links-group">
+                  <a
+                    href={
+                      destination.google_maps_route_url ||
+                      (destination.koordinat_lat && destination.koordinat_lng
+                        ? `https://www.google.com/maps/dir/?api=1&destination=${destination.koordinat_lat},${destination.koordinat_lng}`
+                        : `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+                            `${destination.nama_wisata} ${destination.kecamatan}`
+                          )}`)
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="map-direct-link btn-route"
+                    title="Buka petunjuk rute navigasi dari lokasi Anda"
+                  >
+                    <span className="material-symbols-outlined">directions</span>
+                    <span>Lihat Rute</span>
+                    <span className="material-symbols-outlined">open_in_new</span>
+                  </a>
+
+                  <a
+                    href={
+                      destination.google_maps_url
+                        ? destination.google_maps_url.replace('/embed', '/viewer')
+                        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                            `${destination.nama_wisata} ${destination.kecamatan}`
+                          )}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="map-direct-link"
+                    title="Buka di aplikasi Google Maps"
+                  >
+                    <span>Buka di Google Maps</span>
+                    <span className="material-symbols-outlined">open_in_new</span>
+                  </a>
+                </div>
               </div>
             </article>
 
@@ -794,14 +880,17 @@ export default function DetailKatalogContent({
                     <defs>
                       <linearGradient
                         id="crowdGaugeGrad"
-                        x1="0%"
-                        y1="100%"
-                        x2="100%"
-                        y2="0%"
+                        gradientUnits="userSpaceOnUse"
+                        x1="24"
+                        y1="130"
+                        x2="236"
+                        y2="130"
                       >
-                        <stop offset="0%" stopColor="#568942" />
-                        <stop offset="55%" stopColor="#8ABC43" />
-                        <stop offset="100%" stopColor="#F1C40F" />
+                        <stop offset="0%" stopColor="#3E7B2F" />
+                        <stop offset="25%" stopColor="#568942" />
+                        <stop offset="50%" stopColor="#E5A110" />
+                        <stop offset="78%" stopColor="#F97316" />
+                        <stop offset="100%" stopColor="#DC2626" />
                       </linearGradient>
                     </defs>
                     <path
@@ -812,11 +901,16 @@ export default function DetailKatalogContent({
                       strokeLinecap="round"
                     />
                     <path
-                      d="M 24 130 A 106 106 0 0 1 82 36"
+                      d="M 24 130 A 106 106 0 0 1 236 130"
                       fill="none"
                       stroke="url(#crowdGaugeGrad)"
                       strokeWidth="22"
                       strokeLinecap="round"
+                      strokeDasharray={`${keramaianDash} 334`}
+                      strokeDashoffset="0"
+                      style={{
+                        transition: 'stroke-dasharray 0.5s ease',
+                      }}
                     />
                   </svg>
                   <div
@@ -833,9 +927,10 @@ export default function DetailKatalogContent({
                       className="material-symbols-outlined"
                       style={{
                         fontSize: 42,
-                        color: '#568942',
+                        color: keramaianColor,
                         fontVariationSettings: "'FILL' 1",
                         lineHeight: 1,
+                        transition: 'color 0.4s ease',
                       }}
                     >
                       groups
@@ -848,7 +943,7 @@ export default function DetailKatalogContent({
                         marginTop: 2,
                       }}
                     >
-                      {destination.tingkat_keramaian || 'Sedang'}
+                      {keramaianText}
                     </span>
                     <span
                       style={{
@@ -856,7 +951,7 @@ export default function DetailKatalogContent({
                         color: '#444444',
                       }}
                     >
-                      16% - 79%
+                      {keramaianPercent}
                     </span>
                   </div>
                 </div>
@@ -871,11 +966,26 @@ export default function DetailKatalogContent({
                     Waktu terbaik berkunjung
                   </div>
                   <div className="best-time-val">
-                    {destination.waktu_terbaik ||
-                      'Belum tersedia (Menunggu Survei)'}
+                    {(() => {
+                      if (!destination.waktu_terbaik) {
+                        return 'Belum tersedia (Menunggu Survei)';
+                      }
+                      const match = destination.waktu_terbaik.match(/^(.*?)\s*(\(.*?\))\s*$/);
+                      if (match) {
+                        return (
+                          <>
+                            <div>{match[1].trim()}</div>
+                            <div className="best-time-hours">{match[2].trim()}</div>
+                          </>
+                        );
+                      }
+                      return destination.waktu_terbaik;
+                    })()}
                   </div>
                   <div className="best-time-sub">
-                    Untuk menghindari antrean dan kepadatan pengunjung.
+                    {destination.jam_ramai_weekend
+                      ? `Jam ramai akhir pekan: ${destination.jam_ramai_weekend} WIB`
+                      : 'Untuk menghindari antrean dan kepadatan pengunjung.'}
                   </div>
                 </div>
               </div>
@@ -919,7 +1029,7 @@ export default function DetailKatalogContent({
                 </div>
                 <div className="contact-footer-row">
                   <span className="contact-phone-num">
-                    {destination.kontak_pic?.telepon || 'Belum tersedia'}
+                    {destination.nomor_pengelola || destination.kontak_pic?.telepon || 'Belum tersedia'}
                   </span>
                   <button
                     type="button"
@@ -929,7 +1039,7 @@ export default function DetailKatalogContent({
                     onClick={() =>
                       handleCopy(
                         'pic',
-                        destination.kontak_pic?.telepon || 'Belum tersedia'
+                        destination.nomor_pengelola || destination.kontak_pic?.telepon || 'Belum tersedia'
                       )
                     }
                     aria-label="Salin kontak Pokdarwis"

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Destination } from '@/types/destination';
 import { DestinationCard } from '@/components/DestinationCard';
@@ -11,13 +11,48 @@ interface SearchContentProps {
   query: string;
   results: Destination[];
   forceError?: boolean;
+  fromOrigin?: 'beranda' | 'eksplorasi';
 }
 
 export default function SearchContent({
   query,
   results,
   forceError = false,
+  fromOrigin = 'eksplorasi',
 }: SearchContentProps) {
+  const [activeOrigin, setActiveOrigin] = useState<'beranda' | 'eksplorasi'>(
+    fromOrigin
+  );
+
+  useEffect(() => {
+    if (fromOrigin) {
+      setActiveOrigin(fromOrigin);
+    }
+    if (typeof window !== 'undefined') {
+      const sp = new URLSearchParams(window.location.search);
+      const f = sp.get('from');
+      if (f === 'beranda' || f === 'eksplorasi') {
+        setActiveOrigin(f);
+      } else if (document.referrer) {
+        try {
+          const refUrl = new URL(document.referrer);
+          if (refUrl.origin === window.location.origin) {
+            if (refUrl.pathname === '/' || refUrl.pathname === '/beranda.html') {
+              setActiveOrigin('beranda');
+            } else if (refUrl.pathname.startsWith('/eksplorasi')) {
+              setActiveOrigin('eksplorasi');
+            } else if (refUrl.pathname.startsWith('/bantuan-darurat')) {
+              setActiveOrigin('eksplorasi');
+            }
+          }
+        } catch {
+          // ignore
+        }
+      }
+    }
+  }, [fromOrigin]);
+
+  const backHref = activeOrigin === 'beranda' ? '/' : '/eksplorasi';
   const hasResults = !forceError && results.length > 0;
 
   if (!hasResults) {
@@ -26,7 +61,7 @@ export default function SearchContent({
         <Navbar
           variant="main"
           initialSearchQuery={query}
-          activeMainTab="beranda"
+          activeMainTab={activeOrigin}
         />
 
         <main>
@@ -101,7 +136,7 @@ export default function SearchContent({
                 <span className="material-symbols-outlined">restart_alt</span>
                 <span>Reset Pencarian</span>
               </Link>
-              <Link href="/" className="btn-back-home">
+              <Link href={backHref} className="btn-back-home">
                 Kembali
               </Link>
             </div>
@@ -131,9 +166,9 @@ export default function SearchContent({
     <div className="view-transition-wrapper">
       <Navbar
         variant="main-with-back"
-        backHref="/"
+        backHref={backHref}
         backLabel="Kembali"
-        activeMainTab="beranda"
+        activeMainTab={activeOrigin}
       />
 
       <main>
@@ -156,7 +191,11 @@ export default function SearchContent({
 
           <div className="cards-grid">
             {results.map((dest) => (
-              <DestinationCard key={dest.id} destination={dest} />
+              <DestinationCard
+                key={dest.id}
+                destination={dest}
+                fromOrigin="search"
+              />
             ))}
           </div>
         </section>

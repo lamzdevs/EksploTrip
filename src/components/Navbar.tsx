@@ -15,6 +15,7 @@ interface NavbarProps {
   backLabel?: string;
   initialSearchQuery?: string;
   activeMainTab?: 'beranda' | 'eksplorasi' | 'bantuan';
+  onTabChange?: (tab: 'beranda' | 'eksplorasi' | 'bantuan') => void;
 }
 
 export default function Navbar({
@@ -23,6 +24,7 @@ export default function Navbar({
   backLabel = 'Kembali',
   initialSearchQuery = '',
   activeMainTab,
+  onTabChange,
 }: NavbarProps) {
   const pathname = usePathname();
   const router = useRouter();
@@ -34,6 +36,7 @@ export default function Navbar({
   const berandaRef = useRef<HTMLLIElement | null>(null);
   const eksplorasiRef = useRef<HTMLLIElement | null>(null);
   const bantuanRef = useRef<HTMLLIElement | null>(null);
+  const [isIndicatorReady, setIsIndicatorReady] = useState(false);
   const [indicatorStyle, setIndicatorStyle] = useState<{
     left: number;
     width: number;
@@ -48,7 +51,16 @@ export default function Navbar({
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  const [overrideTab, setOverrideTab] = useState<
+    'beranda' | 'eksplorasi' | 'bantuan' | null
+  >(null);
+
+  useEffect(() => {
+    setOverrideTab(null);
+  }, [pathname, activeMainTab]);
+
   const currentTab: 'beranda' | 'eksplorasi' | 'bantuan' =
+    overrideTab ??
     activeMainTab ??
     (pathname.startsWith('/eksplorasi')
       ? 'eksplorasi'
@@ -79,21 +91,89 @@ export default function Navbar({
         width: targetRect.width,
         opacity: 1,
       });
+      setIsIndicatorReady(true);
     };
 
     updateIndicator();
+    if (typeof document !== 'undefined' && document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(updateIndicator);
+    }
     window.addEventListener('resize', updateIndicator);
     return () => window.removeEventListener('resize', updateIndicator);
   }, [variant, currentTab, pathname]);
 
+  const handleMenuClick = (
+    e: React.MouseEvent,
+    tab: 'beranda' | 'eksplorasi' | 'bantuan'
+  ) => {
+    if (onTabChange) {
+      e.preventDefault();
+      onTabChange(tab);
+    }
+  };
+
+  const handleBackClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (
+      typeof window !== 'undefined' &&
+      window.history.length > 1 &&
+      document.referrer &&
+      document.referrer.includes(window.location.host)
+    ) {
+      try {
+        const refUrl = new URL(document.referrer);
+        // Jika sebelumnya dari bantuan-darurat tetapi tujuan kembali adalah eksplorasi,
+        // navigasi langsung ke backHref agar tidak mental kembali ke halaman bantuan darurat
+        if (
+          refUrl.pathname.startsWith('/bantuan-darurat') &&
+          backHref.startsWith('/eksplorasi')
+        ) {
+          e.preventDefault();
+          router.push(backHref);
+          return;
+        }
+      } catch {
+        // ignore URL parse errors
+      }
+      e.preventDefault();
+      router.back();
+    }
+  };
+
   const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const trimmed = searchValue.trim();
+
+    // Sesuai preferensi user:
+    // Jika mencari dari halaman bantuan darurat, garis navbar langsung dialihkan ke eksplorasi
+    // Jika dari beranda tetap beranda, jika dari eksplorasi tetap eksplorasi
+    const fromTab: 'beranda' | 'eksplorasi' =
+      currentTab === 'beranda' ? 'beranda' : 'eksplorasi';
+
+    if (currentTab === 'bantuan') {
+      setOverrideTab('eksplorasi');
+      if (onTabChange) {
+        onTabChange('eksplorasi');
+      }
+    }
+
     if (!trimmed) {
-      router.push('/eksplorasi');
+      if (currentTab === 'bantuan') {
+        if (!onTabChange) {
+          router.push('/eksplorasi');
+        }
+      } else if (currentTab === 'beranda') {
+        if (!onTabChange) {
+          router.push('/');
+        }
+      } else {
+        if (!onTabChange) {
+          router.push('/eksplorasi');
+        }
+      }
       return;
     }
-    router.push(`/search?q=${encodeURIComponent(trimmed)}`);
+
+    router.push(`/search?q=${encodeURIComponent(trimmed)}&from=${fromTab}`);
   };
 
   if (variant === 'detail-back') {
@@ -113,6 +193,7 @@ export default function Navbar({
             className="btn-back-nav"
             id="btn-back-nav"
             aria-label={backLabel}
+            onClick={handleBackClick}
           >
             <span className="material-symbols-outlined">arrow_back</span>
             <span>{backLabel}</span>
@@ -135,7 +216,7 @@ export default function Navbar({
           </Link>
 
           <nav className="navbar-menu" aria-label="Navigasi Utama">
-            <ul className="nav-links" ref={navLinksRef}>
+            <ul className="nav-links has-indicator" ref={navLinksRef}>
               <li
                 ref={berandaRef}
                 className={`nav-item ${currentTab === 'beranda' ? 'active' : ''}`}
@@ -144,6 +225,7 @@ export default function Navbar({
                 <Link
                   href="/"
                   aria-current={currentTab === 'beranda' ? 'page' : undefined}
+                  onClick={(e) => handleMenuClick(e, 'beranda')}
                 >
                   Beranda
                 </Link>
@@ -160,6 +242,7 @@ export default function Navbar({
                   aria-current={
                     currentTab === 'eksplorasi' ? 'page' : undefined
                   }
+                  onClick={(e) => handleMenuClick(e, 'eksplorasi')}
                 >
                   Eksplorasi Destinasi
                 </Link>
@@ -172,6 +255,7 @@ export default function Navbar({
                 <Link
                   href="/bantuan-darurat"
                   aria-current={currentTab === 'bantuan' ? 'page' : undefined}
+                  onClick={(e) => handleMenuClick(e, 'bantuan')}
                 >
                   Bantuan Darurat
                 </Link>
@@ -180,9 +264,12 @@ export default function Navbar({
                 className="nav-indicator"
                 aria-hidden="true"
                 style={{
-                  left: `${indicatorStyle.left}px`,
+                  transform: `translate3d(${indicatorStyle.left}px, 0, 0)`,
                   width: `${indicatorStyle.width}px`,
                   opacity: indicatorStyle.opacity,
+                  transition: isIndicatorReady
+                    ? 'transform 0.42s cubic-bezier(0.25, 1, 0.35, 1), width 0.42s cubic-bezier(0.25, 1, 0.35, 1), opacity 0.25s ease'
+                    : 'none',
                 }}
               />
             </ul>
@@ -194,6 +281,7 @@ export default function Navbar({
                 href={backHref}
                 className="btn-back-nav"
                 aria-label={backLabel}
+                onClick={handleBackClick}
               >
                 <span className="material-symbols-outlined">arrow_back</span>
                 <span>{backLabel}</span>
@@ -252,7 +340,10 @@ export default function Navbar({
           <Link
             href="/"
             className={currentTab === 'beranda' ? 'active' : ''}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={(e) => {
+              setMobileMenuOpen(false);
+              handleMenuClick(e, 'beranda');
+            }}
           >
             <span>Beranda</span>
             <span className="material-symbols-outlined">chevron_right</span>
@@ -260,7 +351,10 @@ export default function Navbar({
           <Link
             href="/eksplorasi"
             className={currentTab === 'eksplorasi' ? 'active' : ''}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={(e) => {
+              setMobileMenuOpen(false);
+              handleMenuClick(e, 'eksplorasi');
+            }}
           >
             <span>Eksplorasi Destinasi</span>
             <span className="material-symbols-outlined">chevron_right</span>
@@ -268,7 +362,10 @@ export default function Navbar({
           <Link
             href="/bantuan-darurat"
             className={currentTab === 'bantuan' ? 'active' : ''}
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={(e) => {
+              setMobileMenuOpen(false);
+              handleMenuClick(e, 'bantuan');
+            }}
           >
             <span>Bantuan Darurat</span>
             <span className="material-symbols-outlined">chevron_right</span>
@@ -311,19 +408,6 @@ export default function Navbar({
                 <strong>AIplo</strong> membantu kamu menemukan destinasi wisata
                 alam di Bogor berdasarkan kondisi jalur, estimasi biaya, dan
                 tingkat kesiapan perjalanan.
-              </p>
-              <p
-                style={{
-                  background: '#F4F4F4',
-                  padding: '12px 16px',
-                  borderRadius: 10,
-                  borderLeft: '4px solid #568942',
-                  fontSize: 13,
-                }}
-              >
-                <strong>Status Pengembangan:</strong> Database saat ini berisi{' '}
-                <strong>maksimal 3 data dummy</strong> untuk pengujian antarmuka
-                sebelum data hasil survei lapangan resmi dimasukkan ke Supabase.
               </p>
               <div className="eksplo-modal-actions">
                 <Link

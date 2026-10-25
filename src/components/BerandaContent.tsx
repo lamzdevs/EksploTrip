@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 
 interface BerandaContentProps {
   destinations: Destination[];
-  source: 'supabase' | 'local_dummy';
+  source?: 'supabase' | 'local_dummy';
 }
 
 const SLOT_TYPES: Array<'curug' | 'danau' | 'gunung'> = [
@@ -20,9 +20,14 @@ const SLOT_TYPES: Array<'curug' | 'danau' | 'gunung'> = [
 
 export default function BerandaContent({
   destinations,
-  source,
 }: BerandaContentProps) {
-  const displayedDestinations = destinations.slice(0, 6);
+  // Selalu prioritaskan destinasi terverifikasi di urutan paling atas beranda
+  const sortedDestinations = [...destinations].sort((a, b) => {
+    const aVer = a.status_verifikasi === 'terverifikasi' ? 1 : 0;
+    const bVer = b.status_verifikasi === 'terverifikasi' ? 1 : 0;
+    return bVer - aVer;
+  });
+  const displayedDestinations = sortedDestinations.slice(0, 6);
   const placeholderCount = Math.max(0, 6 - displayedDestinations.length);
 
   return (
@@ -65,23 +70,6 @@ export default function BerandaContent({
           </div>
         </section>
 
-        {source === 'local_dummy' && (
-          <div className="dummy-status-banner">
-            <div className="dummy-status-inner">
-              <div className="dummy-status-left">
-                <span className="material-symbols-outlined">info</span>
-                <span>
-                  Menampilkan <strong>3 destinasi dummy sementara</strong> untuk
-                  pengujian pengembangan. Slot kartu lainnya adalah placeholder
-                  untuk mempertahankan layout 6 kartu sesuai desain Figma
-                  sebelum data survei asli tersedia di Supabase.
-                </span>
-              </div>
-              <span className="dummy-status-badge">Maks. 3 Data Dummy</span>
-            </div>
-          </div>
-        )}
-
         {/* Destinasi Wisata Populer */}
         <section className="destinations-section">
           <div className="destinations-header">
@@ -102,7 +90,11 @@ export default function BerandaContent({
 
           <div className="cards-grid">
             {displayedDestinations.map((dest) => (
-              <DestinationCard key={dest.id} destination={dest} />
+              <DestinationCard
+                key={dest.id}
+                destination={dest}
+                fromOrigin="beranda"
+              />
             ))}
             {Array.from({ length: placeholderCount }).map((_, idx) => (
               <PlaceholderSlotCard

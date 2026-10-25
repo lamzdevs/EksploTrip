@@ -2,10 +2,11 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import DetailKatalogContent from '@/components/DetailKatalogContent';
-import { getDestinationBySlug, getDestinations } from '@/lib/destinations';
+import { getDestinationBySlug } from '@/lib/destinations';
 
 interface DestinationDetailPageProps {
   params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({
@@ -30,12 +31,13 @@ export async function generateMetadata({
 
 export default async function DestinationDetailPage({
   params,
+  searchParams,
 }: DestinationDetailPageProps) {
   const { slug } = await params;
-  const [{ destination }, { destinations }] = await Promise.all([
-    getDestinationBySlug(slug),
-    getDestinations(),
-  ]);
+  const sp = searchParams ? await searchParams : {};
+  const fromOrigin = typeof sp.from === 'string' ? sp.from : undefined;
+
+  const { destination } = await getDestinationBySlug(slug);
 
   if (!destination) {
     notFound();
@@ -44,7 +46,7 @@ export default async function DestinationDetailPage({
   return (
     <DetailKatalogContent
       destination={destination}
-      allDestinations={destinations}
+      fromOrigin={fromOrigin}
     />
   );
 }

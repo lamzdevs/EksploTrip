@@ -101,7 +101,7 @@ export default function Footer() {
               <ul className="footer-social-list">
                 <li>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/eksplotrip/?utm_source=ig_web_button_share_sheet"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-icon-btn"

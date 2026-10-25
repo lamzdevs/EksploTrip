@@ -3,13 +3,17 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Destination } from '@/types/destination';
-import { formatBogorLocation } from '@/lib/destinations';
+import { formatBogorLocation, formatKondisiTag } from '@/lib/destinations';
 
 interface DestinationCardProps {
   destination: Destination;
+  fromOrigin?: 'beranda' | 'eksplorasi' | 'search';
 }
 
-export function DestinationCard({ destination }: DestinationCardProps) {
+export function DestinationCard({
+  destination,
+  fromOrigin = 'eksplorasi',
+}: DestinationCardProps) {
   const [imgSrc, setImgSrc] = useState(
     destination.foto_utama || '/assets/images/beranda/list_katalog.png'
   );
@@ -31,8 +35,16 @@ export function DestinationCard({ destination }: DestinationCardProps) {
       ? 'Situ/Danau'
       : 'Gunung/Bukit';
 
+  const detailUrl = fromOrigin
+    ? `/destinasi/${destination.slug}?from=${fromOrigin}`
+    : `/destinasi/${destination.slug}`;
+
   return (
-    <article className="destination-card">
+    <Link
+      href={detailUrl}
+      className="destination-card"
+      aria-label={`Lihat detail ${destination.nama_wisata}`}
+    >
       <div className="card-media">
         <span className="card-badge">
           <span className="material-symbols-outlined">{badgeIcon}</span>
@@ -56,14 +68,15 @@ export function DestinationCard({ destination }: DestinationCardProps) {
 
         <ul className="card-tags">
           {isVerified && destination.kondisi.length > 0 ? (
-            destination.kondisi.slice(0, 3).map((tag, idx) => (
-              <li key={idx}>{tag}</li>
+            destination.kondisi.slice(0, 4).map((tag, idx) => (
+              <li key={idx}>{formatKondisiTag(tag)}</li>
             ))
           ) : (
             <>
               <li>Data Dummy</li>
               <li>Kondisi: Belum Tersedia</li>
               <li>Menunggu Survei</li>
+              <li>Belum Terverifikasi</li>
             </>
           )}
         </ul>
@@ -77,16 +90,15 @@ export function DestinationCard({ destination }: DestinationCardProps) {
             </span>
             <span>{isVerified ? 'Terverifikasi' : 'Belum Diverifikasi'}</span>
           </span>
-          <Link
-            href={`/destinasi/${destination.slug}`}
+          <span
             className="card-action-btn"
-            aria-label={`Lihat detail ${destination.nama_wisata}`}
+            aria-hidden="true"
           >
             <span className="material-symbols-outlined">arrow_forward</span>
-          </Link>
+          </span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
 
@@ -146,6 +158,8 @@ export function PlaceholderSlotCard({
         <ul className="card-tags">
           <li>Slot Katalog</li>
           <li>Belum Ada Data</li>
+          <li>Menunggu Survei</li>
+          <li>Kondisi: Belum Tersedia</li>
         </ul>
 
         <div className="card-footer-row">

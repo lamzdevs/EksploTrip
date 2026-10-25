@@ -1,7 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import Navbar from '@/components/Navbar';
-import EksplorasiContent from '@/components/EksplorasiContent';
+import MainViewSlider from '@/components/MainViewSlider';
 import { getDestinations } from '@/lib/destinations';
 
 export const metadata: Metadata = {
@@ -14,13 +13,11 @@ export default async function EksplorasiPage() {
   const { destinations, source, error } = await getDestinations();
 
   return (
-    <>
-      <Navbar variant="main" activeMainTab="eksplorasi" />
-      <EksplorasiContent
-        destinations={destinations}
-        source={source}
-        errorMessage={error}
-      />
-    </>
+    <MainViewSlider
+      initialTab="eksplorasi"
+      destinations={destinations}
+      source={source}
+      errorMessage={error}
+    />
   );
 }

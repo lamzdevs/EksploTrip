@@ -6,6 +6,7 @@ import { getDestinationBySlug } from '@/lib/destinations';
 
 interface DestinationVisualPageProps {
   params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({
@@ -28,13 +29,22 @@ export async function generateMetadata({
 
 export default async function DestinationVisualPage({
   params,
+  searchParams,
 }: DestinationVisualPageProps) {
   const { slug } = await params;
+  const sp = searchParams ? await searchParams : {};
+  const fromOrigin = typeof sp.from === 'string' ? sp.from : undefined;
+
   const { destination } = await getDestinationBySlug(slug);
 
   if (!destination) {
     notFound();
   }
 
-  return <DetailVisualContent destination={destination} />;
+  return (
+    <DetailVisualContent
+      destination={destination}
+      fromOrigin={fromOrigin}
+    />
+  );
 }

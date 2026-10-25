@@ -11,13 +11,13 @@ export const metadata: Metadata = {
 };
 
 interface DetailKatalogPageProps {
-  searchParams: Promise<{ slug?: string }>;
+  searchParams: Promise<{ slug?: string; from?: string }>;
 }
 
 export default async function DetailKatalogPage({
   searchParams,
 }: DetailKatalogPageProps) {
-  const { slug } = await searchParams;
+  const { slug, from } = await searchParams;
   const { destinations } = await getDestinations();
 
   const selected =
@@ -31,6 +31,7 @@ export default async function DetailKatalogPage({
     <DetailKatalogContent
       destination={selected}
       allDestinations={destinations}
+      fromOrigin={from}
     />
   );
 }

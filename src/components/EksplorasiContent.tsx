@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 
 interface EksplorasiContentProps {
   destinations: Destination[];
-  source: 'supabase' | 'local_dummy';
+  source?: 'supabase' | 'local_dummy';
   errorMessage?: string | null;
 }
 
@@ -24,8 +24,6 @@ const SLOT_TYPES: Array<'curug' | 'danau' | 'gunung'> = [
 
 export default function EksplorasiContent({
   destinations,
-  source,
-  errorMessage,
 }: EksplorasiContentProps) {
   const [selectedType, setSelectedType] = useState<string>('all');
   const [selectedCondition, setSelectedCondition] = useState<string>('all');
@@ -58,7 +56,36 @@ export default function EksplorasiContent({
     1,
     Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE)
   );
-  const totalPages = !isFiltered && source === 'local_dummy' ? 4 : totalRealPages;
+  const totalPages = totalRealPages;
+
+  const getPaginationNumbers = () => {
+    if (totalPages <= 7) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    if (currentPage <= 4) {
+      return [1, 2, 3, 4, 5, '...', totalPages];
+    }
+    if (currentPage >= totalPages - 3) {
+      return [
+        1,
+        '...',
+        totalPages - 4,
+        totalPages - 3,
+        totalPages - 2,
+        totalPages - 1,
+        totalPages,
+      ];
+    }
+    return [
+      1,
+      '...',
+      currentPage - 1,
+      currentPage,
+      currentPage + 1,
+      '...',
+      totalPages,
+    ];
+  };
 
   const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
   const currentSlice = filteredDestinations.slice(
@@ -187,10 +214,10 @@ export default function EksplorasiContent({
                 <button
                   type="button"
                   className={`filter-btn ${
-                    selectedCondition === 'cocok-pemula' ? 'active' : ''
+                    selectedCondition === 'ramah-pemula' || selectedCondition === 'cocok-pemula' ? 'active' : ''
                   }`}
                   data-condition="pemula"
-                  onClick={() => handleSelectCondition('cocok-pemula')}
+                  onClick={() => handleSelectCondition('ramah-pemula')}
                 >
                   <span className="material-symbols-outlined">footprint</span>
                   <span>Ramah Pemula</span>
@@ -211,10 +238,10 @@ export default function EksplorasiContent({
                 <button
                   type="button"
                   className={`filter-btn ${
-                    selectedCondition === 'jalur-bagus' ? 'active' : ''
+                    selectedCondition === 'rute-ekstrem' ? 'active' : ''
                   }`}
                   data-condition="ekstrem"
-                  onClick={() => handleSelectCondition('jalur-bagus')}
+                  onClick={() => handleSelectCondition('rute-ekstrem')}
                 >
                   <span className="material-symbols-outlined">landscape</span>
                   <span>Rute Ekstrem</span>
@@ -222,10 +249,10 @@ export default function EksplorasiContent({
                 <button
                   type="button"
                   className={`filter-btn ${
-                    selectedCondition === 'akses-mudah' ? 'active' : ''
+                    selectedCondition === 'dekat-parkiran' ? 'active' : ''
                   }`}
                   data-condition="parkir"
-                  onClick={() => handleSelectCondition('akses-mudah')}
+                  onClick={() => handleSelectCondition('dekat-parkiran')}
                 >
                   <span className="material-symbols-outlined">
                     local_parking
@@ -236,37 +263,6 @@ export default function EksplorasiContent({
             </div>
           </div>
         </section>
-
-        {errorMessage && (
-          <div className="dummy-status-banner">
-            <div className="dummy-status-inner">
-              <div className="dummy-status-left">
-                <span className="material-symbols-outlined">warning</span>
-                <span>{errorMessage}</span>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {source === 'local_dummy' && (
-          <div className="dummy-status-banner">
-            <div className="dummy-status-inner">
-              <div className="dummy-status-left">
-                <span className="material-symbols-outlined">info</span>
-                <span>
-                  <strong>Data Pengembangan:</strong> Katalog saat ini memuat
-                  maksimal <strong>3 destinasi dummy</strong> (Curug Cibulao,
-                  Situ Gede, Gunung Pancar) tanpa klaim verifikasi lapangan.
-                  Slot lainnya disediakan untuk menjaga proporsi 12 kartu sesuai
-                  desain Figma.
-                </span>
-              </div>
-              <span className="dummy-status-badge">
-                {filteredDestinations.length} Data Dummy
-              </span>
-            </div>
-          </div>
-        )}
 
         {/* Daftar Destinasi */}
         <section className="destinations-section" id="katalog-destinasi">
@@ -318,9 +314,9 @@ export default function EksplorasiContent({
                   lineHeight: 1.6,
                 }}
               >
-                Data destinasi dummy saat ini belum menyertakan klaim kondisi
-                seperti <em>Ramah Keluarga</em> atau <em>Ramah Pemula</em>{' '}
-                sebelum hasil survei lapangan resmi tersedia.
+                Tidak ada destinasi yang cocok dengan kombinasi filter yang Anda
+                pilih. Coba pilih kriteria lain atau reset filter untuk melihat
+                semua destinasi.
               </p>
               <button
                 type="button"
@@ -339,7 +335,11 @@ export default function EksplorasiContent({
           ) : (
             <div className="cards-grid" id="destinations-grid">
               {currentSlice.map((dest) => (
-                <DestinationCard key={dest.id} destination={dest} />
+                <DestinationCard
+                  key={dest.id}
+                  destination={dest}
+                  fromOrigin="eksplorasi"
+                />
               ))}
               {Array.from({ length: placeholderCount }).map((_, idx) => {
                 const slotNum =
@@ -381,8 +381,15 @@ export default function EksplorasiContent({
                 <span className="material-symbols-outlined">arrow_back</span>
               </button>
               <ul className="pagi-numbers" id="pagi-numbers">
-                {Array.from({ length: totalPages }).map((_, idx) => {
-                  const pageNum = idx + 1;
+                {getPaginationNumbers().map((item, idx) => {
+                  if (item === '...') {
+                    return (
+                      <li key={`ellipsis-${idx}`} className="pagi-ellipsis">
+                        <span>…</span>
+                      </li>
+                    );
+                  }
+                  const pageNum = Number(item);
                   return (
                     <li key={pageNum}>
                       <button

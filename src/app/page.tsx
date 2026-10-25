@@ -1,15 +1,16 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import BerandaContent from '@/components/BerandaContent';
+import MainViewSlider from '@/components/MainViewSlider';
 import { getDestinations } from '@/lib/destinations';
 
 export default async function HomePage() {
-  const { destinations, source } = await getDestinations();
+  const { destinations, source, error } = await getDestinations();
 
   return (
-    <>
-      <Navbar variant="main" activeMainTab="beranda" />
-      <BerandaContent destinations={destinations} source={source} />
-    </>
+    <MainViewSlider
+      initialTab="beranda"
+      destinations={destinations}
+      source={source}
+      errorMessage={error}
+    />
   );
 }

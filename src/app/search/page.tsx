@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 };
 
 interface SearchPageProps {
-  searchParams: Promise<{ q?: string; status?: string }>;
+  searchParams: Promise<{ q?: string; status?: string; from?: string }>;
 }
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {
-  const { q = '', status } = await searchParams;
+  const { q = '', status, from } = await searchParams;
   const { destinations } = await getDestinations();
 
   const trimmedQuery = q.trim();
@@ -25,11 +25,15 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     ? filterDestinationsList(destinations, { query: trimmedQuery })
     : destinations;
 
+  const resolvedFrom: 'beranda' | 'eksplorasi' =
+    from === 'beranda' ? 'beranda' : 'eksplorasi';
+
   return (
     <SearchContent
       query={trimmedQuery}
       results={matchingResults}
       forceError={forceError}
+      fromOrigin={resolvedFrom}
     />
   );
 }

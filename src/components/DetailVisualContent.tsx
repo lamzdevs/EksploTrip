@@ -1,13 +1,14 @@
 'use client';
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Destination } from '@/types/destination';
-import { formatBogorLocation } from '@/lib/destinations';
+import { formatBogorLocation, formatKondisiTag } from '@/lib/destinations';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 interface DetailVisualContentProps {
   destination: Destination;
+  fromOrigin?: string;
 }
 
 interface VisualCardData {
@@ -44,11 +45,26 @@ const DEFAULT_20_VISUAL_SLOTS: VisualCardData[] = [
 
 export default function DetailVisualContent({
   destination,
+  fromOrigin,
 }: DetailVisualContentProps) {
+  const [resolvedFrom, setResolvedFrom] = useState<string | undefined>(fromOrigin);
   const [activeMediaTab, setActiveMediaTab] = useState<'all' | 'video'>('all');
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [lightboxItem, setLightboxItem] = useState<VisualCardData | null>(null);
+
+  useEffect(() => {
+    if (!resolvedFrom && typeof window !== 'undefined') {
+      const sp = new URLSearchParams(window.location.search);
+      const f = sp.get('from');
+      if (f) setResolvedFrom(f);
+    }
+  }, [resolvedFrom]);
+
+  const effectiveFrom = resolvedFrom || fromOrigin;
+  const backHref = `/destinasi/${destination.slug}${
+    effectiveFrom ? `?from=${effectiveFrom}` : ''
+  }`;
 
   const isVerified =
     !destination.is_dummy && destination.status_verifikasi === 'terverifikasi';
@@ -73,7 +89,7 @@ export default function DetailVisualContent({
     <div className="view-transition-wrapper">
       <Navbar
         variant="detail-back"
-        backHref={`/destinasi/${destination.slug}`}
+        backHref={backHref}
         backLabel="Kembali"
       />
 
@@ -85,7 +101,10 @@ export default function DetailVisualContent({
         >
           <div className="hero-detail-bg">
             <img
-              src="/assets/images/detail_visual/banner_atas.png"
+              src={
+                destination.foto_banner ||
+                '/assets/visual/curug_cibulao/banner_curug_cibulao.png'
+              }
               alt={destination.nama_wisata}
               className="hero-detail-img"
             />
@@ -112,9 +131,19 @@ export default function DetailVisualContent({
             </p>
 
             <div className="hero-tags-row">
-              <span className="hero-tag-pill">Data Dummy Pengembangan</span>
-              <span className="hero-tag-pill">Placeholder Visual</span>
-              <span className="hero-tag-pill">Menunggu Survei</span>
+              {isVerified && destination.kondisi.length > 0 ? (
+                destination.kondisi.map((tag, idx) => (
+                  <span key={idx} className="hero-tag-pill">
+                    {formatKondisiTag(tag)}
+                  </span>
+                ))
+              ) : (
+                <>
+                  <span className="hero-tag-pill">Data Dummy Pengembangan</span>
+                  <span className="hero-tag-pill">Placeholder Visual</span>
+                  <span className="hero-tag-pill">Menunggu Survei</span>
+                </>
+              )}
             </div>
 
             <div className="hero-meta-row">
@@ -130,13 +159,45 @@ export default function DetailVisualContent({
                     : 'Ketinggian: Belum tersedia'}
                 </span>
               </div>
+              <div
+                className="hero-meta-item"
+                title={`Jam Operasional: ${destination.jam_buka_weekday || 'Belum tersedia'}`}
+              >
+                <span className="material-symbols-outlined">schedule</span>
+                <span>
+                  {destination.jam_buka_weekday
+                    ? destination.jam_buka_weekday === destination.jam_buka_weekend ||
+                      !destination.jam_buka_weekend
+                      ? destination.jam_buka_weekday
+                      : `${destination.jam_buka_weekday} (Wd) | ${destination.jam_buka_weekend} (We)`
+                    : 'Operasional: Belum tersedia'}
+                </span>
+              </div>
               <div className="hero-meta-item">
                 <span className="material-symbols-outlined">hiking</span>
                 <span>
-                  {destination.waktu_tempuh_parkir ||
-                    'Waktu tempuh: Belum tersedia'}
+                  {destination.waktu_tempuh && destination.waktu_tempuh !== '-'
+                    ? destination.waktu_tempuh
+                    : destination.waktu_tempuh_parkir && destination.waktu_tempuh_parkir !== '-'
+                      ? destination.waktu_tempuh_parkir
+                      : 'Waktu tempuh: Belum tersedia'}
                 </span>
               </div>
+              <a
+                href={
+                  destination.akun_instagram
+                    ? `https://www.instagram.com/${destination.akun_instagram.replace('@', '')}/`
+                    : "https://www.instagram.com/eksplotrip/?utm_source=ig_web_button_share_sheet"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-meta-item hero-meta-link"
+                title={`Kunjungi Instagram ${destination.akun_instagram || '@eksplotrip'}`}
+                aria-label={`Instagram ${destination.akun_instagram || '@eksplotrip'}`}
+              >
+                <i className="fa-brands fa-instagram"></i>
+                <span>{destination.akun_instagram || '@eksplotrip'}</span>
+              </a>
             </div>
           </div>
         </section>
