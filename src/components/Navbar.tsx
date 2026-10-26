@@ -291,7 +291,7 @@ export default function Navbar({
                 <form
                   onSubmit={handleSearchSubmit}
                   role="search"
-                  className="search-form"
+                  className="search-form desktop-search-form"
                 >
                   <span className="material-symbols-outlined search-icon">
                     search
@@ -336,6 +336,79 @@ export default function Navbar({
           </div>
         </div>
 
+        {/* Mobile Search Row (Same styling & placeholder as desktop search) */}
+        {variant === 'main' && (
+          <div className="navbar-mobile-search">
+            <form
+              onSubmit={handleSearchSubmit}
+              role="search"
+              className="search-form mobile-search-form"
+            >
+              <span className="material-symbols-outlined search-icon">
+                search
+              </span>
+              <input
+                type="search"
+                name="q"
+                placeholder="Cari destinasi..."
+                aria-label="Cari destinasi"
+                className="search-input"
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+              />
+            </form>
+          </div>
+        )}
+
+        {/* Mobile Tab Navigation Row (Same 3 menu items as desktop) */}
+        {variant === 'main' && (
+          <nav className="navbar-mobile-tabs" aria-label="Navigasi Tab Mobile">
+            <button
+              type="button"
+              className={`mobile-tab-btn ${
+                currentTab === 'beranda' ? 'active' : ''
+              }`}
+              onClick={(e) => {
+                handleMenuClick(e, 'beranda');
+                if (!onTabChange) {
+                  router.push('/');
+                }
+              }}
+            >
+              Beranda
+            </button>
+            <button
+              type="button"
+              className={`mobile-tab-btn ${
+                currentTab === 'eksplorasi' ? 'active' : ''
+              }`}
+              onClick={(e) => {
+                handleMenuClick(e, 'eksplorasi');
+                if (!onTabChange) {
+                  router.push('/eksplorasi');
+                }
+              }}
+            >
+              Eksplorasi Destinasi
+            </button>
+            <button
+              type="button"
+              className={`mobile-tab-btn ${
+                currentTab === 'bantuan' ? 'active' : ''
+              }`}
+              onClick={(e) => {
+                handleMenuClick(e, 'bantuan');
+                if (!onTabChange) {
+                  router.push('/bantuan-darurat');
+                }
+              }}
+            >
+              Bantuan Darurat
+            </button>
+          </nav>
+        )}
+
+        {/* Mobile Nav Drawer (Exact same links as desktop menu) */}
         <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
           <Link
             href="/"

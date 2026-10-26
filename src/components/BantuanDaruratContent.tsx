@@ -101,13 +101,11 @@ const RIGHT_FAQS = [
 ];
 
 export default function BantuanDaruratContent() {
-  const [openFaqIds, setOpenFaqIds] = useState<number[]>([0]);
+  const [openFaqId, setOpenFaqId] = useState<number | null>(null);
   const [activeModal, setActiveModal] = useState<HelpModalKey>(null);
 
   const toggleFaq = (id: number) => {
-    setOpenFaqIds((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
-    );
+    setOpenFaqId((prev) => (prev === id ? null : id));
   };
 
   return (
@@ -296,11 +294,17 @@ export default function BantuanDaruratContent() {
             </div>
 
             <div className="safety-image-wrap">
-              <img
-                src="/assets/images/bantuan_darurat/tips_keselamatan.png"
-                alt="Tas carrier di puncak bukit pemandangan alam"
-                className="safety-img"
-              />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcSet="/assets/images/bantuan_darurat/tips_keselamatan_mobile.png"
+                />
+                <img
+                  src="/assets/images/bantuan_darurat/tips_keselamatan.png"
+                  alt="Tas carrier di puncak bukit pemandangan alam"
+                  className="safety-img"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -422,7 +426,7 @@ export default function BantuanDaruratContent() {
                 aria-label="Lihat Tips Keamanan Wanita"
               >
                 <div className="help-card-top">
-                  <div className="help-card-icon icon-orange">
+                  <div className="help-card-icon icon-purple">
                     <span className="material-symbols-outlined">female</span>
                   </div>
                 </div>
@@ -520,7 +524,7 @@ export default function BantuanDaruratContent() {
             <div className="faq-grid">
               <div className="faq-column">
                 {LEFT_FAQS.map((faq, idx) => {
-                  const isOpen = openFaqIds.includes(faq.id);
+                  const isOpen = openFaqId === faq.id;
                   return (
                     <div
                       key={faq.id}
@@ -553,7 +557,7 @@ export default function BantuanDaruratContent() {
 
               <div className="faq-column">
                 {RIGHT_FAQS.map((faq, idx) => {
-                  const isOpen = openFaqIds.includes(faq.id);
+                  const isOpen = openFaqId === faq.id;
                   return (
                     <div
                       key={faq.id}

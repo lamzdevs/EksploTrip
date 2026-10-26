@@ -43,53 +43,55 @@ export default function Footer() {
               </p>
             </div>
 
-            <nav
-              className="footer-col footer-col-links"
-              aria-label="Navigasi Eksplorasi"
-            >
-              <h4 className="footer-col-title">Eksplorasi</h4>
-              <ul className="footer-links">
-                <li>
-                  <Link href="/">Beranda</Link>
-                </li>
-                <li>
-                  <Link href="/eksplorasi">Eksplorasi Destinasi</Link>
-                </li>
-                <li>
-                  <Link href="/bantuan-darurat">Bantuan Darurat</Link>
-                </li>
-              </ul>
-            </nav>
+            <div className="footer-links-group">
+              <nav
+                className="footer-col footer-col-links"
+                aria-label="Navigasi Eksplorasi"
+              >
+                <h4 className="footer-col-title">Eksplorasi</h4>
+                <ul className="footer-links">
+                  <li>
+                    <Link href="/">Beranda</Link>
+                  </li>
+                  <li>
+                    <Link href="/eksplorasi">Eksplorasi Destinasi</Link>
+                  </li>
+                  <li>
+                    <Link href="/bantuan-darurat">Bantuan Darurat</Link>
+                  </li>
+                </ul>
+              </nav>
 
-            <nav
-              className="footer-col footer-col-links"
-              aria-label="Navigasi Dukungan"
-            >
-              <h4 className="footer-col-title">Dukungan</h4>
-              <ul className="footer-links">
-                <li>
-                  <Link href="/bantuan-darurat">Pusat Bantuan</Link>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    className="footer-link-btn"
-                    onClick={() => setActiveDoc('privasi')}
-                  >
-                    Kebijakan Privasi
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    className="footer-link-btn"
-                    onClick={() => setActiveDoc('syarat')}
-                  >
-                    Syarat &amp; Ketentuan
-                  </button>
-                </li>
-              </ul>
-            </nav>
+              <nav
+                className="footer-col footer-col-links"
+                aria-label="Navigasi Dukungan"
+              >
+                <h4 className="footer-col-title">Dukungan</h4>
+                <ul className="footer-links">
+                  <li>
+                    <Link href="/bantuan-darurat">Pusat Bantuan</Link>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      className="footer-link-btn"
+                      onClick={() => setActiveDoc('privasi')}
+                    >
+                      Kebijakan Privasi
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      className="footer-link-btn"
+                      onClick={() => setActiveDoc('syarat')}
+                    >
+                      Syarat &amp; Ketentuan
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
             <div className="footer-col footer-col-social">
               <h4 className="footer-col-title">Tetap Terhubung</h4>

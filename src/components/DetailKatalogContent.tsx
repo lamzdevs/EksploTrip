@@ -243,20 +243,12 @@ export default function DetailKatalogContent({
             </div>
 
             <div className="hero-meta-row">
-              <div className="hero-meta-item">
+              <div className="hero-meta-item hero-meta-location">
                 <span className="material-symbols-outlined">location_on</span>
                 <span>{formattedLocation}</span>
               </div>
-              <div className="hero-meta-item">
-                <span className="material-symbols-outlined">landscape</span>
-                <span>
-                  {destination.ketinggian_mdpl !== null
-                    ? `+ ${destination.ketinggian_mdpl} Mdpl`
-                    : 'Ketinggian: Belum tersedia'}
-                </span>
-              </div>
               <div
-                className="hero-meta-item"
+                className="hero-meta-item hero-meta-schedule"
                 title={`Jam Operasional: ${destination.jam_buka_weekday || 'Belum tersedia'}`}
               >
                 <span className="material-symbols-outlined">schedule</span>
@@ -267,6 +259,14 @@ export default function DetailKatalogContent({
                       ? destination.jam_buka_weekday
                       : `${destination.jam_buka_weekday} (Wd) | ${destination.jam_buka_weekend} (We)`
                     : 'Operasional: Belum tersedia'}
+                </span>
+              </div>
+              <div className="hero-meta-item hero-meta-altitude">
+                <span className="material-symbols-outlined">landscape</span>
+                <span>
+                  {destination.ketinggian_mdpl !== null
+                    ? `+ ${destination.ketinggian_mdpl} Mdpl`
+                    : 'Ketinggian: Belum tersedia'}
                 </span>
               </div>
               {(() => {
@@ -280,7 +280,7 @@ export default function DetailKatalogContent({
                 if (!travelTime) return null;
 
                 return (
-                  <div className="hero-meta-item">
+                  <div className="hero-meta-item hero-meta-distance">
                     <span className="material-symbols-outlined">hiking</span>
                     <span>{travelTime}</span>
                   </div>
@@ -294,7 +294,7 @@ export default function DetailKatalogContent({
                 }
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-meta-item hero-meta-link"
+                className="hero-meta-item hero-meta-link hero-meta-instagram"
                 title={`Kunjungi Instagram ${destination.akun_instagram || '@eksplotrip'}`}
                 aria-label={`Instagram ${destination.akun_instagram || '@eksplotrip'}`}
               >
@@ -633,7 +633,10 @@ export default function DetailKatalogContent({
                   </div>
                   <div>
                     <span className="calc-total-title">
-                      Total Estimasi Biaya ({totalPersons} Orang, {totalVehicles} Kendaraan)
+                      Total Estimasi Biaya
+                      <span className="calc-total-meta">
+                        ({totalPersons} Orang, {totalVehicles} Kendaraan)
+                      </span>
                     </span>
                     <div className="calc-total-price" id="calc-total-display">
                       {hasVerifiedPricing

@@ -50,10 +50,10 @@ export default function BerandaContent({
               <span>Jelajahi Alam, Jaga Bersama</span>
             </div>
             <h1 className="hero-title">
-              Eksplorasi Wisata
-              <br />
-              Keindahan Alam di Bogor
-              <br />
+              Eksplorasi Wisata{' '}
+              <br className="desktop-only-br" />
+              Keindahan Alam di Bogor{' '}
+              <br className="desktop-only-br" />
               yang <strong>Aman &amp; Transparan</strong>
             </h1>
             <p className="hero-desc">
@@ -117,8 +117,8 @@ export default function BerandaContent({
               </div>
               <div>
                 <h2 className="value-prop-title">
-                  Kenapa Pilih
-                  <br />
+                  Kenapa Pilih{' '}
+                  <br className="desktop-only-br" />
                   EksploTrip?
                 </h2>
                 <p className="value-prop-desc">
