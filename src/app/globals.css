@@ -9354,7 +9354,7 @@ button {
         gap: 12px !important;
     }
 
-    .header-icon-box {
+    .card-section-header .header-icon-box {
         width: 38px !important;
         height: 38px !important;
         min-width: 38px !important;
@@ -9366,7 +9366,7 @@ button {
         flex-shrink: 0 !important;
     }
 
-    .header-icon-box .material-symbols-outlined,
+    .card-section-header .header-icon-box .material-symbols-outlined,
     .visual-catalog-main-card .header-icon-box .material-symbols-outlined {
         font-size: 34px !important;
         width: 34px !important;
@@ -9374,6 +9374,28 @@ button {
         line-height: 34px !important;
         color: var(--color-text-highlight) !important;
         font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24 !important;
+    }
+
+    /* Bantuan Darurat - Tips Saat Keadaan Darurat Header Icon (Kotak Hijau + Icon Putih) */
+    .section-header-row .header-icon-box {
+        width: 38px !important;
+        height: 38px !important;
+        min-width: 38px !important;
+        border-radius: 8px !important;
+        background-color: var(--color-text-highlight, #375E27) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+    }
+
+    .section-header-row .header-icon-box .material-symbols-outlined {
+        font-size: 24px !important;
+        width: auto !important;
+        height: auto !important;
+        line-height: normal !important;
+        color: #FFFFFF !important;
+        font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24 !important;
     }
 
     .card-title {
