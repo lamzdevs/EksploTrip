@@ -8058,6 +8058,10 @@ button {
 
 /* Mobile Screens (<= 768px) */
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: clip !important;
+    }
+
     :root {
         --screen-padding: 16px;
     }
@@ -8067,9 +8071,9 @@ button {
         height: auto !important;
         min-height: 60px;
         background-color: #FFFFFF !important;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 1000 !important;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
         border-bottom: 1px solid #ECECEC;
     }
@@ -8237,12 +8241,15 @@ button {
 
     /* Detail Navbar (variant="detail-back") */
     .detail-navbar {
-        position: relative !important;
-        top: auto !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+        width: 100% !important;
         height: 56px !important;
         min-height: 56px !important;
         margin: 0 !important;
-        box-shadow: none !important;
+        background-color: #FFFFFF !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
         border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
     }
 
