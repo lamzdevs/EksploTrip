@@ -1595,16 +1595,15 @@ ul, ol {
     flex-direction: column;
     justify-content: space-between;
     min-width: 0;
-    overflow: hidden;
     gap: 10px;
 }
 
 .filter-card:first-child {
-    flex: 38 1 0%;
+    flex: 36 1 0%;
 }
 
 .filter-card:last-child {
-    flex: 62 1 0%;
+    flex: 64 1 0%;
 }
 
 .filter-title {
@@ -1627,21 +1626,13 @@ ul, ol {
 .filter-buttons {
     display: flex;
     align-items: center;
-    gap: 6px;
-    flex-wrap: nowrap;
+    gap: 7px;
+    flex-wrap: wrap;
     width: 100%;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 2px;
-}
-
-.filter-buttons::-webkit-scrollbar {
-    display: none;
 }
 
 .filter-btn {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1657,7 +1648,6 @@ ul, ol {
     box-shadow: var(--pill-shadow);
     white-space: nowrap;
     transition: all 0.2s ease;
-    flex-shrink: 0;
 }
 
 .filter-btn .material-symbols-outlined {
@@ -7707,39 +7697,44 @@ button {
         padding: 0 var(--screen-padding);
     }
     .filter-container {
-        gap: 12px;
+        gap: 14px;
     }
     .filter-card {
-        padding: 12px 14px;
+        padding: 12px 16px;
     }
     .filter-card:first-child {
-        flex: 37 1 0%;
+        flex: 36 1 0%;
     }
     .filter-card:last-child {
-        flex: 63 1 0%;
+        flex: 64 1 0%;
     }
     .filter-title {
-        font-size: 14px;
+        font-size: 14.5px;
         gap: 6px;
     }
     .filter-title .material-symbols-outlined {
         font-size: 18px;
     }
     .filter-buttons {
-        gap: 5px;
+        gap: 6px;
+        flex-wrap: wrap;
     }
     .filter-btn {
-        font-size: 10px;
-        padding: 0 7px;
-        height: 26px;
-        gap: 4px;
+        flex: 0 0 auto !important;
+        font-size: 10.5px;
+        padding: 0 8px;
+        height: 27px;
+        gap: 5px;
     }
     .filter-btn .material-symbols-outlined {
-        font-size: 13px;
+        font-size: 13.5px;
     }
 }
 
 @media (max-width: 1200px) {
+    :root {
+        --screen-padding: 24px;
+    }
     .cards-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -7751,12 +7746,7 @@ button {
         align-items: flex-start;
         gap: 14px;
     }
-}
-
-@media (max-width: 1100px) and (min-width: 769px) {
-    :root {
-        --screen-padding: 24px;
-    }
+    /* Filter beralih ke 2 baris full-width agar semua merek laptop bebas overflow */
     .filter-container {
         flex-direction: column !important;
         gap: 12px !important;
@@ -7766,11 +7756,11 @@ button {
         width: 100% !important;
         flex: none !important;
         min-height: auto !important;
-        padding: 14px 18px !important;
+        padding: 14px 20px !important;
         gap: 10px !important;
     }
     .filter-title {
-        font-size: 14.5px !important;
+        font-size: 15px !important;
     }
     .filter-buttons {
         display: flex !important;
@@ -7781,9 +7771,9 @@ button {
     }
     .filter-btn {
         flex: 0 0 auto !important;
-        font-size: 11px !important;
-        padding: 0 11px !important;
-        height: 29px !important;
+        font-size: 11.5px !important;
+        padding: 0 12px !important;
+        height: 30px !important;
         border-radius: 99px !important;
     }
 }
