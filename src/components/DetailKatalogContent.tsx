@@ -987,7 +987,7 @@ export default function DetailKatalogContent({
                   </div>
                   <div className="best-time-sub">
                     {destination.jam_ramai_weekend
-                      ? `Jam ramai akhir pekan: ${destination.jam_ramai_weekend} WIB`
+                      ? `Jam ramai akhir pekan: ${destination.jam_ramai_weekend.replace(/\s*,\s*/g, ', ')} WIB`
                       : 'Untuk menghindari antrean dan kepadatan pengunjung.'}
                   </div>
                 </div>
