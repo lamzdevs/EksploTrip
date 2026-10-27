@@ -7780,17 +7780,14 @@ button {
     border: 1px solid #DCDCDC;
 }
 
-.destination-card.placeholder-slot-card .card-verified {
-    color: #568942;
-}
-
-/* Unverified / Dummy Data Badge on Destination Card */
+.destination-card.placeholder-slot-card .card-verified,
 .card-verified.unverified-dummy {
-    color: #568942;
+    color: #DC2626 !important;
 }
 
+.destination-card.placeholder-slot-card .card-verified .material-symbols-outlined,
 .card-verified.unverified-dummy .material-symbols-outlined {
-    color: #568942;
+    color: #DC2626 !important;
 }
 
 /* Mobile Menu Button & Drawer */
@@ -8606,6 +8603,16 @@ button {
         font-variation-settings: 'FILL' 1, 'wght' 600 !important;
     }
 
+    .destination-card .card-verified.unverified-dummy,
+    .destination-card.placeholder-slot-card .card-verified {
+        color: #DC2626 !important;
+    }
+
+    .destination-card .card-verified.unverified-dummy .material-symbols-outlined,
+    .destination-card.placeholder-slot-card .card-verified .material-symbols-outlined {
+        color: #DC2626 !important;
+    }
+
     .destination-card .card-action-btn {
         width: 28px !important;
         height: 28px !important;
@@ -9099,10 +9106,98 @@ button {
         color: var(--color-text-white) !important;
     }
 
-    .pagination-container {
-        padding: 0 16px !important;
-        gap: 6px !important;
-        flex-wrap: wrap !important;
+    /* Eksplorasi Pagination Mobile (Sama Ukuran dengan Tombol CTA 38px) */
+    .pagination-nav {
+        margin-top: 32px !important;
+        margin-bottom: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .pagination-wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        max-width: 100% !important;
+    }
+
+    .pagi-btn {
+        width: 38px !important;
+        height: 38px !important;
+        min-width: 38px !important;
+        min-height: 38px !important;
+        border-radius: 50% !important;
+        background-color: var(--color-button, #179BAE) !important;
+        color: var(--color-text-white, #FFFFFF) !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 2px 8px rgba(23, 155, 174, 0.25) !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pagi-btn .material-symbols-outlined {
+        font-size: 18px !important;
+        line-height: 1 !important;
+    }
+
+    .pagi-btn:disabled,
+    .pagi-btn[aria-disabled="true"] {
+        opacity: 0.45 !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    .pagi-numbers {
+        display: flex !important;
+        align-items: center !important;
+        background-color: var(--color-card, #FFFFFF) !important;
+        border-radius: 99px !important;
+        height: 38px !important;
+        padding: 3px !important;
+        box-shadow: 0 2px 10px rgba(4, 8, 17, 0.08) !important;
+        border: 1px solid #ECECEC !important;
+        list-style: none !important;
+        margin: 0 !important;
+        gap: 4px !important;
+    }
+
+    .pagi-num {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        border-radius: 50% !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        border: none !important;
+        background: transparent !important;
+        color: var(--color-text, #333333) !important;
+        cursor: pointer !important;
+        padding: 0 !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .pagi-num.active {
+        background-color: var(--color-button, #179BAE) !important;
+        color: var(--color-text-white, #FFFFFF) !important;
+        box-shadow: 0 2px 6px rgba(23, 155, 174, 0.3) !important;
+    }
+
+    .pagi-ellipsis {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 16px !important;
+        height: 32px !important;
+        font-size: 11px !important;
+        color: #888888 !important;
     }
 
     /* 8. Detail Katalog & Detail Visual on Mobile */
