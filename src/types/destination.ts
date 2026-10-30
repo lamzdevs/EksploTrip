@@ -41,10 +41,19 @@ export interface CatatanJalurItem {
 export interface GaleriVisualItem {
   id: string;
   judul: string;
-  kategori: 'jalur-trekking' | 'spot-utama' | 'fasilitas' | 'area-parkir';
+  kategori:
+    | 'jalur-trekking'
+    | 'spot-utama'
+    | 'fasilitas'
+    | 'area-parkir'
+    | 'alam'
+    | 'aktivitas'
+    | 'lainnya'
+    | string;
   kategori_label: string;
   tipe_media: 'foto' | 'video';
   url_gambar: string;
+  url_video?: string;
   keterangan_waktu: string;
   deskripsi: string;
   badge_status: string;

@@ -12,12 +12,14 @@ interface DetailVisualContentProps {
 }
 
 interface VisualCardData {
-  id: number;
+  id: number | string;
   type: 'photo' | 'video';
   cat: 'alam' | 'fasilitas' | 'aktivitas' | 'lainnya';
   title: string;
   badgeText: string;
   thumb: string;
+  videoUrl?: string;
+  desc?: string;
 }
 
 const DEFAULT_20_VISUAL_SLOTS: VisualCardData[] = [
@@ -72,15 +74,65 @@ export default function DetailVisualContent({
   const formattedLocation = formatBogorLocation(destination.kecamatan);
   const shortKecamatan = formattedLocation.split(',')[0].trim();
 
+  const isCustomGaleri = Boolean(
+    destination.galeri_visual && destination.galeri_visual.length > 0
+  );
+
+  const allItems: VisualCardData[] = useMemo(() => {
+    if (isCustomGaleri && destination.galeri_visual) {
+      return destination.galeri_visual.map((item, idx) => {
+        let cat: 'alam' | 'fasilitas' | 'aktivitas' | 'lainnya' = 'alam';
+        if (item.kategori === 'fasilitas' || item.kategori === 'area-parkir') {
+          cat = 'fasilitas';
+        } else if (
+          item.kategori === 'aktivitas' ||
+          item.kategori === 'jalur-trekking'
+        ) {
+          cat = 'aktivitas';
+        } else if (item.kategori === 'lainnya') {
+          cat = 'lainnya';
+        } else {
+          cat = 'alam';
+        }
+
+        return {
+          id: item.id || idx + 1,
+          type: item.tipe_media === 'video' ? 'video' : 'photo',
+          cat,
+          title: item.judul,
+          badgeText:
+            item.badge_status ||
+            item.kategori_label ||
+            (item.tipe_media === 'video' ? 'Video Dokumentasi' : 'Foto Survei'),
+          thumb: item.url_gambar,
+          videoUrl:
+            item.url_video ||
+            (item.tipe_media === 'video' ? item.url_gambar : undefined),
+          desc: item.deskripsi || item.keterangan_waktu || '',
+        };
+      });
+    }
+    return DEFAULT_20_VISUAL_SLOTS;
+  }, [destination, isCustomGaleri]);
+
   const filteredItems = useMemo(() => {
-    return DEFAULT_20_VISUAL_SLOTS.filter((item) => {
+    return allItems.filter((item) => {
       const matchMedia =
         activeMediaTab === 'all' ? true : item.type === 'video';
       const matchCat =
         activeCategory === 'all' ? true : item.cat === activeCategory;
       return matchMedia && matchCat;
     });
-  }, [activeMediaTab, activeCategory]);
+  }, [allItems, activeMediaTab, activeCategory]);
+
+  const ITEMS_PER_PAGE = 20;
+  const totalPages = Math.max(1, Math.ceil(filteredItems.length / ITEMS_PER_PAGE));
+  const validCurrentPage = Math.min(currentPage, totalPages);
+
+  const paginatedItems = useMemo(() => {
+    const start = (validCurrentPage - 1) * ITEMS_PER_PAGE;
+    return filteredItems.slice(start, start + ITEMS_PER_PAGE);
+  }, [filteredItems, validCurrentPage]);
 
   const photoCount = filteredItems.filter((i) => i.type === 'photo').length;
   const videoCount = filteredItems.filter((i) => i.type === 'video').length;
@@ -291,9 +343,9 @@ export default function DetailVisualContent({
               </div>
             </div>
 
-            {/* Visual Items Grid (4 Cols x 5 Rows = 20 Items) */}
+            {/* Visual Items Grid */}
             <div className="visual-grid-container" id="visual-grid-container">
-              {filteredItems.map((item) => (
+              {paginatedItems.map((item) => (
                 <article
                   key={item.id}
                   className="visual-item-card"
@@ -309,11 +361,23 @@ export default function DetailVisualContent({
                     }
                   }}
                 >
-                  <img
-                    src={item.thumb}
-                    alt={item.title}
-                    className="visual-card-thumb"
-                  />
+                  {item.type === 'video' ? (
+                    <video
+                      src={item.videoUrl || item.thumb}
+                      className="visual-card-thumb"
+                      muted
+                      playsInline
+                      preload="metadata"
+                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                    />
+                  ) : (
+                    <img
+                      src={item.thumb}
+                      alt={item.title}
+                      className="visual-card-thumb"
+                      loading="lazy"
+                    />
+                  )}
                   {item.type === 'video' && (
                     <div className="video-play-indicator">
                       <span className="material-symbols-outlined">
@@ -338,49 +402,61 @@ export default function DetailVisualContent({
                   image
                 </span>
                 <span className="media-count-text">
-                  {photoCount} slot foto dan {videoCount} slot video (Placeholder
-                  Pengembangan)
+                  {isCustomGaleri
+                    ? `${photoCount} foto dan ${videoCount} video dokumentasi survei lapangan`
+                    : `${photoCount} slot foto dan ${videoCount} slot video (Placeholder Pengembangan)`}
                 </span>
               </div>
 
-              <nav
-                className="visual-pagination"
-                aria-label="Navigasi Halaman Galeri"
-              >
-                <button
-                  type="button"
-                  className="btn-page-arrow prev-page"
-                  aria-label="Halaman Sebelumnya"
-                  disabled={currentPage <= 1}
-                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+              {totalPages > 1 && (
+                <nav
+                  className="visual-pagination"
+                  aria-label="Navigasi Halaman Galeri"
                 >
-                  <span className="material-symbols-outlined">arrow_back</span>
-                </button>
-                {[1, 2, 3, 4].map((num) => (
                   <button
-                    key={num}
                     type="button"
-                    className={`btn-page-num ${
-                      currentPage === num ? 'active' : ''
-                    }`}
-                    aria-current={currentPage === num ? 'page' : undefined}
-                    onClick={() => setCurrentPage(num)}
+                    className="btn-page-arrow prev-page"
+                    aria-label="Halaman Sebelumnya"
+                    disabled={validCurrentPage <= 1}
+                    onClick={() => {
+                      setCurrentPage((p) => Math.max(1, p - 1));
+                      window.scrollTo({ top: 380, behavior: 'smooth' });
+                    }}
                   >
-                    {num}
+                    <span className="material-symbols-outlined">arrow_back</span>
                   </button>
-                ))}
-                <button
-                  type="button"
-                  className="btn-page-arrow next-page"
-                  aria-label="Halaman Berikutnya"
-                  disabled={currentPage >= 4}
-                  onClick={() => setCurrentPage((p) => Math.min(4, p + 1))}
-                >
-                  <span className="material-symbols-outlined">
-                    arrow_forward
-                  </span>
-                </button>
-              </nav>
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
+                    <button
+                      key={num}
+                      type="button"
+                      className={`btn-page-num ${
+                        validCurrentPage === num ? 'active' : ''
+                      }`}
+                      aria-current={validCurrentPage === num ? 'page' : undefined}
+                      onClick={() => {
+                        setCurrentPage(num);
+                        window.scrollTo({ top: 380, behavior: 'smooth' });
+                      }}
+                    >
+                      {num}
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    className="btn-page-arrow next-page"
+                    aria-label="Halaman Berikutnya"
+                    disabled={validCurrentPage >= totalPages}
+                    onClick={() => {
+                      setCurrentPage((p) => Math.min(totalPages, p + 1));
+                      window.scrollTo({ top: 380, behavior: 'smooth' });
+                    }}
+                  >
+                    <span className="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </button>
+                </nav>
+              )}
             </div>
           </section>
         </div>
@@ -421,11 +497,25 @@ export default function DetailVisualContent({
               <span className="material-symbols-outlined">close</span>
             </button>
             <div className="lightbox-media-wrapper">
-              <img
-                src={lightboxItem.thumb}
-                alt={lightboxItem.title}
-                id="lightbox-img"
-              />
+              {lightboxItem.type === 'video' ? (
+                <video
+                  src={lightboxItem.videoUrl || lightboxItem.thumb}
+                  controls
+                  autoPlay
+                  muted
+                  playsInline
+                  style={{ maxHeight: '75vh', maxWidth: '100%', borderRadius: '12px' }}
+                  onVolumeChange={(e) => {
+                    e.currentTarget.muted = true;
+                  }}
+                />
+              ) : (
+                <img
+                  src={lightboxItem.thumb}
+                  alt={lightboxItem.title}
+                  id="lightbox-img"
+                />
+              )}
             </div>
             <div className="lightbox-info-bar">
               <div>
@@ -433,8 +523,10 @@ export default function DetailVisualContent({
                   {lightboxItem.title}
                 </h3>
                 <p className="lightbox-subtitle" id="lightbox-subtitle">
-                  Placeholder Visual Pengembangan — Dokumentasi asli akan
-                  ditampilkan setelah survei lapangan selesai
+                  {lightboxItem.desc ||
+                    (isVerified
+                      ? 'Dokumentasi visual kondisi nyata lapangan resmi terverifikasi.'
+                      : 'Placeholder Visual Pengembangan — Dokumentasi asli akan ditampilkan setelah survei lapangan selesai')}
                 </p>
               </div>
             </div>

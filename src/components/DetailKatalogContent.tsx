@@ -129,58 +129,85 @@ export default function DetailKatalogContent({
 
   const visualSummaryItems = [
     {
-      title: 'Akses Jalan',
+      title: 'Kondisi Jalan',
       desc: isVerified
-        ? 'Kondisi jalan menuju lokasi telah diverifikasi.'
+        ? 'Kondisi fisik jalan dan kelayakan akses kendaraan menuju lokasi telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/menuju%20gapura%20trekking.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Area Parkir',
       desc: isVerified
         ? 'Area parkir kendaraan telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Fasilitas Sekitar',
       desc: isVerified
         ? 'Ketersediaan fasilitas umum telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/ruang%20medis%20basecamp.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Jalur Trekking',
       desc: isVerified
         ? 'Kondisi fisik jalur trekking telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/trek%20anak%20tangga.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Kondisi Spot Utama',
       desc: isVerified
         ? 'Kondisi spot utama wisata telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20camp.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Toilet & Kamar Bilas',
       desc: isVerified
         ? 'Kondisi sanitasi dan kamar bilas telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/toilet%20di%20musholla.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Mushola & Ibadah',
       desc: isVerified
         ? 'Kondisi mushola dan fasilitas ibadah telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/mushola%20panggung%20kayu%20area%20camp.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Warung & Logistik',
       desc: isVerified
         ? 'Ketersediaan warung makan dan logistik telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20basecamp.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
     {
       title: 'Spot Foto & Panorama',
       desc: isVerified
         ? 'Kondisi spot foto dan panorama alam telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
+      thumb: destination.slug === 'gunung-luhur-sukamakmur'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/spot%20foto%20bunga.jpg'
+        : '/assets/images/detail_katalog/list_visual_katalog.png',
     },
   ];
 
@@ -714,7 +741,7 @@ export default function DetailKatalogContent({
                   >
                     <div className="visual-thumb-wrapper">
                       <img
-                        src="/assets/images/detail_katalog/list_visual_katalog.png"
+                        src={item.thumb || '/assets/images/detail_katalog/list_visual_katalog.png'}
                         alt={`${item.title} ${destination.nama_wisata}`}
                         className="visual-thumb-img"
                       />
