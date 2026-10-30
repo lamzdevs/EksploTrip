@@ -5267,11 +5267,20 @@ a.hero-meta-item:hover,
     border-top-right-radius: 8px;
     z-index: 3;
     pointer-events: none;
+    max-width: calc(100% - 14px);
+    overflow: hidden;
+}
+
+.visual-type-badge span:not(.material-symbols-outlined) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .visual-type-badge .material-symbols-outlined {
     font-size: 16px;
     color: #FFFFFF;
+    flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -9890,7 +9899,8 @@ button {
 
     .visual-type-badge {
         font-size: 9.5px !important;
-        padding: 3px 8px !important;
+        padding: 4px 8px !important;
+        max-width: calc(100% - 10px) !important;
     }
 
     .visual-type-badge .material-symbols-outlined {

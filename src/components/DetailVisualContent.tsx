@@ -101,6 +101,7 @@ export default function DetailVisualContent({
           cat,
           title: item.judul,
           badgeText:
+            item.judul ||
             item.badge_status ||
             item.kategori_label ||
             (item.tipe_media === 'video' ? 'Video Dokumentasi' : 'Foto Survei'),
