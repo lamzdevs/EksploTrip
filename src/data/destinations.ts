@@ -449,17 +449,6 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "galeri_visual": [
       {
             "id": "gunungluhur-visual-1",
-            "judul": "Spot Foto Taman Bunga",
-            "kategori": "alam",
-            "kategori_label": "Alam",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20spot%20foto%20bunga.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Area spot foto berlatar tanaman bunga warna-warni dan panorama alam di lereng Gunung Luhur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-2",
             "judul": "Area Camp",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -470,7 +459,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-3",
+            "id": "gunungluhur-visual-2",
             "judul": "Area Parkir Motor Utama",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -481,7 +470,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-4",
+            "id": "gunungluhur-visual-3",
             "judul": "Area Parkir Motor Sisi Barat",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -492,18 +481,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-5",
-            "judul": "Kapasitas Parkir Roda Dua",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20roda%20dua%20luas.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Daya tampung area parkir roda dua yang luas untuk menampung pengunjung saat akhir pekan.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-6",
+            "id": "gunungluhur-visual-4",
             "judul": "Area Parkir Dekat Warung",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -514,7 +492,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-7",
+            "id": "gunungluhur-visual-5",
             "judul": "Area Parkir Mobil Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -525,29 +503,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-8",
-            "judul": "Area Parkir Mobil dan Plang Jalur Pendakian",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil%20dan%20plang%20jalur%20pendakian.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kondisi area parkir kendaraan resmi yang aman dan tertata rapi di Gunung Luhur Sukamakmur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-9",
-            "judul": "Area Parkir Mobil dan Warung Basecamp",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil%20dan%20warung%20basecamp.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kondisi area parkir kendaraan resmi yang aman dan tertata rapi di Gunung Luhur Sukamakmur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-10",
+            "id": "gunungluhur-visual-6",
             "judul": "Area Parkir Mobil",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -558,18 +514,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-11",
-            "judul": "Area Parkir Motor dan Basecamp",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20motor%20dan%20basecamp.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kondisi area parkir kendaraan resmi yang aman dan tertata rapi di Gunung Luhur Sukamakmur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-12",
+            "id": "gunungluhur-visual-7",
             "judul": "Banner Area Camp Tepi Sungai",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -580,7 +525,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-13",
+            "id": "gunungluhur-visual-8",
             "judul": "Banner Peringatan",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -591,7 +536,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-14",
+            "id": "gunungluhur-visual-9",
             "judul": "Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -602,7 +547,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-15",
+            "id": "gunungluhur-visual-10",
             "judul": "Foto Spot Panca Warna MT Luhur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -613,7 +558,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-16",
+            "id": "gunungluhur-visual-11",
             "judul": "Gapura Area Camp Tepi Sungai",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -624,40 +569,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-17",
-            "judul": "Gapura Gerbang Masuk",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/gapura%20gerbang%20masuk%20pendakian.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Gapura gerbang selamat datang yang menandai pintu masuk resmi kawasan Gunung Luhur Sukamakmur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-18",
-            "judul": "Gapura Selamat Datang Trekking Gunung Luhur",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/gapura%20selamat%20datang%20trekking%20gunung%20luhur.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kondisi fisik jalur trekking setapak alami yang terawat menuju pos pendakian.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-19",
-            "judul": "Gapura Selamat Datang Trekking Luhur",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/gapura%20selamat%20datang%20trekking%20luhur.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kondisi fisik jalur trekking setapak alami yang terawat menuju pos pendakian.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-20",
+            "id": "gunungluhur-visual-12",
             "judul": "Gapura Selamat Mendaki 1750 MDPL",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -668,29 +580,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-21",
-            "judul": "Suasana Rombongan di Gapura Mendaki",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/suasana%20rombongan%20di%20gapura%20mendaki.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Aktivitas rombongan pendaki yang bersiap sebelum melintasi gapura awal rute pendakian.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-22",
-            "judul": "Gapura Selamat Mendaki Rombongan Pendaki",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/gapura%20selamat%20mendaki%20rombongan%20pendaki.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Gapura Selamat Mendaki Rombongan Pendaki pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-23",
+            "id": "gunungluhur-visual-13",
             "judul": "Loket Registrasi dan Papan Tarif",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -701,18 +591,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-24",
-            "judul": "Jalur Setapak Menuju Gapura",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/jalur%20setapak%20menuju%20gapura.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Jalur setapak bertingkat alami yang nyaman dan terawat menuju gapura utama.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-25",
+            "id": "gunungluhur-visual-14",
             "judul": "Menuju Gapura Trekking",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -723,7 +602,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-26",
+            "id": "gunungluhur-visual-15",
             "judul": "Menuju Trek",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -734,7 +613,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-27",
+            "id": "gunungluhur-visual-16",
             "judul": "Mushola Panggung Kayu Area Camp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -745,18 +624,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-28",
-            "judul": "Area Parkir Mobil Lapang",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil%20lapang.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Lahan parkir mobil yang luas dengan kontur tanah padat dan aman untuk kendaraan keluarga.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-29",
+            "id": "gunungluhur-visual-17",
             "judul": "Area Parkir Mobil Bawah",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -767,7 +635,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-30",
+            "id": "gunungluhur-visual-18",
             "judul": "Parkiran Alternatif",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -778,18 +646,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-31",
-            "judul": "Koleksi Tanaman Pasar Bunga",
-            "kategori": "lainnya",
-            "kategori_label": "Lainnya",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/koleksi%20tanaman%20pasar%20bunga.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Deretan tanaman hias dan bunga segar yang dibudidayakan serta diperjualbelikan warga lokal.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-32",
+            "id": "gunungluhur-visual-19",
             "judul": "Lorong Kios Pasar Bunga",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -800,7 +657,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-33",
+            "id": "gunungluhur-visual-20",
             "judul": "Kios Bibit Pasar Bunga",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -811,18 +668,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-34",
-            "judul": "Pasar Bunga dan Warung Jajanan",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pasar%20bunga%20dan%20warung%20jajanan.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Pasar Bunga dan Warung Jajanan pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-35",
+            "id": "gunungluhur-visual-21",
             "judul": "Pasar Bunga",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -833,7 +679,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-36",
+            "id": "gunungluhur-visual-22",
             "judul": "Peringatan Dilarang Keluar Jalur Pendakian",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -844,7 +690,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-37",
+            "id": "gunungluhur-visual-23",
             "judul": "Plang Pos 2 Sanghek",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -855,7 +701,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-38",
+            "id": "gunungluhur-visual-24",
             "judul": "Plang Pos 5 Heuay",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -866,7 +712,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-39",
+            "id": "gunungluhur-visual-25",
             "judul": "Pos 1 Persiapan Mendaki",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -877,7 +723,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-40",
+            "id": "gunungluhur-visual-26",
             "judul": "Pos 1 Pendakian",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -888,18 +734,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-41",
-            "judul": "Pos 2 Sanghek",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%202.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Titik pos peristirahatan kedua (Sanghek) dengan suasana sejuk hutan pegunungan.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-42",
+            "id": "gunungluhur-visual-27",
             "judul": "Pos 3 Peristirahatan",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -910,29 +745,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-43",
-            "judul": "Pos 5 Heuay",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%205.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Pos peristirahatan Pos 5 (Heuay) sebelum menuju batas vegetasi dan puncak Gunung Luhur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-44",
-            "judul": "Pos Pembayaran Registrasi dan Pendaki",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%20pembayaran%20registrasi%20dan%20pendaki.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Pos pelayanan registrasi tiket resmi dan pengecekan perlengkapan pendaki.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-45",
+            "id": "gunungluhur-visual-28",
             "judul": "Loket Registrasi Tampak Depan",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -943,29 +756,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-46",
-            "judul": "Pos Registrasi Tampak Samping",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%20registrasi%20tampak%20samping.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Area antrean dan meja informasi petugas di samping pos registrasi pendakian.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-47",
-            "judul": "Pos Registrasi Tiket",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%20registrasi.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Pos registrasi tiket resmi dan pusat koordinasi pemandu di basecamp Gunung Luhur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-48",
+            "id": "gunungluhur-visual-29",
             "judul": "Ruang Medis Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -976,29 +767,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-49",
-            "judul": "Ruang Registrasi dan Pos Medis",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/ruang%20registrasi%20dan%20pos%20medis.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Pos pelayanan registrasi tiket resmi dan pengecekan perlengkapan pendaki.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-50",
-            "judul": "Spot Foto Bunga Pos 2 Alami",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/spot%20foto%20bunga%20pos%202%20alami.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Spot Foto Bunga Pos 2 Alami pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-51",
+            "id": "gunungluhur-visual-30",
             "judul": "Spot Foto Bunga",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1009,7 +778,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-52",
+            "id": "gunungluhur-visual-31",
             "judul": "Tempat Wudhu Mushola Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -1020,7 +789,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-53",
+            "id": "gunungluhur-visual-32",
             "judul": "Toilet di Musholla",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -1031,18 +800,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-54",
-            "judul": "Toilet Pos 2",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/toilet%20pos%202.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kondisi sanitasi dan kebersihan fasilitas toilet serta tempat wudhu di kawasan Gunung Luhur.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-55",
+            "id": "gunungluhur-visual-33",
             "judul": "Trek Anak Tangga",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1053,7 +811,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-56",
+            "id": "gunungluhur-visual-34",
             "judul": "Video Anak Tangga dan Jalur Berbatu",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1065,7 +823,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-57",
+            "id": "gunungluhur-visual-35",
             "judul": "Video Area Camping Puncak dan Lautan Awan",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1077,7 +835,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-58",
+            "id": "gunungluhur-visual-36",
             "judul": "Video Jalur Awal Pendakian Hutan Pinus",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1089,7 +847,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-59",
+            "id": "gunungluhur-visual-37",
             "judul": "Video Jalur Hutan Menuju Pos 5",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1101,7 +859,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-60",
+            "id": "gunungluhur-visual-38",
             "judul": "Video Jalur Setapak Vegetasi Rapat Pos 5",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1113,7 +871,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-61",
+            "id": "gunungluhur-visual-39",
             "judul": "Video Jalur Tanjakan Terjal Pegunungan",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1125,7 +883,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-62",
+            "id": "gunungluhur-visual-40",
             "judul": "Video Keasrian Hutan Pinus Sukamakmur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1137,7 +895,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-63",
+            "id": "gunungluhur-visual-41",
             "judul": "Video Keindahan Panorama Alam Terbuka",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1149,7 +907,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-64",
+            "id": "gunungluhur-visual-42",
             "judul": "Video Mendekati Area Kebun Bunga",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1161,7 +919,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-65",
+            "id": "gunungluhur-visual-43",
             "judul": "Video Panorama Puncak dan Punggungan Bukit",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1173,7 +931,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-66",
+            "id": "gunungluhur-visual-44",
             "judul": "Video Pemandangan Puncak Gunung Luhur Terbuka",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1185,7 +943,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-67",
+            "id": "gunungluhur-visual-45",
             "judul": "Video Perjalanan Trekking Menuju Pos 3",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1197,7 +955,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-68",
+            "id": "gunungluhur-visual-46",
             "judul": "Video Spot Foto Panca Warna MT Luhur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1209,7 +967,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-69",
+            "id": "gunungluhur-visual-47",
             "judul": "Video Suasana Pos 4 Pendakian",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1221,7 +979,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-70",
+            "id": "gunungluhur-visual-48",
             "judul": "Video Trek Setapak Hutan Pinus",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -1233,7 +991,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-71",
+            "id": "gunungluhur-visual-49",
             "judul": "Video Vegetasi Hijau dan Bukit Sukamakmur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -1245,7 +1003,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Destinasi Terverifikasi"
       },
       {
-            "id": "gunungluhur-visual-72",
+            "id": "gunungluhur-visual-50",
             "judul": "Warung Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -1253,17 +1011,6 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20basecamp.jpg",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kawasan bumi perkemahan (camping ground) berlatar pemandangan alam perbukitan terbuka.",
-            "badge_status": "Destinasi Terverifikasi"
-      },
-      {
-            "id": "gunungluhur-visual-73",
-            "judul": "Warung dan Jalan Setapak Pasar Bunga",
-            "kategori": "fasilitas",
-            "kategori_label": "Fasilitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20dan%20jalan%20setapak%20pasar%20bunga.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Warung dan Jalan Setapak Pasar Bunga pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Destinasi Terverifikasi"
       }
 ],
