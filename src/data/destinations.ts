@@ -482,17 +482,6 @@ export const DUMMY_DESTINATIONS: Destination[] = [
       },
       {
             "id": "gunungluhur-visual-4",
-            "judul": "Banner Area Camp Tepi Sungai",
-            "kategori": "lainnya",
-            "kategori_label": "Lainnya",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/banner%20area%20camp%20tepi%20sungai.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kawasan bumi perkemahan (camping ground) berlatar pemandangan alam perbukitan terbuka.",
-            "badge_status": "Banner Area Camp Tepi Sungai"
-      },
-      {
-            "id": "gunungluhur-visual-5",
             "judul": "Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -503,7 +492,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Basecamp"
       },
       {
-            "id": "gunungluhur-visual-6",
+            "id": "gunungluhur-visual-5",
             "judul": "Foto Spot Panca Warna MT Luhur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -514,18 +503,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Foto Spot Panca Warna MT Luhur"
       },
       {
-            "id": "gunungluhur-visual-7",
-            "judul": "Gapura Area Camp Tepi Sungai",
-            "kategori": "aktivitas",
-            "kategori_label": "Aktivitas",
-            "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/gapura%20area%20camp%20tepi%20sungai.jpg",
-            "keterangan_waktu": "Survei Lapangan Resmi",
-            "deskripsi": "Kawasan bumi perkemahan (camping ground) berlatar pemandangan alam perbukitan terbuka.",
-            "badge_status": "Gapura Area Camp Tepi Sungai"
-      },
-      {
-            "id": "gunungluhur-visual-8",
+            "id": "gunungluhur-visual-6",
             "judul": "Gapura Selamat Mendaki 1750 MDPL",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -536,7 +514,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Gapura Selamat Mendaki 1750 MDPL"
       },
       {
-            "id": "gunungluhur-visual-9",
+            "id": "gunungluhur-visual-7",
             "judul": "Loket Registrasi dan Papan Tarif",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -547,7 +525,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Loket Registrasi dan Papan Tarif"
       },
       {
-            "id": "gunungluhur-visual-10",
+            "id": "gunungluhur-visual-8",
             "judul": "Menuju Gapura Trekking",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -558,7 +536,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Menuju Gapura Trekking"
       },
       {
-            "id": "gunungluhur-visual-11",
+            "id": "gunungluhur-visual-9",
             "judul": "Mushola Panggung Kayu Area Camp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -569,7 +547,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Mushola Panggung Kayu Area Camp"
       },
       {
-            "id": "gunungluhur-visual-12",
+            "id": "gunungluhur-visual-10",
             "judul": "Pasar Bunga",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -580,7 +558,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Pasar Bunga"
       },
       {
-            "id": "gunungluhur-visual-13",
+            "id": "gunungluhur-visual-11",
             "judul": "Peringatan Dilarang Keluar Jalur Pendakian",
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
@@ -591,7 +569,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Peringatan Dilarang Keluar Jalur Pendakian"
       },
       {
-            "id": "gunungluhur-visual-14",
+            "id": "gunungluhur-visual-12",
             "judul": "Plang Pos 2 Sanghek",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -602,7 +580,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Plang Pos 2 Sanghek"
       },
       {
-            "id": "gunungluhur-visual-15",
+            "id": "gunungluhur-visual-13",
             "judul": "Plang Pos 5 Heuay",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -613,7 +591,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Plang Pos 5 Heuay"
       },
       {
-            "id": "gunungluhur-visual-16",
+            "id": "gunungluhur-visual-14",
             "judul": "Pos 1 Pendakian",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -624,7 +602,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Pos 1 Pendakian"
       },
       {
-            "id": "gunungluhur-visual-17",
+            "id": "gunungluhur-visual-15",
             "judul": "Pos 3 Peristirahatan",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -635,7 +613,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Pos 3 Peristirahatan"
       },
       {
-            "id": "gunungluhur-visual-18",
+            "id": "gunungluhur-visual-16",
             "judul": "Loket Registrasi Tampak Depan",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -646,7 +624,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Loket Registrasi Tampak Depan"
       },
       {
-            "id": "gunungluhur-visual-19",
+            "id": "gunungluhur-visual-17",
             "judul": "Ruang Medis Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -657,7 +635,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Ruang Medis Basecamp"
       },
       {
-            "id": "gunungluhur-visual-20",
+            "id": "gunungluhur-visual-18",
             "judul": "Spot Foto Bunga",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -668,7 +646,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Spot Foto Bunga"
       },
       {
-            "id": "gunungluhur-visual-21",
+            "id": "gunungluhur-visual-19",
             "judul": "Tempat Wudhu Mushola Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -679,7 +657,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Tempat Wudhu Mushola Basecamp"
       },
       {
-            "id": "gunungluhur-visual-22",
+            "id": "gunungluhur-visual-20",
             "judul": "Toilet di Musholla",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
@@ -690,7 +668,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Toilet di Musholla"
       },
       {
-            "id": "gunungluhur-visual-23",
+            "id": "gunungluhur-visual-21",
             "judul": "Trek Anak Tangga",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -701,7 +679,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Trek Anak Tangga"
       },
       {
-            "id": "gunungluhur-visual-24",
+            "id": "gunungluhur-visual-22",
             "judul": "Video Anak Tangga dan Jalur Berbatu",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -713,7 +691,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Anak Tangga dan Jalur Berbatu"
       },
       {
-            "id": "gunungluhur-visual-25",
+            "id": "gunungluhur-visual-23",
             "judul": "Video Area Camping Puncak dan Lautan Awan",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -725,7 +703,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Area Camping Puncak dan Lautan Awan"
       },
       {
-            "id": "gunungluhur-visual-26",
+            "id": "gunungluhur-visual-24",
             "judul": "Video Jalur Awal Pendakian Hutan Pinus",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -737,7 +715,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Jalur Awal Pendakian Hutan Pinus"
       },
       {
-            "id": "gunungluhur-visual-27",
+            "id": "gunungluhur-visual-25",
             "judul": "Video Jalur Hutan Menuju Pos 5",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -749,7 +727,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Jalur Hutan Menuju Pos 5"
       },
       {
-            "id": "gunungluhur-visual-28",
+            "id": "gunungluhur-visual-26",
             "judul": "Video Jalur Setapak Vegetasi Rapat Pos 5",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -761,7 +739,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Jalur Setapak Vegetasi Rapat Pos 5"
       },
       {
-            "id": "gunungluhur-visual-29",
+            "id": "gunungluhur-visual-27",
             "judul": "Video Jalur Tanjakan Terjal Pegunungan",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -773,7 +751,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Jalur Tanjakan Terjal Pegunungan"
       },
       {
-            "id": "gunungluhur-visual-30",
+            "id": "gunungluhur-visual-28",
             "judul": "Video Keasrian Hutan Pinus Sukamakmur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -785,7 +763,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Keasrian Hutan Pinus Sukamakmur"
       },
       {
-            "id": "gunungluhur-visual-31",
+            "id": "gunungluhur-visual-29",
             "judul": "Video Keindahan Panorama Alam Terbuka",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -797,7 +775,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Keindahan Panorama Alam Terbuka"
       },
       {
-            "id": "gunungluhur-visual-32",
+            "id": "gunungluhur-visual-30",
             "judul": "Video Mendekati Area Kebun Bunga",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -809,7 +787,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Mendekati Area Kebun Bunga"
       },
       {
-            "id": "gunungluhur-visual-33",
+            "id": "gunungluhur-visual-31",
             "judul": "Video Panorama Puncak dan Punggungan Bukit",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -821,7 +799,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Panorama Puncak dan Punggungan Bukit"
       },
       {
-            "id": "gunungluhur-visual-34",
+            "id": "gunungluhur-visual-32",
             "judul": "Video Pemandangan Puncak Gunung Luhur Terbuka",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -833,7 +811,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Pemandangan Puncak Gunung Luhur Terbuka"
       },
       {
-            "id": "gunungluhur-visual-35",
+            "id": "gunungluhur-visual-33",
             "judul": "Video Perjalanan Trekking Menuju Pos 3",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -845,7 +823,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Perjalanan Trekking Menuju Pos 3"
       },
       {
-            "id": "gunungluhur-visual-36",
+            "id": "gunungluhur-visual-34",
             "judul": "Video Spot Foto Panca Warna MT Luhur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -857,7 +835,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Spot Foto Panca Warna MT Luhur"
       },
       {
-            "id": "gunungluhur-visual-37",
+            "id": "gunungluhur-visual-35",
             "judul": "Video Suasana Pos 4 Pendakian",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -869,7 +847,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Suasana Pos 4 Pendakian"
       },
       {
-            "id": "gunungluhur-visual-38",
+            "id": "gunungluhur-visual-36",
             "judul": "Video Trek Setapak Hutan Pinus",
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
@@ -881,7 +859,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Trek Setapak Hutan Pinus"
       },
       {
-            "id": "gunungluhur-visual-39",
+            "id": "gunungluhur-visual-37",
             "judul": "Video Vegetasi Hijau dan Bukit Sukamakmur",
             "kategori": "alam",
             "kategori_label": "Alam",
@@ -893,7 +871,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "badge_status": "Video Vegetasi Hijau dan Bukit Sukamakmur"
       },
       {
-            "id": "gunungluhur-visual-40",
+            "id": "gunungluhur-visual-38",
             "judul": "Warung Basecamp",
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
