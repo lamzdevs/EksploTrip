@@ -63,6 +63,20 @@ export default function DetailVisualContent({
     }
   }, [resolvedFrom]);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setLightboxItem(null);
+      }
+    };
+    if (lightboxItem) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [lightboxItem]);
+
   const effectiveFrom = resolvedFrom || fromOrigin;
   const backHref = `/destinasi/${destination.slug}${
     effectiveFrom ? `?from=${effectiveFrom}` : ''
@@ -488,15 +502,34 @@ export default function DetailVisualContent({
             className="lightbox-content-box"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              type="button"
-              className="btn-close-lightbox"
-              id="btn-close-lightbox"
-              aria-label="Tutup Preview"
-              onClick={() => setLightboxItem(null)}
-            >
-              <span className="material-symbols-outlined">close</span>
-            </button>
+            {/* Header Bar di Atas Foto */}
+            <div className="lightbox-top-bar">
+              <div className="lightbox-top-title">
+                <span
+                  className="material-symbols-outlined"
+                  style={{ fontSize: '18px', color: '#38BDF8' }}
+                >
+                  {lightboxItem.type === 'video'
+                    ? 'play_circle'
+                    : 'photo_library'}
+                </span>
+                <span>
+                  {lightboxItem.type === 'video'
+                    ? 'Pratinjau Video'
+                    : 'Pratinjau Foto'}
+                </span>
+              </div>
+              <button
+                type="button"
+                className="btn-close-lightbox"
+                id="btn-close-lightbox"
+                aria-label="Tutup Preview"
+                onClick={() => setLightboxItem(null)}
+              >
+                <span className="material-symbols-outlined">close</span>
+              </button>
+            </div>
+
             <div className="lightbox-media-wrapper">
               {lightboxItem.type === 'video' ? (
                 <video
