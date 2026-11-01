@@ -354,12 +354,8 @@ export default function BantuanDaruratContent() {
               </Link>
 
               {/* Card 2 */}
-              <a
-                href="#faskes-info"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveModal('faskes');
-                }}
+              <Link
+                href="/fasilitas-kesehatan-terdekat"
                 className="help-card"
                 aria-label="Lihat Fasilitas Kesehatan Terdekat"
               >
@@ -384,15 +380,11 @@ export default function BantuanDaruratContent() {
                     arrow_forward
                   </span>
                 </span>
-              </a>
+              </Link>
 
               {/* Card 3 */}
-              <a
-                href="#cuaca-info"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveModal('cuaca');
-                }}
+              <Link
+                href="/informasi-cuaca"
                 className="help-card"
                 aria-label="Lihat Informasi Cuaca"
               >
@@ -413,15 +405,11 @@ export default function BantuanDaruratContent() {
                     arrow_forward
                   </span>
                 </span>
-              </a>
+              </Link>
 
               {/* Card 4 */}
-              <a
-                href="#wanita-info"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveModal('wanita');
-                }}
+              <Link
+                href="/tips-keamanan-wanita"
                 className="help-card"
                 aria-label="Lihat Tips Keamanan Wanita"
               >
@@ -441,15 +429,11 @@ export default function BantuanDaruratContent() {
                     arrow_forward
                   </span>
                 </span>
-              </a>
+              </Link>
 
               {/* Card 5 */}
-              <a
-                href="#edukasi-info"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveModal('edukasi');
-                }}
+              <Link
+                href="/edukasi-pencegahan"
                 className="help-card"
                 aria-label="Lihat Edukasi dan Pencegahan"
               >
@@ -470,15 +454,11 @@ export default function BantuanDaruratContent() {
                     arrow_forward
                   </span>
                 </span>
-              </a>
+              </Link>
 
               {/* Card 6 */}
-              <a
-                href="#hubungi-info"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActiveModal('hubungi');
-                }}
+              <Link
+                href="/hubungi-tim-kami"
                 className="help-card"
                 aria-label="Hubungi Tim Kami"
               >
@@ -498,7 +478,7 @@ export default function BantuanDaruratContent() {
                     arrow_forward
                   </span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
