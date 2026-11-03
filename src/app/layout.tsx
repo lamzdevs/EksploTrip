@@ -9,7 +9,7 @@ const poppins = Poppins({
   style: ['normal'],
   display: 'swap',
   variable: '--font-poppins',
-  preload: true,
+  preload: false,
 });
 
 export const metadata: Metadata = {

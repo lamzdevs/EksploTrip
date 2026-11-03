@@ -347,7 +347,6 @@ export default function BantuanDaruratContent() {
               <Link
                 href="/nomor-darurat-umum"
                 className="help-card"
-                aria-label="Lihat Nomor Darurat Umum"
               >
                 <div className="help-card-top">
                   <div className="help-card-icon icon-red">
@@ -372,7 +371,6 @@ export default function BantuanDaruratContent() {
               <Link
                 href="/fasilitas-kesehatan-terdekat"
                 className="help-card"
-                aria-label="Lihat Fasilitas Kesehatan Terdekat"
               >
                 <div className="help-card-top">
                   <div className="help-card-icon icon-green">
@@ -401,7 +399,6 @@ export default function BantuanDaruratContent() {
               <Link
                 href="/informasi-cuaca"
                 className="help-card"
-                aria-label="Lihat Informasi Cuaca"
               >
                 <div className="help-card-top">
                   <div className="help-card-icon icon-blue">
@@ -426,7 +423,6 @@ export default function BantuanDaruratContent() {
               <Link
                 href="/tips-keamanan-wanita"
                 className="help-card"
-                aria-label="Lihat Tips Keamanan Wanita"
               >
                 <div className="help-card-top">
                   <div className="help-card-icon icon-purple">
@@ -450,7 +446,6 @@ export default function BantuanDaruratContent() {
               <Link
                 href="/edukasi-pencegahan"
                 className="help-card"
-                aria-label="Lihat Edukasi dan Pencegahan"
               >
                 <div className="help-card-top">
                   <div className="help-card-icon icon-orange">
@@ -475,7 +470,6 @@ export default function BantuanDaruratContent() {
               <Link
                 href="/hubungi-tim-kami"
                 className="help-card"
-                aria-label="Hubungi Tim Kami"
               >
                 <div className="help-card-top">
                   <div className="help-card-icon icon-darkgreen">

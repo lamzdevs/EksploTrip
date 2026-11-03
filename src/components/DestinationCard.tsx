@@ -51,7 +51,6 @@ export function DestinationCard({
     <Link
       href={detailUrl}
       className="destination-card"
-      aria-label={`Lihat detail ${destination.nama_wisata}`}
       prefetch={false}
     >
       <div className="card-media">
@@ -147,7 +146,6 @@ export function PlaceholderSlotCard({
   return (
     <article
       className="destination-card placeholder-slot-card"
-      aria-label={`Slot destinasi survei ${slotNumber} belum tersedia`}
     >
       <div className="card-media">
         <span className="card-badge">
