@@ -2,20 +2,29 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Destination } from '@/types/destination';
-import { formatBogorLocation, formatKondisiTag } from '@/lib/destinations';
+import {
+  formatBogorLocation,
+  formatKondisiTag,
+  normalizeAssetUrl,
+} from '@/lib/destinationUtils';
+
+const FALLBACK_CARD_IMG = '/assets/images/beranda/list_katalog.webp';
 
 interface DestinationCardProps {
   destination: Destination;
   fromOrigin?: 'beranda' | 'eksplorasi' | 'search';
+  priority?: boolean;
 }
 
 export function DestinationCard({
   destination,
   fromOrigin = 'eksplorasi',
+  priority = false,
 }: DestinationCardProps) {
   const [imgSrc, setImgSrc] = useState(
-    destination.foto_utama || '/assets/images/beranda/list_katalog.png'
+    normalizeAssetUrl(destination.foto_utama) || FALLBACK_CARD_IMG
   );
 
   const isVerified =
@@ -44,17 +53,23 @@ export function DestinationCard({
       href={detailUrl}
       className="destination-card"
       aria-label={`Lihat detail ${destination.nama_wisata}`}
+      prefetch={false}
     >
       <div className="card-media">
         <span className="card-badge">
           <span className="material-symbols-outlined">{badgeIcon}</span>
           <span>{badgeLabel}</span>
         </span>
-        <img
+        <Image
           src={imgSrc}
           alt={destination.nama_wisata}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 410px"
+          loading={priority ? undefined : 'lazy'}
+          priority={priority}
           className="card-img"
-          onError={() => setImgSrc('/assets/images/beranda/list_katalog.png')}
+          style={{ objectFit: 'cover' }}
+          onError={() => setImgSrc(FALLBACK_CARD_IMG)}
         />
       </div>
       <div className="card-body">
@@ -140,10 +155,14 @@ export function PlaceholderSlotCard({
           <span className="material-symbols-outlined">{badgeIcon}</span>
           <span>{badgeLabel}</span>
         </span>
-        <img
-          src="/assets/images/beranda/list_katalog.png"
+        <Image
+          src={FALLBACK_CARD_IMG}
           alt="Slot Data Survei Belum Tersedia"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 410px"
+          loading="lazy"
           className="card-img"
+          style={{ objectFit: 'cover' }}
         />
       </div>
       <div className="card-body">

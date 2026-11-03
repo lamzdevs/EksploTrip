@@ -290,8 +290,13 @@ export default function InformasiCuacaContent() {
         <section className="hero-section" aria-label="Banner Bantuan Darurat">
           <div className="hero-bg-wrapper">
             <img
-              src="/assets/images/bantuan_darurat/banner_atas.png"
+              src="/assets/images/beranda/banner_atas.webp"
               alt="Pemandangan danau dan bukit pegunungan Bogor"
+              width={1440}
+              height={280}
+              fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               className="hero-banner-img"
             />
             <div className="hero-overlay"></div>
@@ -374,8 +379,11 @@ export default function InformasiCuacaContent() {
             <div className="cuaca-hero-card">
               <div className="cuaca-hero-bg">
                 <img
-                  src="/assets/images/bantuan_darurat/banner_atas.png"
+                  src="/assets/images/beranda/banner_atas.webp"
                   alt="Misty landscape"
+                  width={1440}
+                  height={280}
+                  decoding="async"
                   className="cuaca-hero-bg-img"
                 />
                 <div className="cuaca-hero-bg-overlay"></div>

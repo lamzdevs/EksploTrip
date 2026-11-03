@@ -16,6 +16,7 @@ interface NavbarProps {
   initialSearchQuery?: string;
   activeMainTab?: 'beranda' | 'eksplorasi' | 'bantuan';
   onTabChange?: (tab: 'beranda' | 'eksplorasi' | 'bantuan') => void;
+  onTabPreload?: (tab: 'beranda' | 'eksplorasi' | 'bantuan') => void;
 }
 
 export default function Navbar({
@@ -25,6 +26,7 @@ export default function Navbar({
   initialSearchQuery = '',
   activeMainTab,
   onTabChange,
+  onTabPreload,
 }: NavbarProps) {
   const pathname = usePathname();
   const router = useRouter();
@@ -121,8 +123,6 @@ export default function Navbar({
     ) {
       try {
         const refUrl = new URL(document.referrer);
-        // Jika sebelumnya dari bantuan-darurat tetapi tujuan kembali adalah eksplorasi,
-        // navigasi langsung ke backHref agar tidak mental kembali ke halaman bantuan darurat
         if (
           refUrl.pathname.startsWith('/bantuan-darurat') &&
           backHref.startsWith('/eksplorasi')
@@ -143,9 +143,6 @@ export default function Navbar({
     e.preventDefault();
     const trimmed = searchValue.trim();
 
-    // Sesuai preferensi user:
-    // Jika mencari dari halaman bantuan darurat, garis navbar langsung dialihkan ke eksplorasi
-    // Jika dari beranda tetap beranda, jika dari eksplorasi tetap eksplorasi
     const fromTab: 'beranda' | 'eksplorasi' =
       currentTab === 'beranda' ? 'beranda' : 'eksplorasi';
 
@@ -182,8 +179,11 @@ export default function Navbar({
         <div className="detail-navbar-container">
           <Link href="/" className="navbar-brand" aria-label="EksploTrip Beranda">
             <img
-              src="/assets/images/detail_katalog/logo_eksplotrip_navbar.png"
+              src="/assets/images/beranda/logo_eksplotrip_navbar.webp"
               alt="EksploTrip Logo"
+              width={81}
+              height={40}
+              decoding="sync"
               className="navbar-brand-logo"
             />
           </Link>
@@ -209,8 +209,11 @@ export default function Navbar({
         <div className="navbar-container">
           <Link href="/" className="navbar-brand" aria-label="EksploTrip Beranda">
             <img
-              src="/assets/images/beranda/logo_eksplotrip_navbar.png"
+              src="/assets/images/beranda/logo_eksplotrip_navbar.webp"
               alt="EksploTrip Logo"
+              width={81}
+              height={40}
+              decoding="sync"
               className="navbar-logo"
             />
           </Link>
@@ -225,6 +228,8 @@ export default function Navbar({
                 <Link
                   href="/"
                   aria-current={currentTab === 'beranda' ? 'page' : undefined}
+                  onMouseEnter={() => onTabPreload?.('beranda')}
+                  onFocus={() => onTabPreload?.('beranda')}
                   onClick={(e) => handleMenuClick(e, 'beranda')}
                 >
                   Beranda
@@ -242,6 +247,8 @@ export default function Navbar({
                   aria-current={
                     currentTab === 'eksplorasi' ? 'page' : undefined
                   }
+                  onMouseEnter={() => onTabPreload?.('eksplorasi')}
+                  onFocus={() => onTabPreload?.('eksplorasi')}
                   onClick={(e) => handleMenuClick(e, 'eksplorasi')}
                 >
                   Eksplorasi Destinasi
@@ -255,6 +262,8 @@ export default function Navbar({
                 <Link
                   href="/bantuan-darurat"
                   aria-current={currentTab === 'bantuan' ? 'page' : undefined}
+                  onMouseEnter={() => onTabPreload?.('bantuan')}
+                  onFocus={() => onTabPreload?.('bantuan')}
                   onClick={(e) => handleMenuClick(e, 'bantuan')}
                 >
                   Bantuan Darurat
@@ -314,8 +323,11 @@ export default function Navbar({
                   onClick={() => setAiModalOpen(true)}
                 >
                   <img
-                    src="/assets/images/beranda/logo_aiplo.png"
+                    src="/assets/images/beranda/logo_aiplo.webp"
                     alt="AI Bot EksploTrip"
+                    width={34}
+                    height={34}
+                    decoding="async"
                     className="ai-logo"
                   />
                 </button>
@@ -336,7 +348,7 @@ export default function Navbar({
           </div>
         </div>
 
-        {/* Mobile Search Row (Same styling & placeholder as desktop search) */}
+        {/* Mobile Search Row */}
         {variant === 'main' && (
           <div className="navbar-mobile-search">
             <form
@@ -360,7 +372,7 @@ export default function Navbar({
           </div>
         )}
 
-        {/* Mobile Tab Navigation Row (Same 3 menu items as desktop) */}
+        {/* Mobile Tab Navigation Row */}
         {variant === 'main' && (
           <nav className="navbar-mobile-tabs" aria-label="Navigasi Tab Mobile">
             <button
@@ -368,6 +380,8 @@ export default function Navbar({
               className={`mobile-tab-btn ${
                 currentTab === 'beranda' ? 'active' : ''
               }`}
+              onTouchStart={() => onTabPreload?.('beranda')}
+              onMouseEnter={() => onTabPreload?.('beranda')}
               onClick={(e) => {
                 handleMenuClick(e, 'beranda');
                 if (!onTabChange) {
@@ -382,6 +396,8 @@ export default function Navbar({
               className={`mobile-tab-btn ${
                 currentTab === 'eksplorasi' ? 'active' : ''
               }`}
+              onTouchStart={() => onTabPreload?.('eksplorasi')}
+              onMouseEnter={() => onTabPreload?.('eksplorasi')}
               onClick={(e) => {
                 handleMenuClick(e, 'eksplorasi');
                 if (!onTabChange) {
@@ -396,6 +412,8 @@ export default function Navbar({
               className={`mobile-tab-btn ${
                 currentTab === 'bantuan' ? 'active' : ''
               }`}
+              onTouchStart={() => onTabPreload?.('bantuan')}
+              onMouseEnter={() => onTabPreload?.('bantuan')}
               onClick={(e) => {
                 handleMenuClick(e, 'bantuan');
                 if (!onTabChange) {
@@ -408,8 +426,12 @@ export default function Navbar({
           </nav>
         )}
 
-        {/* Mobile Nav Drawer (Exact same links as desktop menu) */}
-        <div className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}>
+        {/* Mobile Nav Drawer */}
+        <div
+          className={`mobile-nav-drawer ${mobileMenuOpen ? 'open' : ''}`}
+          aria-hidden={!mobileMenuOpen}
+          inert={!mobileMenuOpen ? true : undefined}
+        >
           <Link
             href="/"
             className={currentTab === 'beranda' ? 'active' : ''}
@@ -461,8 +483,10 @@ export default function Navbar({
             <div className="eksplo-modal-header">
               <h3 id="aiplo-modal-title">
                 <img
-                  src="/assets/images/beranda/logo_aiplo.png"
+                  src="/assets/images/beranda/logo_aiplo.webp"
                   alt="AIplo"
+                  width={24}
+                  height={24}
                   style={{ width: 24, height: 24 }}
                 />
                 Asisten AI EksploTrip (AIplo)

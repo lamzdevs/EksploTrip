@@ -93,7 +93,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": 106.9518232,
     "google_maps_url": "https://www.google.com/maps/d/embed?mid=1_mmqM4bM3mFCCMpHaF2LcRINzh_sC0w&ehbc=2E312F&noprof=1",
     "google_maps_route_url": "https://maps.app.goo.gl/Cxx46EtFytkKn8JV9",
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -116,8 +116,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Sekitar 10 menit berjalan kaki santai dari titik parkir."
       }
     ],
-    "foto_utama": "/assets/images/detail_katalog/card_curug_cibulao.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/detail_katalog/card_curug_cibulao.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "cibulao-visual-1",
@@ -125,7 +125,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "jalur-trekking",
         "kategori_label": "Jalur Trekking",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Jalur setapak alami dan teduh dengan anak tangga berbatu.",
         "badge_status": "Destinasi Terverifikasi"
@@ -136,7 +136,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Air terjun bertingkat dengan kolam alami berwarna biru kehijauan.",
         "badge_status": "Destinasi Terverifikasi"
@@ -147,7 +147,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "fasilitas",
         "kategori_label": "Fasilitas",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Toilet bersih, mushola, dan warung warga sekitar.",
         "badge_status": "Destinasi Terverifikasi"
@@ -158,7 +158,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "area-parkir",
         "kategori_label": "Area Parkir",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Kapasitas parkir motor dan mobil tertata rapi.",
         "badge_status": "Destinasi Terverifikasi"
@@ -256,7 +256,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": 106.7540144,
     "google_maps_url": "https://www.google.com/maps/d/embed?mid=1tCCjPOI5eGmCB5nEaAClRlbxEIrF5u4&ehbc=2E312F&noprof=1",
     "google_maps_route_url": "https://maps.app.goo.gl/fPzVkcCwJjsa2T8A7",
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -279,8 +279,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Hanya 5 menit dari area parkir ke bibir danau."
       }
     ],
-    "foto_utama": "/assets/images/detail_katalog/card_situ_tamansari.png",
-    "foto_banner": "/assets/visual/situ_tamansari/banner_situ_tamansari.png",
+    "foto_utama": "/assets/images/detail_katalog/card_situ_tamansari.webp",
+    "foto_banner": "/assets/visual/situ_tamansari/banner_situ_tamansari.webp",
     "galeri_visual": [
       {
         "id": "tamansari-visual-1",
@@ -288,7 +288,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Pemandangan air danau tenang berlatar pohon pinus kaki Gunung Salak.",
         "badge_status": "Destinasi Terverifikasi"
@@ -299,7 +299,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Dermaga kayu tepi danau untuk bersantai menikmati panorama danau.",
         "badge_status": "Destinasi Terverifikasi"
@@ -310,7 +310,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "fasilitas",
         "kategori_label": "Fasilitas",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Warung sederhana menyediakan makanan dan minuman hangat.",
         "badge_status": "Destinasi Terverifikasi"
@@ -321,7 +321,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "area-parkir",
         "kategori_label": "Area Parkir",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Kondisi Nyata Lapangan",
         "deskripsi": "Parkir kendaraan roda dua dan roda empat tepat di sebelah pintu masuk.",
         "badge_status": "Destinasi Terverifikasi"
@@ -421,7 +421,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": 107.01603,
     "google_maps_url": "https://www.google.com/maps/d/embed?mid=1QiziD5y8Y-VfiNle9etE4bnSTIO4me4&ehbc=2E312F",
     "google_maps_route_url": "https://maps.app.goo.gl/pu8aoLa8pC5XFbQV9",
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -444,8 +444,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Sekitar 2 jam trekking santai ke spot perkemahan puncak."
       }
     ],
-    "foto_utama": "/assets/images/detail_katalog/card_gunung_luhur.png",
-    "foto_banner": "/assets/visual/gunung_luhur_sukamakmur/banner_gunung_luhur_sukamakmur.png",
+    "foto_utama": "/assets/images/detail_katalog/card_gunung_luhur.webp",
+    "foto_banner": "/assets/visual/gunung_luhur_sukamakmur/banner_gunung_luhur_sukamakmur.webp",
     "galeri_visual": [
       {
             "id": "gunungluhur-visual-1",
@@ -453,7 +453,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "alam",
             "kategori_label": "Alam",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20camp.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20camp.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kawasan bumi perkemahan (camping ground) berlatar pemandangan alam perbukitan terbuka.",
             "badge_status": "Area Camp"
@@ -464,7 +464,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20motor%20utama.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20motor%20utama.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Area parkir khusus sepeda motor di depan loket registrasi yang tertata rapi dan aman.",
             "badge_status": "Area Parkir Motor Utama"
@@ -475,7 +475,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kondisi area parkir kendaraan resmi yang aman dan tertata rapi di Gunung Luhur Sukamakmur.",
             "badge_status": "Area Parkir Mobil"
@@ -486,7 +486,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/basecamp.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/basecamp.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kawasan bumi perkemahan (camping ground) berlatar pemandangan alam perbukitan terbuka.",
             "badge_status": "Basecamp"
@@ -497,7 +497,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "alam",
             "kategori_label": "Alam",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/foto%20spot%20panca%20warna%20mt%20luhur.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/foto%20spot%20panca%20warna%20mt%20luhur.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Foto Spot Panca Warna MT Luhur pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Foto Spot Panca Warna MT Luhur"
@@ -508,7 +508,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/gapura%20selamat%20mendaki%201750%20mdpl.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/gapura%20selamat%20mendaki%201750%20mdpl.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Gapura Selamat Mendaki 1750 MDPL pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Gapura Selamat Mendaki 1750 MDPL"
@@ -519,7 +519,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/loket%20registrasi%20dan%20papan%20tarif.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/loket%20registrasi%20dan%20papan%20tarif.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Pos pelayanan registrasi tiket resmi dan pengecekan perlengkapan pendaki.",
             "badge_status": "Loket Registrasi dan Papan Tarif"
@@ -530,7 +530,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/menuju%20gapura%20trekking.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/menuju%20gapura%20trekking.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kondisi fisik jalur trekking setapak alami yang terawat menuju pos pendakian.",
             "badge_status": "Menuju Gapura Trekking"
@@ -541,7 +541,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/mushola%20panggung%20kayu%20area%20camp.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/mushola%20panggung%20kayu%20area%20camp.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Fasilitas mushola ibadah yang bersih dan nyaman bagi pengunjung dan pendaki.",
             "badge_status": "Mushola Panggung Kayu Area Camp"
@@ -552,7 +552,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pasar%20bunga.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pasar%20bunga.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Pasar Bunga pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Pasar Bunga"
@@ -563,7 +563,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "lainnya",
             "kategori_label": "Lainnya",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/peringatan%20dilarang%20keluar%20jalur%20pendakian.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/peringatan%20dilarang%20keluar%20jalur%20pendakian.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Peringatan Dilarang Keluar Jalur Pendakian pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Peringatan Dilarang Keluar Jalur Pendakian"
@@ -574,7 +574,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/plang%20pos%202%20sanghek.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/plang%20pos%202%20sanghek.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Plang Pos 2 Sanghek pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Plang Pos 2 Sanghek"
@@ -585,7 +585,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/plang%20pos%205%20heuay.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/plang%20pos%205%20heuay.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Plang Pos 5 Heuay pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Plang Pos 5 Heuay"
@@ -596,7 +596,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%201.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%201.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Pondok peristirahatan pertama Pos 1 pada jalur resmi pendakian Gunung Luhur.",
             "badge_status": "Pos 1 Pendakian"
@@ -607,7 +607,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%203.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/pos%203.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Pondok singgah Pos 3 di tengah jalur pendakian Gunung Luhur untuk melepas lelah.",
             "badge_status": "Pos 3 Peristirahatan"
@@ -618,7 +618,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/loket%20registrasi%20tampak%20depan.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/loket%20registrasi%20tampak%20depan.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kondisi loket pendaftaran dan pembayaran simaksi resmi dari tampak depan.",
             "badge_status": "Loket Registrasi Tampak Depan"
@@ -629,7 +629,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/ruang%20medis%20basecamp.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/ruang%20medis%20basecamp.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kawasan bumi perkemahan (camping ground) berlatar pemandangan alam perbukitan terbuka.",
             "badge_status": "Ruang Medis Basecamp"
@@ -640,7 +640,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "alam",
             "kategori_label": "Alam",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/spot%20foto%20bunga.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/spot%20foto%20bunga.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Spot Foto Bunga pada dokumentasi survei lapangan resmi Gunung Luhur Sukamakmur.",
             "badge_status": "Spot Foto Bunga"
@@ -651,7 +651,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/tempat%20wudhu%20mushola%20basecamp.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/tempat%20wudhu%20mushola%20basecamp.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kondisi sanitasi dan kebersihan fasilitas toilet serta tempat wudhu di kawasan Gunung Luhur.",
             "badge_status": "Tempat Wudhu Mushola Basecamp"
@@ -662,7 +662,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/toilet%20di%20musholla.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/toilet%20di%20musholla.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kondisi sanitasi dan kebersihan fasilitas toilet serta tempat wudhu di kawasan Gunung Luhur.",
             "badge_status": "Toilet di Musholla"
@@ -673,7 +673,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "aktivitas",
             "kategori_label": "Aktivitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/trek%20anak%20tangga.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/trek%20anak%20tangga.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kondisi fisik jalur trekking setapak alami yang terawat menuju pos pendakian.",
             "badge_status": "Trek Anak Tangga"
@@ -876,7 +876,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
             "kategori": "fasilitas",
             "kategori_label": "Fasilitas",
             "tipe_media": "foto",
-            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20basecamp.jpg",
+            "url_gambar": "/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20basecamp.webp",
             "keterangan_waktu": "Survei Lapangan Resmi",
             "deskripsi": "Kawasan bumi perkemahan (camping ground) berlatar pemandangan alam perbukitan terbuka.",
             "badge_status": "Warung Basecamp"
@@ -972,7 +972,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -995,8 +995,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-aren-visual-1",
@@ -1004,7 +1004,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1094,7 +1094,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1117,8 +1117,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-asoy-visual-1",
@@ -1126,7 +1126,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1216,7 +1216,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1239,8 +1239,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-bidadari-sentul-visual-1",
@@ -1248,7 +1248,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1338,7 +1338,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1361,8 +1361,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-bingbin-visual-1",
@@ -1370,7 +1370,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1460,7 +1460,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1483,8 +1483,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cisalada-visual-1",
@@ -1492,7 +1492,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1582,7 +1582,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1605,8 +1605,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-dua-perjaka-visual-1",
@@ -1614,7 +1614,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1704,7 +1704,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1727,8 +1727,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-kanyere-visual-1",
@@ -1736,7 +1736,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1826,7 +1826,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1849,8 +1849,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-love-visual-1",
@@ -1858,7 +1858,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -1948,7 +1948,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -1971,8 +1971,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ngumpet-bojongkoneng-visual-1",
@@ -1980,7 +1980,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2070,7 +2070,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2093,8 +2093,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-putri-kencana-visual-1",
@@ -2102,7 +2102,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2192,7 +2192,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2215,8 +2215,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cikaracak-visual-1",
@@ -2224,7 +2224,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2314,7 +2314,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2337,8 +2337,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciberet-visual-1",
@@ -2346,7 +2346,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2436,7 +2436,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2459,8 +2459,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ketupat-visual-1",
@@ -2468,7 +2468,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2558,7 +2558,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2581,8 +2581,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-lembah-pelangi-visual-1",
@@ -2590,7 +2590,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2680,7 +2680,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2703,8 +2703,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciawitali-visual-1",
@@ -2712,7 +2712,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2802,7 +2802,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2825,8 +2825,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciazis-visual-1",
@@ -2834,7 +2834,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -2924,7 +2924,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -2947,8 +2947,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cipadaranten-visual-1",
@@ -2956,7 +2956,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3046,7 +3046,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3069,8 +3069,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cisadane-visual-1",
@@ -3078,7 +3078,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3168,7 +3168,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3191,8 +3191,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-pengleseran-visual-1",
@@ -3200,7 +3200,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3290,7 +3290,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3313,8 +3313,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-rahong-visual-1",
@@ -3322,7 +3322,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3412,7 +3412,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3435,8 +3435,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-putri-pelangi-visual-1",
@@ -3444,7 +3444,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3534,7 +3534,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3557,8 +3557,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cibogo-visual-1",
@@ -3566,7 +3566,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3656,7 +3656,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3679,8 +3679,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-jaksa-visual-1",
@@ -3688,7 +3688,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3778,7 +3778,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3801,8 +3801,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-pariuk-visual-1",
@@ -3810,7 +3810,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -3900,7 +3900,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -3923,8 +3923,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cibentang-visual-1",
@@ -3932,7 +3932,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4022,7 +4022,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4045,8 +4045,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-sedong-visual-1",
@@ -4054,7 +4054,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4144,7 +4144,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4167,8 +4167,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciaul-purasari-visual-1",
@@ -4176,7 +4176,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4266,7 +4266,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4289,8 +4289,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cikoneng-visual-1",
@@ -4298,7 +4298,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4388,7 +4388,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4411,8 +4411,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-buleud-visual-1",
@@ -4420,7 +4420,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4510,7 +4510,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4533,8 +4533,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cilember-visual-1",
@@ -4542,7 +4542,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4632,7 +4632,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4655,8 +4655,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-kembar-visual-1",
@@ -4664,7 +4664,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4754,7 +4754,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4777,8 +4777,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-naga-visual-1",
@@ -4786,7 +4786,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4876,7 +4876,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -4899,8 +4899,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-orok-visual-1",
@@ -4908,7 +4908,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -4998,7 +4998,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5021,8 +5021,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-panjang-megamendung-visual-1",
@@ -5030,7 +5030,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5120,7 +5120,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5143,8 +5143,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cikawung-nanggung-visual-1",
@@ -5152,7 +5152,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5242,7 +5242,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5265,8 +5265,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-kembar-cinyenang-visual-1",
@@ -5274,7 +5274,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5364,7 +5364,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5387,8 +5387,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-love-nanggung-visual-1",
@@ -5396,7 +5396,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5486,7 +5486,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5509,8 +5509,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-sawer-visual-1",
@@ -5518,7 +5518,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5608,7 +5608,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5631,8 +5631,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-angkasa-visual-1",
@@ -5640,7 +5640,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5730,7 +5730,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5753,8 +5753,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-balong-endah-visual-1",
@@ -5762,7 +5762,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5852,7 +5852,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5875,8 +5875,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-balong-kiara-visual-1",
@@ -5884,7 +5884,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -5974,7 +5974,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -5997,8 +5997,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-batu-ampar-visual-1",
@@ -6006,7 +6006,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6096,7 +6096,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6119,8 +6119,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-batu-pancur-visual-1",
@@ -6128,7 +6128,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6218,7 +6218,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6241,8 +6241,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-bidadari-visual-1",
@@ -6250,7 +6250,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6340,7 +6340,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6363,8 +6363,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cigamea-visual-1",
@@ -6372,7 +6372,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6462,7 +6462,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6485,8 +6485,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cihurang-visual-1",
@@ -6494,7 +6494,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6584,7 +6584,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6607,8 +6607,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cikawah-visual-1",
@@ -6616,7 +6616,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6706,7 +6706,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6729,8 +6729,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cikuluwung-visual-1",
@@ -6738,7 +6738,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6828,7 +6828,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6851,8 +6851,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciparay-visual-1",
@@ -6860,7 +6860,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -6950,7 +6950,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -6973,8 +6973,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-geblug-visual-1",
@@ -6982,7 +6982,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7072,7 +7072,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7095,8 +7095,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-kondang-visual-1",
@@ -7104,7 +7104,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7194,7 +7194,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7217,8 +7217,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-lontar-visual-1",
@@ -7226,7 +7226,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7316,7 +7316,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7339,8 +7339,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-pangeran-visual-1",
@@ -7348,7 +7348,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7438,7 +7438,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7461,8 +7461,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-panganten-batu-ampar-1-visual-1",
@@ -7470,7 +7470,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7560,7 +7560,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7583,8 +7583,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-payung-visual-1",
@@ -7592,7 +7592,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7682,7 +7682,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7705,8 +7705,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-saderi-visual-1",
@@ -7714,7 +7714,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7804,7 +7804,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7827,8 +7827,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-sawer-pamijahan-visual-1",
@@ -7836,7 +7836,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -7926,7 +7926,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -7949,8 +7949,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-seribu-visual-1",
@@ -7958,7 +7958,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8048,7 +8048,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8071,8 +8071,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-walet-visual-1",
@@ -8080,7 +8080,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8170,7 +8170,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8193,8 +8193,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "lembah-tepus-visual-1",
@@ -8202,7 +8202,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8292,7 +8292,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8315,8 +8315,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-suakan-rumpin-visual-1",
@@ -8324,7 +8324,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8414,7 +8414,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8437,8 +8437,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cidurian-visual-1",
@@ -8446,7 +8446,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8536,7 +8536,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8559,8 +8559,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-pintu-air-visual-1",
@@ -8568,7 +8568,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8658,7 +8658,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8681,8 +8681,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cibaliung-visual-1",
@@ -8690,7 +8690,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8780,7 +8780,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8803,8 +8803,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cibereum-rawagede-visual-1",
@@ -8812,7 +8812,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -8902,7 +8902,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -8925,8 +8925,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciburial-visual-1",
@@ -8934,7 +8934,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9024,7 +9024,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9047,8 +9047,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cidulang-khayangan-visual-1",
@@ -9056,7 +9056,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9146,7 +9146,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9169,8 +9169,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciherang-sukmakmur-visual-1",
@@ -9178,7 +9178,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9268,7 +9268,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9291,8 +9291,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cilandak-visual-1",
@@ -9300,7 +9300,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9390,7 +9390,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9413,8 +9413,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-citiis-jonggol-visual-1",
@@ -9422,7 +9422,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9512,7 +9512,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9535,8 +9535,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-hordeng-visual-1",
@@ -9544,7 +9544,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9634,7 +9634,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9657,8 +9657,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-kembar-sukamakmur-visual-1",
@@ -9666,7 +9666,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9756,7 +9756,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9779,8 +9779,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-leuwi-hejo-visual-1",
@@ -9788,7 +9788,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -9878,7 +9878,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -9901,8 +9901,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-leuwi-panjang-visual-1",
@@ -9910,7 +9910,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10000,7 +10000,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10023,8 +10023,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-lieuk-visual-1",
@@ -10032,7 +10032,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10122,7 +10122,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10145,8 +10145,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-mariuk-visual-1",
@@ -10154,7 +10154,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10244,7 +10244,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10267,8 +10267,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-salangit-atas-visual-1",
@@ -10276,7 +10276,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10366,7 +10366,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10389,8 +10389,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-aspi-visual-1",
@@ -10398,7 +10398,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10488,7 +10488,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10511,8 +10511,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-daun-visual-1",
@@ -10520,7 +10520,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10610,7 +10610,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10633,8 +10633,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-luhur-visual-1",
@@ -10642,7 +10642,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10732,7 +10732,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10755,8 +10755,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-mading-visual-1",
@@ -10764,7 +10764,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10854,7 +10854,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10877,8 +10877,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-nangka-visual-1",
@@ -10886,7 +10886,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -10976,7 +10976,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -10999,8 +10999,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-country-jonggol-visual-1",
@@ -11008,7 +11008,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11098,7 +11098,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11121,8 +11121,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciampea-visual-1",
@@ -11130,7 +11130,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11220,7 +11220,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11243,8 +11243,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-cipeteuy-visual-1",
@@ -11252,7 +11252,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11342,7 +11342,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11365,8 +11365,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ciputri-visual-1",
@@ -11374,7 +11374,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11464,7 +11464,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11487,8 +11487,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-goong-visual-1",
@@ -11496,7 +11496,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11586,7 +11586,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11609,8 +11609,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-kiara-visual-1",
@@ -11618,7 +11618,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11708,7 +11708,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11731,8 +11731,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-padalarang-visual-1",
@@ -11740,7 +11740,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11830,7 +11830,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11853,8 +11853,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-gede-visual-1",
@@ -11862,7 +11862,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -11952,7 +11952,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -11975,8 +11975,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "danau-gunting-kebun-raya-bogor-visual-1",
@@ -11984,7 +11984,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12074,7 +12074,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12097,8 +12097,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "danau-rusunawa-visual-1",
@@ -12106,7 +12106,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12196,7 +12196,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12219,8 +12219,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-bekang-visual-1",
@@ -12228,7 +12228,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12318,7 +12318,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12341,8 +12341,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-bentenan-visual-1",
@@ -12350,7 +12350,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12440,7 +12440,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12463,8 +12463,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-cibuntu-visual-1",
@@ -12472,7 +12472,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12562,7 +12562,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12585,8 +12585,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-cikaret-visual-1",
@@ -12594,7 +12594,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12684,7 +12684,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12707,8 +12707,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-citatah-visual-1",
@@ -12716,7 +12716,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12806,7 +12806,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12829,8 +12829,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-kibing-visual-1",
@@ -12838,7 +12838,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -12928,7 +12928,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -12951,8 +12951,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "danau-lido-visual-1",
@@ -12960,7 +12960,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13050,7 +13050,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13073,8 +13073,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-ciomas-permai-visual-1",
@@ -13082,7 +13082,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13172,7 +13172,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13195,8 +13195,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-iwul-visual-1",
@@ -13204,7 +13204,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13294,7 +13294,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13317,8 +13317,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "danau-situ-cibodas-visual-1",
@@ -13326,7 +13326,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13416,7 +13416,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13439,8 +13439,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "situ-rawa-gede-visual-1",
@@ -13448,7 +13448,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13538,7 +13538,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13561,8 +13561,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-batu-gajah-visual-1",
@@ -13570,7 +13570,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13660,7 +13660,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13683,8 +13683,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-batu-gede-visual-1",
@@ -13692,7 +13692,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13782,7 +13782,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13805,8 +13805,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-batu-hijau-gunung-pancar-camp-ground-visual-1",
@@ -13814,7 +13814,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -13904,7 +13904,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -13927,8 +13927,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-batu-pandan-visual-1",
@@ -13936,7 +13936,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14026,7 +14026,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14049,8 +14049,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-paniisan-visual-1",
@@ -14058,7 +14058,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14148,7 +14148,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14171,8 +14171,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-kepanduan-sentul-visual-1",
@@ -14180,7 +14180,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14270,7 +14270,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14293,8 +14293,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-bukit-wangun-visual-1",
@@ -14302,7 +14302,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14392,7 +14392,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14415,8 +14415,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "goes-camp-visual-1",
@@ -14424,7 +14424,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14514,7 +14514,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14537,8 +14537,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "gunung-ciung-camping-ground-visual-1",
@@ -14546,7 +14546,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14636,7 +14636,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14659,8 +14659,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "gunung-pancar-camping-ground-visual-1",
@@ -14668,7 +14668,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14758,7 +14758,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14781,8 +14781,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "lembah-hijau-visual-1",
@@ -14790,7 +14790,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -14880,7 +14880,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -14903,8 +14903,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "lembah-pakis-visual-1",
@@ -14912,7 +14912,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15002,7 +15002,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15025,8 +15025,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "sisi-cai-campground-visual-1",
@@ -15034,7 +15034,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15124,7 +15124,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15147,8 +15147,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-pancawati-visual-1",
@@ -15156,7 +15156,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15246,7 +15246,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15269,8 +15269,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "el-mande-camping-ground-visual-1",
@@ -15278,7 +15278,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15368,7 +15368,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15391,8 +15391,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "garuda-huha-camp-visual-1",
@@ -15400,7 +15400,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15490,7 +15490,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15513,8 +15513,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "halimun-camping-ground-visual-1",
@@ -15522,7 +15522,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15612,7 +15612,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15635,8 +15635,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "kancah-nangkub-site-warung-kopi-kampung-camping-ground-visual-1",
@@ -15644,7 +15644,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15734,7 +15734,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15757,8 +15757,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "lingkung-gunung-adventure-camp-visual-1",
@@ -15766,7 +15766,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15856,7 +15856,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -15879,8 +15879,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "pondok-kapilih-camping-ground-visual-1",
@@ -15888,7 +15888,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -15978,7 +15978,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16001,8 +16001,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "puncak-halimun-camp-bogor-visual-1",
@@ -16010,7 +16010,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16100,7 +16100,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16123,8 +16123,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "tempat-camping-di-bogor-visual-1",
@@ -16132,7 +16132,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16222,7 +16222,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16245,8 +16245,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-ciburayut-visual-1",
@@ -16254,7 +16254,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16344,7 +16344,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16367,8 +16367,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-suaka-elang-visual-1",
@@ -16376,7 +16376,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16466,7 +16466,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16489,8 +16489,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-desa-wisata-watesjaya-visual-1",
@@ -16498,7 +16498,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16588,7 +16588,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16611,8 +16611,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "suaka-elang-loji-camping-ground-visual-1",
@@ -16620,7 +16620,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16710,7 +16710,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16733,8 +16733,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-alesano-campground-visual-1",
@@ -16742,7 +16742,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16832,7 +16832,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16855,8 +16855,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-bukit-pangkalan-hijau-visual-1",
@@ -16864,7 +16864,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -16954,7 +16954,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -16977,8 +16977,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-bukit-gajah-visual-1",
@@ -16986,7 +16986,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17076,7 +17076,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17099,8 +17099,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-rumah-merah-salak-visual-1",
@@ -17108,7 +17108,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17198,7 +17198,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17221,8 +17221,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-paradise-gabe-visual-1",
@@ -17230,7 +17230,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17320,7 +17320,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17343,8 +17343,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "clavo-hill-camp-visual-1",
@@ -17352,7 +17352,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17442,7 +17442,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17465,8 +17465,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "drajih-nature-camp-visual-1",
@@ -17474,7 +17474,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17564,7 +17564,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17587,8 +17587,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "gajog-hill-camp-visual-1",
@@ -17596,7 +17596,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17686,7 +17686,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17709,8 +17709,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "hopeland-camp-visual-1",
@@ -17718,7 +17718,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17808,7 +17808,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17831,8 +17831,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "taneuh-polaris-visual-1",
@@ -17840,7 +17840,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -17930,7 +17930,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -17953,8 +17953,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "toba-paradise-camp-visual-1",
@@ -17962,7 +17962,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18052,7 +18052,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18075,8 +18075,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-cita-cita-camping-ground-visual-1",
@@ -18084,7 +18084,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18174,7 +18174,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18197,8 +18197,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-citamiang-camping-ground-visual-1",
@@ -18206,7 +18206,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18296,7 +18296,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18319,8 +18319,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-gunder-camping-ground-kedai-kopi-visual-1",
@@ -18328,7 +18328,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18418,7 +18418,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18441,8 +18441,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-cirimpak-camping-ground-visual-1",
@@ -18450,7 +18450,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18540,7 +18540,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18563,8 +18563,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-kumpel-puncak-langit-camping-ground-visual-1",
@@ -18572,7 +18572,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18662,7 +18662,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18685,8 +18685,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-pinus-paseban-camp-visual-1",
@@ -18694,7 +18694,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18784,7 +18784,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18807,8 +18807,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-eagle-hill-mega-mendung-visual-1",
@@ -18816,7 +18816,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -18906,7 +18906,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -18929,8 +18929,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "campground-situhiang-highland-camp-visual-1",
@@ -18938,7 +18938,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19028,7 +19028,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19051,8 +19051,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "geger-paseban-camping-ground-visual-1",
@@ -19060,7 +19060,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19150,7 +19150,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19173,8 +19173,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "lentemland-camping-ground-coffee-visual-1",
@@ -19182,7 +19182,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19272,7 +19272,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19295,8 +19295,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "mega-indah-camping-ground-visual-1",
@@ -19304,7 +19304,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19394,7 +19394,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19417,8 +19417,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "megamendung-fun-camp-visual-1",
@@ -19426,7 +19426,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19516,7 +19516,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19539,8 +19539,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "paseban-mountain-view-camping-ground-visual-1",
@@ -19548,7 +19548,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19638,7 +19638,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19661,8 +19661,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "pesona-bukit-damar-camp-visual-1",
@@ -19670,7 +19670,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19760,7 +19760,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19783,8 +19783,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "river-campground-visual-1",
@@ -19792,7 +19792,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -19882,7 +19882,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -19905,8 +19905,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "squid-camp-visual-1",
@@ -19914,7 +19914,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20004,7 +20004,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20027,8 +20027,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "tekad-camping-ground-visual-1",
@@ -20036,7 +20036,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20126,7 +20126,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20149,8 +20149,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "villa-jago-camping-ground-visual-1",
@@ -20158,7 +20158,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20248,7 +20248,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20271,8 +20271,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-cisangku-visual-1",
@@ -20280,7 +20280,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20370,7 +20370,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20393,8 +20393,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-citalahab-central-visual-1",
@@ -20402,7 +20402,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20492,7 +20492,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20515,8 +20515,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-halimun-salak-visual-1",
@@ -20524,7 +20524,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20614,7 +20614,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20637,8 +20637,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-desa-wisata-malasari-visual-1",
@@ -20646,7 +20646,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20736,7 +20736,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20759,8 +20759,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-jodi-camping-ground-visual-1",
@@ -20768,7 +20768,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20858,7 +20858,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -20881,8 +20881,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-kabayan-camping-ground-visual-1",
@@ -20890,7 +20890,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -20980,7 +20980,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21003,8 +21003,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bukit-surya-salaka-visual-1",
@@ -21012,7 +21012,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21102,7 +21102,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21125,8 +21125,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-cidokom-visual-1",
@@ -21134,7 +21134,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21224,7 +21224,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21247,8 +21247,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-gunung-salak-visual-1",
@@ -21256,7 +21256,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21346,7 +21346,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21369,8 +21369,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-pasir-luhur-visual-1",
@@ -21378,7 +21378,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21468,7 +21468,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21491,8 +21491,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-gunung-bunder-halimun-salak-visual-1",
@@ -21500,7 +21500,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21590,7 +21590,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21613,8 +21613,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-pasir-reungit-visual-1",
@@ -21622,7 +21622,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21712,7 +21712,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21735,8 +21735,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "curug-ngumpet-camping-ground-visual-1",
@@ -21744,7 +21744,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21834,7 +21834,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21857,8 +21857,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "gunung-bunder-campground-visual-1",
@@ -21866,7 +21866,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -21956,7 +21956,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -21979,8 +21979,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "idn-camping-ground-pamijahan-visual-1",
@@ -21988,7 +21988,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22078,7 +22078,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22101,8 +22101,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "leuwi-situhiang-camping-ground-visual-1",
@@ -22110,7 +22110,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22200,7 +22200,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22223,8 +22223,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "panorama-alam-camping-ground-visual-1",
@@ -22232,7 +22232,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22322,7 +22322,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22345,8 +22345,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "pasker-camp-purwabakti-visual-1",
@@ -22354,7 +22354,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22444,7 +22444,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22467,8 +22467,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-pramuka-cimandala-visual-1",
@@ -22476,7 +22476,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22566,7 +22566,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22589,8 +22589,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "ggca-gunung-geulis-camp-area-visual-1",
@@ -22598,7 +22598,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22688,7 +22688,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22711,8 +22711,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-cisarua-2-sukamakmur-visual-1",
@@ -22720,7 +22720,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22810,7 +22810,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22833,8 +22833,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-curug-cipamingkis-visual-1",
@@ -22842,7 +22842,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -22932,7 +22932,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -22955,8 +22955,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-curug-tidar-visual-1",
@@ -22964,7 +22964,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23054,7 +23054,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23077,8 +23077,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-desa-wisata-sinarmakmur-visual-1",
@@ -23086,7 +23086,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23176,7 +23176,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23199,8 +23199,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-puncak-2-cisarua-sukawangi-visual-1",
@@ -23208,7 +23208,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23298,7 +23298,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23321,8 +23321,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "gunung-sabeulah-camping-ground-visual-1",
@@ -23330,7 +23330,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23420,7 +23420,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23443,8 +23443,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "samudra-alam-camping-ground-visual-1",
@@ -23452,7 +23452,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23542,7 +23542,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23565,8 +23565,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "taman-bukit-purnama-sukamakmur-camping-ground-visual-1",
@@ -23574,7 +23574,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23664,7 +23664,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23687,8 +23687,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "taman-sukawangi-highland-camping-ground-visual-1",
@@ -23696,7 +23696,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23786,7 +23786,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23809,8 +23809,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "telaga-gemilang-sampeuran-camping-ground-visual-1",
@@ -23818,7 +23818,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -23908,7 +23908,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -23931,8 +23931,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "bumi-perkemahan-sukamantri-visual-1",
@@ -23940,7 +23940,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -24030,7 +24030,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -24053,8 +24053,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "herman-lantang-camp-visual-1",
@@ -24062,7 +24062,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -24152,7 +24152,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -24175,8 +24175,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "tamansari-camp-adventure-bogor-visual-1",
@@ -24184,7 +24184,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -24274,7 +24274,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -24297,8 +24297,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "camping-ground-bukit-sem-visual-1",
@@ -24306,7 +24306,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"
@@ -24396,7 +24396,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
     "koordinat_lng": null,
     "google_maps_url": null,
     "google_maps_route_url": null,
-    "peta_jalur_url": "/assets/images/detail_katalog/peta_jalur_cibulao.png",
+    "peta_jalur_url": "/assets/images/beranda/list_katalog.webp",
     "catatan_jalur": [
       {
         "nomor": "01",
@@ -24419,8 +24419,8 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "deskripsi": "Belum tersedia — durasi perjalanan dari titik parkir belum diukur."
       }
     ],
-    "foto_utama": "/assets/images/beranda/list_katalog.png",
-    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.png",
+    "foto_utama": "/assets/images/beranda/list_katalog.webp",
+    "foto_banner": "/assets/visual/curug_cibulao/banner_curug_cibulao.webp",
     "galeri_visual": [
       {
         "id": "mb-camp-visual-1",
@@ -24428,7 +24428,7 @@ export const DUMMY_DESTINATIONS: Destination[] = [
         "kategori": "spot-utama",
         "kategori_label": "Spot Utama",
         "tipe_media": "foto",
-        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.png",
+        "url_gambar": "/assets/images/detail_katalog/list_visual_katalog.webp",
         "keterangan_waktu": "Menunggu Survei Lapangan",
         "deskripsi": "Foto dokumentasi survei lapangan belum tersedia. Gambar ini merupakan placeholder visual pengembangan.",
         "badge_status": "Data Dummy (Belum Diverifikasi)"

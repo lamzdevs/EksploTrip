@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 type HelpModalKey =
@@ -114,10 +115,14 @@ export default function BantuanDaruratContent() {
         {/* Hero Banner */}
         <section className="hero-section">
           <div className="hero-bg-wrapper">
-            <img
-              src="/assets/images/bantuan_darurat/banner_atas.png"
+            <Image
+              src="/assets/images/beranda/banner_atas.webp"
               alt="Pemandangan danau dan gunung di Bogor"
+              fill
+              priority
+              sizes="100vw"
               className="hero-banner-img"
+              style={{ objectFit: 'cover' }}
             />
             <div className="hero-overlay"></div>
           </div>
@@ -297,11 +302,15 @@ export default function BantuanDaruratContent() {
               <picture>
                 <source
                   media="(max-width: 768px)"
-                  srcSet="/assets/images/bantuan_darurat/tips_keselamatan_mobile.png"
+                  srcSet="/assets/images/bantuan_darurat/tips_keselamatan_mobile.webp"
                 />
                 <img
-                  src="/assets/images/bantuan_darurat/tips_keselamatan.png"
+                  src="/assets/images/bantuan_darurat/tips_keselamatan.webp"
                   alt="Tas carrier di puncak bukit pemandangan alam"
+                  width={464}
+                  height={288}
+                  loading="lazy"
+                  decoding="async"
                   className="safety-img"
                 />
               </picture>
@@ -575,8 +584,12 @@ export default function BantuanDaruratContent() {
         <section className="banner-bottom-section">
           <div className="banner-bottom-wrapper">
             <img
-              src="/assets/images/bantuan_darurat/banner_bawah.png"
+              src="/assets/images/beranda/banner_bawah.webp"
               alt="Pemandangan pegunungan berkabut"
+              width={1440}
+              height={233}
+              loading="lazy"
+              decoding="async"
               className="banner-bottom-img"
             />
           </div>

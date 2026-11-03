@@ -33,8 +33,13 @@ export default function NomorDaruratContent() {
         <section className="hero-section" aria-label="Banner Bantuan Darurat">
           <div className="hero-bg-wrapper">
             <img
-              src="/assets/images/nomor_darurat_umum/banner_atas.png"
+              src="/assets/images/beranda/banner_atas.webp"
               alt="Pemandangan danau dan gunung di Bogor"
+              width={1440}
+              height={280}
+              fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               className="hero-banner-img"
             />
             <div className="hero-overlay"></div>
@@ -364,8 +369,12 @@ export default function NomorDaruratContent() {
         <section className="banner-bottom-section" aria-label="Banner Pemandangan">
           <div className="banner-bottom-wrapper">
             <img
-              src="/assets/images/nomor_darurat_umum/banner_bawah.png"
+              src="/assets/images/beranda/banner_bawah.webp"
               alt="Pemandangan pegunungan berkabut"
+              width={1440}
+              height={233}
+              loading="lazy"
+              decoding="async"
               className="banner-bottom-img"
             />
           </div>

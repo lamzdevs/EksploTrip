@@ -1,8 +1,14 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import Image from 'next/image';
 import { Destination } from '@/types/destination';
-import { formatBogorLocation, formatKondisiTag } from '@/lib/destinations';
+import {
+  formatBogorLocation,
+  formatKondisiTag,
+  normalizeAssetUrl,
+} from '@/lib/destinationUtils';
+import BrandIcon from '@/components/BrandIcon';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -22,27 +28,68 @@ interface VisualCardData {
   desc?: string;
 }
 
+function LazyVideoThumb({ src }: { src: string }) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') {
+      setInView(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '220px' }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={containerRef} style={{ width: '100%', height: '100%' }}>
+      {inView && (
+        <video
+          src={src}
+          className="visual-card-thumb"
+          muted
+          playsInline
+          preload="metadata"
+          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+        />
+      )}
+    </div>
+  );
+}
+
+const DEFAULT_THUMB = '/assets/images/detail_visual/list_visual.webp';
+
 const DEFAULT_20_VISUAL_SLOTS: VisualCardData[] = [
-  { id: 1, type: 'photo', cat: 'alam', title: 'Slot Visual #1 - Spot Utama Alam (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 2, type: 'video', cat: 'alam', title: 'Slot Video #2 - Panorama Suasana Utama (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 3, type: 'photo', cat: 'alam', title: 'Slot Visual #3 - Kondisi Lingkungan Sekitar (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 4, type: 'video', cat: 'alam', title: 'Slot Video #4 - Dokumentasi Kondisi Alam (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 5, type: 'photo', cat: 'alam', title: 'Slot Visual #5 - Sudut Pandang Area Wisata (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 6, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #6 - Area Istirahat Pengunjung (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 7, type: 'video', cat: 'aktivitas', title: 'Slot Video #7 - Aktivitas Wisatawan (Menunggu Survei)', badgeText: 'Placeholder Aktivitas', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 8, type: 'photo', cat: 'alam', title: 'Slot Visual #8 - Kondisi Pagi Hari (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 9, type: 'video', cat: 'alam', title: 'Slot Video #9 - Suasana Hutan & Jalur (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 10, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #10 - Plang Petunjuk & Keselamatan (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 11, type: 'photo', cat: 'alam', title: 'Slot Visual #11 - Pepohonan Sekitar Kawasan (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 12, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #12 - Fasilitas Pendukung (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 13, type: 'photo', cat: 'alam', title: 'Slot Visual #13 - Lanskap Utama Destinasi (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 14, type: 'photo', cat: 'aktivitas', title: 'Slot Visual #14 - Jalur Trekking Menuju Lokasi (Menunggu Survei)', badgeText: 'Placeholder Aktivitas', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 15, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #15 - Gazebo & Warung Sekitar (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 16, type: 'video', cat: 'alam', title: 'Slot Video #16 - Lanskap Kawasan Wisata (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 17, type: 'video', cat: 'aktivitas', title: 'Slot Video #17 - Panduan Jalur Lapangan (Menunggu Survei)', badgeText: 'Placeholder Aktivitas', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 18, type: 'photo', cat: 'alam', title: 'Slot Visual #18 - Kondisi Alam Pegunungan (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 19, type: 'video', cat: 'alam', title: 'Slot Video #19 - Eksplorasi Jalur Wisata (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: '/assets/images/detail_visual/list_visual.png' },
-  { id: 20, type: 'photo', cat: 'lainnya', title: 'Slot Visual #20 - Area Parkir & Pintu Masuk (Menunggu Survei)', badgeText: 'Placeholder Lainnya', thumb: '/assets/images/detail_visual/list_visual.png' },
+  { id: 1, type: 'photo', cat: 'alam', title: 'Slot Visual #1 - Spot Utama Alam (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 2, type: 'video', cat: 'alam', title: 'Slot Video #2 - Panorama Suasana Utama (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 3, type: 'photo', cat: 'alam', title: 'Slot Visual #3 - Kondisi Lingkungan Sekitar (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 4, type: 'video', cat: 'alam', title: 'Slot Video #4 - Dokumentasi Kondisi Alam (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 5, type: 'photo', cat: 'alam', title: 'Slot Visual #5 - Sudut Pandang Area Wisata (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 6, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #6 - Area Istirahat Pengunjung (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: DEFAULT_THUMB },
+  { id: 7, type: 'video', cat: 'aktivitas', title: 'Slot Video #7 - Aktivitas Wisatawan (Menunggu Survei)', badgeText: 'Placeholder Aktivitas', thumb: DEFAULT_THUMB },
+  { id: 8, type: 'photo', cat: 'alam', title: 'Slot Visual #8 - Kondisi Pagi Hari (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 9, type: 'video', cat: 'alam', title: 'Slot Video #9 - Suasana Hutan & Jalur (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 10, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #10 - Plang Petunjuk & Keselamatan (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: DEFAULT_THUMB },
+  { id: 11, type: 'photo', cat: 'alam', title: 'Slot Visual #11 - Pepohonan Sekitar Kawasan (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 12, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #12 - Fasilitas Pendukung (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: DEFAULT_THUMB },
+  { id: 13, type: 'photo', cat: 'alam', title: 'Slot Visual #13 - Lanskap Utama Destinasi (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 14, type: 'photo', cat: 'aktivitas', title: 'Slot Visual #14 - Jalur Trekking Menuju Lokasi (Menunggu Survei)', badgeText: 'Placeholder Aktivitas', thumb: DEFAULT_THUMB },
+  { id: 15, type: 'photo', cat: 'fasilitas', title: 'Slot Visual #15 - Gazebo & Warung Sekitar (Menunggu Survei)', badgeText: 'Placeholder Fasilitas', thumb: DEFAULT_THUMB },
+  { id: 16, type: 'video', cat: 'alam', title: 'Slot Video #16 - Lanskap Kawasan Wisata (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 17, type: 'video', cat: 'aktivitas', title: 'Slot Video #17 - Panduan Jalur Lapangan (Menunggu Survei)', badgeText: 'Placeholder Aktivitas', thumb: DEFAULT_THUMB },
+  { id: 18, type: 'photo', cat: 'alam', title: 'Slot Visual #18 - Kondisi Alam Pegunungan (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 19, type: 'video', cat: 'alam', title: 'Slot Video #19 - Eksplorasi Jalur Wisata (Menunggu Survei)', badgeText: 'Placeholder Alam', thumb: DEFAULT_THUMB },
+  { id: 20, type: 'photo', cat: 'lainnya', title: 'Slot Visual #20 - Area Parkir & Pintu Masuk (Menunggu Survei)', badgeText: 'Placeholder Lainnya', thumb: DEFAULT_THUMB },
 ];
 
 export default function DetailVisualContent({
@@ -109,6 +156,9 @@ export default function DetailVisualContent({
           cat = 'alam';
         }
 
+        const normalizedThumb =
+          normalizeAssetUrl(item.url_gambar) || DEFAULT_THUMB;
+
         return {
           id: item.id || idx + 1,
           type: item.tipe_media === 'video' ? 'video' : 'photo',
@@ -119,7 +169,7 @@ export default function DetailVisualContent({
             item.badge_status ||
             item.kategori_label ||
             (item.tipe_media === 'video' ? 'Video Dokumentasi' : 'Foto Survei'),
-          thumb: item.url_gambar,
+          thumb: normalizedThumb,
           videoUrl:
             item.url_video ||
             (item.tipe_media === 'video' ? item.url_gambar : undefined),
@@ -167,13 +217,17 @@ export default function DetailVisualContent({
           aria-label={`Informasi Utama ${destination.nama_wisata}`}
         >
           <div className="hero-detail-bg">
-            <img
+            <Image
               src={
-                destination.foto_banner ||
-                '/assets/visual/curug_cibulao/banner_curug_cibulao.png'
+                normalizeAssetUrl(destination.foto_banner) ||
+                '/assets/visual/curug_cibulao/banner_curug_cibulao.webp'
               }
               alt={destination.nama_wisata}
+              fill
+              priority
+              sizes="100vw"
               className="hero-detail-img"
+              style={{ objectFit: 'cover' }}
             />
             <div className="hero-detail-overlay"></div>
           </div>
@@ -262,7 +316,7 @@ export default function DetailVisualContent({
                 title={`Kunjungi Instagram ${destination.akun_instagram || '@eksplotrip'}`}
                 aria-label={`Instagram ${destination.akun_instagram || '@eksplotrip'}`}
               >
-                <i className="fa-brands fa-instagram"></i>
+                <BrandIcon name="instagram" className="fa-instagram" />
                 <span>{destination.akun_instagram || '@eksplotrip'}</span>
               </a>
             </div>
@@ -360,7 +414,7 @@ export default function DetailVisualContent({
 
             {/* Visual Items Grid */}
             <div className="visual-grid-container" id="visual-grid-container">
-              {paginatedItems.map((item) => (
+              {paginatedItems.map((item, idx) => (
                 <article
                   key={item.id}
                   className="visual-item-card"
@@ -376,21 +430,17 @@ export default function DetailVisualContent({
                     }
                   }}
                 >
-                  {item.type === 'video' ? (
-                    <video
-                      src={item.videoUrl || item.thumb}
-                      className="visual-card-thumb"
-                      muted
-                      playsInline
-                      preload="metadata"
-                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                    />
+                  {item.type === 'video' && item.videoUrl ? (
+                    <LazyVideoThumb src={item.videoUrl} />
                   ) : (
                     <img
                       src={item.thumb}
                       alt={item.title}
+                      width={340}
+                      height={255}
                       className="visual-card-thumb"
-                      loading="lazy"
+                      loading={idx < 4 ? 'eager' : 'lazy'}
+                      decoding="async"
                     />
                   )}
                   {item.type === 'video' && (
@@ -479,8 +529,12 @@ export default function DetailVisualContent({
         {/* 3. Banner Bawah Section */}
         <section className="bottom-banner-section" aria-label="Banner Pemandangan">
           <img
-            src="/assets/images/detail_visual/banner_bawah.png"
+            src="/assets/images/beranda/banner_bawah.webp"
             alt="Pemandangan pegunungan dan hutan pinus Bogor"
+            width={1440}
+            height={260}
+            loading="lazy"
+            decoding="async"
             className="bottom-banner-img"
           />
         </section>
@@ -492,9 +546,11 @@ export default function DetailVisualContent({
       <div
         className={`lightbox-modal ${lightboxItem ? 'active' : ''}`}
         id="lightbox-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="lightbox-title"
+        role={lightboxItem ? 'dialog' : undefined}
+        aria-modal={lightboxItem ? 'true' : undefined}
+        aria-labelledby={lightboxItem ? 'lightbox-title' : undefined}
+        aria-hidden={!lightboxItem}
+        inert={!lightboxItem ? true : undefined}
         onClick={() => setLightboxItem(null)}
       >
         {lightboxItem && (
@@ -531,9 +587,9 @@ export default function DetailVisualContent({
             </div>
 
             <div className="lightbox-media-wrapper">
-              {lightboxItem.type === 'video' ? (
+              {lightboxItem.type === 'video' && lightboxItem.videoUrl ? (
                 <video
-                  src={lightboxItem.videoUrl || lightboxItem.thumb}
+                  src={lightboxItem.videoUrl}
                   controls
                   autoPlay
                   muted

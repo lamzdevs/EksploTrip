@@ -1,13 +1,16 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Destination } from '@/types/destination';
 import {
   formatBogorLocation,
   formatKondisiTag,
   getLiveCrowdStatus,
-} from '@/lib/destinations';
+  normalizeAssetUrl,
+} from '@/lib/destinationUtils';
+import BrandIcon from '@/components/BrandIcon';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -134,8 +137,8 @@ export default function DetailKatalogContent({
         ? 'Kondisi fisik jalan dan kelayakan akses kendaraan menuju lokasi telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/menuju%20gapura%20trekking.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/menuju%20gapura%20trekking.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Area Parkir',
@@ -143,8 +146,8 @@ export default function DetailKatalogContent({
         ? 'Area parkir kendaraan telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Fasilitas Sekitar',
@@ -152,8 +155,8 @@ export default function DetailKatalogContent({
         ? 'Ketersediaan fasilitas umum telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/ruang%20medis%20basecamp.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/ruang%20medis%20basecamp.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Jalur Trekking',
@@ -161,8 +164,8 @@ export default function DetailKatalogContent({
         ? 'Kondisi fisik jalur trekking telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/trek%20anak%20tangga.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/trek%20anak%20tangga.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Kondisi Spot Utama',
@@ -170,8 +173,8 @@ export default function DetailKatalogContent({
         ? 'Kondisi spot utama wisata telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20camp.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20camp.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Toilet & Kamar Bilas',
@@ -179,8 +182,8 @@ export default function DetailKatalogContent({
         ? 'Kondisi sanitasi dan kamar bilas telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/toilet%20di%20musholla.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/toilet%20di%20musholla.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Mushola & Ibadah',
@@ -188,8 +191,8 @@ export default function DetailKatalogContent({
         ? 'Kondisi mushola dan fasilitas ibadah telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/mushola%20panggung%20kayu%20area%20camp.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/mushola%20panggung%20kayu%20area%20camp.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Warung & Logistik',
@@ -197,8 +200,8 @@ export default function DetailKatalogContent({
         ? 'Ketersediaan warung makan dan logistik telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20basecamp.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20basecamp.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
       title: 'Spot Foto & Panorama',
@@ -206,8 +209,8 @@ export default function DetailKatalogContent({
         ? 'Kondisi spot foto dan panorama alam telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/spot%20foto%20bunga.jpg'
-        : '/assets/images/detail_katalog/list_visual_katalog.png',
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/spot%20foto%20bunga.webp'
+        : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
   ];
 
@@ -223,13 +226,17 @@ export default function DetailKatalogContent({
         {/* 1. Hero Banner Section */}
         <section className="hero-detail-section">
           <div className="hero-detail-bg">
-            <img
+            <Image
               src={
-                destination.foto_banner ||
-                '/assets/visual/curug_cibulao/banner_curug_cibulao.png'
+                normalizeAssetUrl(destination.foto_banner) ||
+                '/assets/visual/curug_cibulao/banner_curug_cibulao.webp'
               }
               alt={`${destination.nama_wisata} ${shortKecamatan}`}
+              fill
+              priority
+              sizes="100vw"
               className="hero-detail-img"
+              style={{ objectFit: 'cover' }}
             />
             <div className="hero-detail-overlay"></div>
           </div>
@@ -325,7 +332,7 @@ export default function DetailKatalogContent({
                 title={`Kunjungi Instagram ${destination.akun_instagram || '@eksplotrip'}`}
                 aria-label={`Instagram ${destination.akun_instagram || '@eksplotrip'}`}
               >
-                <i className="fa-brands fa-instagram"></i>
+                <BrandIcon name="instagram" className="fa-instagram" />
                 <span>{destination.akun_instagram || '@eksplotrip'}</span>
               </a>
             </div>
@@ -721,6 +728,7 @@ export default function DetailKatalogContent({
                     effectiveFrom ? `?from=${effectiveFrom}` : ''
                   }`}
                   className="btn-see-all-visual"
+                  prefetch={false}
                 >
                   <span>Lihat Semua Visual</span>
                   <span className="material-symbols-outlined">
@@ -737,13 +745,17 @@ export default function DetailKatalogContent({
                       effectiveFrom ? `?from=${effectiveFrom}` : ''
                     }`}
                     className="visual-card-item"
+                    prefetch={false}
                     style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
                   >
                     <div className="visual-thumb-wrapper">
-                      <img
-                        src={item.thumb || '/assets/images/detail_katalog/list_visual_katalog.png'}
+                      <Image
+                        src={normalizeAssetUrl(item.thumb) || '/assets/images/detail_katalog/list_visual_katalog.webp'}
                         alt={`${item.title} ${destination.nama_wisata}`}
+                        fill
+                        sizes="(max-width: 768px) 50vw, 220px"
                         className="visual-thumb-img"
+                        style={{ objectFit: 'cover' }}
                       />
                     </div>
                     <div className="visual-item-info">
@@ -800,14 +812,12 @@ export default function DetailKatalogContent({
                       )}&t=k&z=14&ie=UTF8&iwloc=B&output=embed`;
 
                   return (
-                    <iframe
+                    <LazyMapIframe
                       src={mapSrc}
                       className={`google-maps-iframe ${
                         isMyMaps ? 'is-mymaps' : ''
                       }`}
                       title={`Peta Rute & Jalur ${destination.nama_wisata}`}
-                      loading="lazy"
-                      allowFullScreen
                     />
                   );
                 })()}
@@ -1048,7 +1058,7 @@ export default function DetailKatalogContent({
               <div className="contact-card-item">
                 <div className="contact-header-row">
                   <div className="contact-icon-circle green">
-                    <i className="fa-brands fa-whatsapp"></i>
+                    <BrandIcon name="whatsapp" />
                   </div>
                   <div>
                     <h3 className="contact-info-title">
@@ -1190,14 +1200,92 @@ export default function DetailKatalogContent({
         {/* 6. Banner Bawah */}
         <section className="bottom-banner-section" aria-label="Banner Pemandangan">
           <img
-            src="/assets/images/detail_katalog/banner_bawah.png"
+            src="/assets/images/beranda/banner_bawah.webp"
             alt="Pemandangan pegunungan dan hutan pinus Bogor"
+            width={1440}
+            height={260}
+            loading="lazy"
+            decoding="async"
             className="bottom-banner-img"
           />
         </section>
       </main>
 
       <Footer />
+    </div>
+  );
+}
+
+function LazyMapIframe({
+  src,
+  className,
+  title,
+}: {
+  src: string;
+  className: string;
+  title: string;
+}) {
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0]?.isIntersecting) {
+            setShouldLoad(true);
+            observer.disconnect();
+          }
+        },
+        { rootMargin: '200px' }
+      );
+      observer.observe(el);
+      return () => observer.disconnect();
+    } else {
+      setShouldLoad(true);
+    }
+  }, []);
+
+  return (
+    <div
+      ref={containerRef}
+      style={{ width: '100%', height: '100%', position: 'relative' }}
+    >
+      {shouldLoad ? (
+        <iframe
+          src={src}
+          className={className}
+          title={title}
+          loading="lazy"
+          allowFullScreen
+        />
+      ) : (
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'var(--color-bg-light, #f0fdf4)',
+            color: 'var(--color-text-muted, #64748b)',
+            fontSize: '0.875rem',
+            gap: '8px',
+          }}
+        >
+          <span
+            className="material-symbols-outlined"
+            style={{ fontSize: '32px', color: '#16a34a' }}
+          >
+            map
+          </span>
+          <span>Memuat Peta Interaktif...</span>
+        </div>
+      )}
     </div>
   );
 }

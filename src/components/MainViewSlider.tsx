@@ -41,6 +41,11 @@ export default function MainViewSlider({
   errorMessage,
 }: MainViewSliderProps) {
   const [currentTab, setCurrentTab] = useState<MainTabKey>(initialTab);
+  const [mountedTabs, setMountedTabs] = useState<Record<MainTabKey, boolean>>({
+    beranda: initialTab === 'beranda',
+    eksplorasi: initialTab === 'eksplorasi',
+    bantuan: initialTab === 'bantuan',
+  });
   const [isSliding, setIsSliding] = useState<boolean>(false);
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const slideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -54,6 +59,10 @@ export default function MainViewSlider({
     };
   }, []);
 
+  const ensureTabMounted = useCallback((tab: MainTabKey) => {
+    setMountedTabs((prev) => (prev[tab] ? prev : { ...prev, [tab]: true }));
+  }, []);
+
   const handleSlideTo = useCallback(
     (targetTab: MainTabKey, updateHistory: boolean = true) => {
       if (targetTab === currentTab) return;
@@ -62,7 +71,9 @@ export default function MainViewSlider({
         clearTimeout(slideTimeoutRef.current);
       }
 
-      // Expand views during sliding so content doesn't clip
+      setMountedTabs((prev) =>
+        prev[targetTab] ? prev : { ...prev, [targetTab]: true }
+      );
       setIsSliding(true);
       setCurrentTab(targetTab);
 
@@ -88,7 +99,6 @@ export default function MainViewSlider({
     [currentTab]
   );
 
-  // Synchronize browser history (Back / Forward buttons)
   useEffect(() => {
     const handlePopState = () => {
       const path = window.location.pathname;
@@ -108,26 +118,32 @@ export default function MainViewSlider({
     return () => window.removeEventListener('popstate', handlePopState);
   }, [handleSlideTo]);
 
-  // Intercept in-page links to primary tabs (e.g. CTA buttons, footer links, section links)
-  const handleContainerClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    const targetLink = (e.target as HTMLElement).closest('a');
-    if (!targetLink) return;
-
+  const resolveLinkTab = (target: EventTarget | null): MainTabKey | null => {
+    if (!(target instanceof HTMLElement)) return null;
+    const targetLink = target.closest('a');
+    if (!targetLink) return null;
     const href = targetLink.getAttribute('href');
-    if (!href) return;
+    if (!href) return null;
+    if (href === '/' || href === '/beranda.html') return 'beranda';
+    if (href === '/eksplorasi' || href === '/eksplorasi_destinasi.html') {
+      return 'eksplorasi';
+    }
+    if (href === '/bantuan-darurat' || href === '/bantuan_darurat.html') {
+      return 'bantuan';
+    }
+    return null;
+  };
 
-    if (href === '/' || href === '/beranda.html') {
+  const handleContainerHover = (e: React.SyntheticEvent<HTMLDivElement>) => {
+    const tab = resolveLinkTab(e.target);
+    if (tab) ensureTabMounted(tab);
+  };
+
+  const handleContainerClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const tab = resolveLinkTab(e.target);
+    if (tab) {
       e.preventDefault();
-      handleSlideTo('beranda');
-    } else if (href === '/eksplorasi' || href === '/eksplorasi_destinasi.html') {
-      e.preventDefault();
-      handleSlideTo('eksplorasi');
-    } else if (
-      href === '/bantuan-darurat' ||
-      href === '/bantuan_darurat.html'
-    ) {
-      e.preventDefault();
-      handleSlideTo('bantuan');
+      handleSlideTo(tab);
     }
   };
 
@@ -137,12 +153,15 @@ export default function MainViewSlider({
         variant="main"
         activeMainTab={currentTab}
         onTabChange={(tab) => handleSlideTo(tab)}
+        onTabPreload={ensureTabMounted}
       />
 
       <div
         className="page-slider-viewport"
         id="slider-viewport"
         onClick={handleContainerClick}
+        onMouseOver={handleContainerHover}
+        onFocusCapture={handleContainerHover}
       >
         <div
           className="page-slider-track"
@@ -161,8 +180,11 @@ export default function MainViewSlider({
             } ${!isSliding && currentTab !== 'beranda' ? 'collapsed-view' : ''}`}
             id="view-beranda"
             aria-hidden={currentTab !== 'beranda'}
+            inert={currentTab !== 'beranda' ? true : undefined}
           >
-            <BerandaContent destinations={destinations} source={source} />
+            {mountedTabs.beranda && (
+              <BerandaContent destinations={destinations} source={source} />
+            )}
           </div>
 
           {/* View 2: Eksplorasi Destinasi */}
@@ -174,12 +196,15 @@ export default function MainViewSlider({
             }`}
             id="view-eksplorasi"
             aria-hidden={currentTab !== 'eksplorasi'}
+            inert={currentTab !== 'eksplorasi' ? true : undefined}
           >
-            <EksplorasiContent
-              destinations={destinations}
-              source={source}
-              errorMessage={errorMessage}
-            />
+            {mountedTabs.eksplorasi && (
+              <EksplorasiContent
+                destinations={destinations}
+                source={source}
+                errorMessage={errorMessage}
+              />
+            )}
           </div>
 
           {/* View 3: Bantuan Darurat */}
@@ -189,8 +214,9 @@ export default function MainViewSlider({
             } ${!isSliding && currentTab !== 'bantuan' ? 'collapsed-view' : ''}`}
             id="view-bantuan"
             aria-hidden={currentTab !== 'bantuan'}
+            inert={currentTab !== 'bantuan' ? true : undefined}
           >
-            <BantuanDaruratContent />
+            {mountedTabs.bantuan && <BantuanDaruratContent />}
           </div>
         </div>
       </div>

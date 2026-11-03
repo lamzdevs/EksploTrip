@@ -94,8 +94,13 @@ export default function HubungiTimKamiContent() {
         <section className="hero-section" aria-label="Banner Bantuan Darurat">
           <div className="hero-bg-wrapper">
             <img
-              src="/assets/images/bantuan_darurat/banner_atas.png"
+              src="/assets/images/beranda/banner_atas.webp"
               alt="Pemandangan danau dan bukit pegunungan Bogor"
+              width={1440}
+              height={280}
+              fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               className="hero-banner-img"
             />
             <div className="hero-overlay"></div>

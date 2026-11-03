@@ -4,9 +4,18 @@ import { notFound } from 'next/navigation';
 import DetailKatalogContent from '@/components/DetailKatalogContent';
 import { getDestinationBySlug } from '@/lib/destinations';
 
+export const revalidate = 60;
+
+export async function generateStaticParams() {
+  return [
+    { slug: 'curug-cibulao' },
+    { slug: 'situ-tamansari' },
+    { slug: 'gunung-luhur-sukamakmur' },
+  ];
+}
+
 interface DestinationDetailPageProps {
   params: Promise<{ slug: string }>;
-  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateMetadata({
@@ -31,22 +40,13 @@ export async function generateMetadata({
 
 export default async function DestinationDetailPage({
   params,
-  searchParams,
 }: DestinationDetailPageProps) {
   const { slug } = await params;
-  const sp = searchParams ? await searchParams : {};
-  const fromOrigin = typeof sp.from === 'string' ? sp.from : undefined;
-
   const { destination } = await getDestinationBySlug(slug);
 
   if (!destination) {
     notFound();
   }
 
-  return (
-    <DetailKatalogContent
-      destination={destination}
-      fromOrigin={fromOrigin}
-    />
-  );
+  return <DetailKatalogContent destination={destination} />;
 }

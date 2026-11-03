@@ -1,12 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Destination } from '@/types/destination';
 import {
   DestinationCard,
   PlaceholderSlotCard,
 } from '@/components/DestinationCard';
-import { filterDestinationsList } from '@/lib/destinations';
+import { filterDestinationsList } from '@/lib/destinationUtils';
 import Footer from '@/components/Footer';
 
 interface EksplorasiContentProps {
@@ -104,10 +105,14 @@ export default function EksplorasiContent({
         {/* Hero Banner */}
         <section className="hero-section">
           <div className="hero-bg-wrapper">
-            <img
-              src="/assets/images/eksplorasi_destinasi/banner_atas.png"
+            <Image
+              src="/assets/images/beranda/banner_atas.webp"
               alt="Pemandangan danau dan gunung di Bogor"
+              fill
+              priority
+              sizes="100vw"
               className="hero-banner-img"
+              style={{ objectFit: 'cover' }}
             />
             <div className="hero-overlay"></div>
           </div>
@@ -436,8 +441,12 @@ export default function EksplorasiContent({
         <section className="banner-bottom-section">
           <div className="banner-bottom-wrapper">
             <img
-              src="/assets/images/eksplorasi_destinasi/banner_bawah.png"
+              src="/assets/images/beranda/banner_bawah.webp"
               alt="Pemandangan pegunungan berkabut"
+              width={1440}
+              height={233}
+              loading="lazy"
+              decoding="async"
               className="banner-bottom-img"
             />
           </div>

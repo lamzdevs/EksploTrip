@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Destination } from '@/types/destination';
 import {
   DestinationCard,
@@ -36,10 +37,14 @@ export default function BerandaContent({
         {/* Hero Banner */}
         <section className="hero-section">
           <div className="hero-bg-wrapper">
-            <img
-              src="/assets/images/beranda/banner_atas.png"
+            <Image
+              src="/assets/images/beranda/banner_atas.webp"
               alt="Pemandangan danau dan gunung di Bogor"
+              fill
+              priority
+              sizes="100vw"
               className="hero-banner-img"
+              style={{ objectFit: 'cover' }}
             />
             <div className="hero-overlay"></div>
           </div>
@@ -82,7 +87,7 @@ export default function BerandaContent({
                 informasi lengkap dan terverifikasi.
               </p>
             </div>
-            <Link href="/eksplorasi" className="destinations-view-all">
+            <Link href="/eksplorasi" className="destinations-view-all" prefetch={false}>
               <span>Lihat Semua Destinasi</span>
               <span className="material-symbols-outlined">arrow_forward</span>
             </Link>
@@ -180,8 +185,12 @@ export default function BerandaContent({
           </div>
           <div className="cta-banner-wrapper">
             <img
-              src="/assets/images/beranda/banner_bawah.png"
+              src="/assets/images/beranda/banner_bawah.webp"
               alt="Pemandangan pegunungan berkabut"
+              width={1440}
+              height={233}
+              loading="lazy"
+              decoding="async"
               className="cta-banner-img"
             />
           </div>

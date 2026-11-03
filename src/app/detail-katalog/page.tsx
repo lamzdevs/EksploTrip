@@ -30,7 +30,6 @@ export default async function DetailKatalogPage({
   return (
     <DetailKatalogContent
       destination={selected}
-      allDestinations={destinations}
       fromOrigin={from}
     />
   );

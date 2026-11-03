@@ -72,8 +72,12 @@ export default function SearchContent({
           >
             <div className="error-illustration-wrap">
               <img
-                src="/assets/images/search_error/tidak_ditemukan.png"
+                src="/assets/images/search_error/tidak_ditemukan.webp"
                 alt="Ilustrasi papan penunjuk dengan tanda tanya"
+                width={455}
+                height={249}
+                fetchPriority="high"
+                decoding="sync"
                 className="error-illustration-img"
               />
             </div>
@@ -149,8 +153,12 @@ export default function SearchContent({
           >
             <div className="banner-bottom-wrapper">
               <img
-                src="/assets/images/search_error/banner_bawah.png"
+                src="/assets/images/beranda/banner_bawah.webp"
                 alt="Pemandangan pegunungan berkabut"
+                width={1440}
+                height={233}
+                loading="lazy"
+                decoding="async"
                 className="banner-bottom-img"
               />
             </div>
@@ -207,8 +215,12 @@ export default function SearchContent({
         >
           <div className="banner-bottom-wrapper">
             <img
-              src="/assets/images/search_succes/banner_bawah.png"
+              src="/assets/images/beranda/banner_bawah.webp"
               alt="Pemandangan pegunungan berkabut"
+              width={1440}
+              height={233}
+              loading="lazy"
+              decoding="async"
               className="banner-bottom-img"
             />
           </div>

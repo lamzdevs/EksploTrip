@@ -1,7 +1,11 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import SearchContent from '@/components/SearchContent';
-import { filterDestinationsList, getDestinations } from '@/lib/destinations';
+import {
+  filterDestinationsList,
+  getDestinations,
+  toCardDestination,
+} from '@/lib/destinations';
 
 export const metadata: Metadata = {
   title: 'Hasil Pencarian Destinasi - EksploTrip',
@@ -19,11 +23,13 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   const trimmedQuery = q.trim();
   const forceError = status === 'error';
 
-  const matchingResults = forceError
-    ? []
-    : trimmedQuery
-    ? filterDestinationsList(destinations, { query: trimmedQuery })
-    : destinations;
+  const matchingResults = (
+    forceError
+      ? []
+      : trimmedQuery
+      ? filterDestinationsList(destinations, { query: trimmedQuery })
+      : destinations
+  ).map(toCardDestination);
 
   const resolvedFrom: 'beranda' | 'eksplorasi' =
     from === 'beranda' ? 'beranda' : 'eksplorasi';

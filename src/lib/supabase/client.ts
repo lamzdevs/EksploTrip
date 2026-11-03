@@ -40,6 +40,13 @@ export function getSupabaseClient(): SupabaseClient | null {
         persistSession: false,
         autoRefreshToken: false,
       },
+      global: {
+        fetch: (input, init) =>
+          fetch(input, {
+            ...init,
+            signal: init?.signal ?? AbortSignal.timeout(4000),
+          }),
+      },
     });
   }
 

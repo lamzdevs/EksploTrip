@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import BrandIcon from '@/components/BrandIcon';
 
 type SupportDocKey = 'privasi' | 'syarat' | null;
 
@@ -30,8 +31,12 @@ export default function Footer() {
             <div className="footer-col footer-col-brand">
               <Link href="/" aria-label="EksploTrip Beranda">
                 <img
-                  src="/assets/images/detail_katalog/logo_eksplotrip_footer.png"
+                  src="/assets/images/detail_katalog/logo_eksplotrip_footer.webp"
                   alt="EksploTrip Logo"
+                  width={130}
+                  height={65}
+                  loading="lazy"
+                  decoding="async"
                   className="footer-logo"
                 />
               </Link>
@@ -48,7 +53,7 @@ export default function Footer() {
                 className="footer-col footer-col-links"
                 aria-label="Navigasi Eksplorasi"
               >
-                <h4 className="footer-col-title">Eksplorasi</h4>
+                <h3 className="footer-col-title">Eksplorasi</h3>
                 <ul className="footer-links">
                   <li>
                     <Link href="/">Beranda</Link>
@@ -66,7 +71,7 @@ export default function Footer() {
                 className="footer-col footer-col-links"
                 aria-label="Navigasi Dukungan"
               >
-                <h4 className="footer-col-title">Dukungan</h4>
+                <h3 className="footer-col-title">Dukungan</h3>
                 <ul className="footer-links">
                   <li>
                     <Link href="/bantuan-darurat">Pusat Bantuan</Link>
@@ -94,7 +99,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-col footer-col-social">
-              <h4 className="footer-col-title">Tetap Terhubung</h4>
+              <h3 className="footer-col-title">Tetap Terhubung</h3>
               <p className="footer-social-desc">
                 Temukan berbagai informasi dan rekomendasi destinasi wisata alam
                 untuk membantu merencanakan perjalanan yang aman dan
@@ -109,7 +114,7 @@ export default function Footer() {
                     className="social-icon-btn"
                     aria-label="Instagram EksploTrip"
                   >
-                    <i className="fa-brands fa-instagram"></i>
+                    <BrandIcon name="instagram" />
                   </a>
                 </li>
                 <li>
@@ -120,7 +125,7 @@ export default function Footer() {
                     className="social-icon-btn"
                     aria-label="TikTok EksploTrip"
                   >
-                    <i className="fa-brands fa-tiktok"></i>
+                    <BrandIcon name="tiktok" />
                   </a>
                 </li>
                 <li>
@@ -131,7 +136,7 @@ export default function Footer() {
                     className="social-icon-btn"
                     aria-label="X (Twitter) EksploTrip"
                   >
-                    <i className="fa-brands fa-x-twitter"></i>
+                    <BrandIcon name="x-twitter" />
                   </a>
                 </li>
               </ul>
@@ -153,13 +158,14 @@ export default function Footer() {
           onClick={() => setActiveDoc(null)}
           role="dialog"
           aria-modal="true"
+          aria-labelledby="support-doc-modal-title"
         >
           <div
             className="eksplo-modal-box"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="eksplo-modal-header">
-              <h3>
+              <h3 id="support-doc-modal-title">
                 <span className="material-symbols-outlined">info</span>
                 {SUPPORT_DOCS[activeDoc].title}
               </h3>
