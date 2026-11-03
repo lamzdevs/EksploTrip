@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import Image from 'next/image';
 import { Destination } from '@/types/destination';
 import {
   formatBogorLocation,
@@ -217,17 +216,18 @@ export default function DetailVisualContent({
           aria-label={`Informasi Utama ${destination.nama_wisata}`}
         >
           <div className="hero-detail-bg">
-            <Image
+            <img
               src={
                 normalizeAssetUrl(destination.foto_banner) ||
                 '/assets/visual/curug_cibulao/banner_curug_cibulao.webp'
               }
               alt={destination.nama_wisata}
-              fill
-              priority
-              sizes="100vw"
+              width={1440}
+              height={360}
+              fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               className="hero-detail-img"
-              style={{ objectFit: 'cover' }}
             />
             <div className="hero-detail-overlay"></div>
           </div>

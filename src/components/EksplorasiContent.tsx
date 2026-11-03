@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { Destination } from '@/types/destination';
 import {
   DestinationCard,
@@ -105,14 +104,15 @@ export default function EksplorasiContent({
         {/* Hero Banner */}
         <section className="hero-section">
           <div className="hero-bg-wrapper">
-            <Image
+            <img
               src="/assets/images/beranda/banner_atas.webp"
               alt="Pemandangan danau dan gunung di Bogor"
-              fill
-              priority
-              sizes="100vw"
+              width={1440}
+              height={280}
+              fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               className="hero-banner-img"
-              style={{ objectFit: 'cover' }}
             />
             <div className="hero-overlay"></div>
           </div>

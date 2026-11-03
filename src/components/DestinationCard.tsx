@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Destination } from '@/types/destination';
 import {
   formatBogorLocation,
@@ -60,15 +59,15 @@ export function DestinationCard({
           <span className="material-symbols-outlined">{badgeIcon}</span>
           <span>{badgeLabel}</span>
         </span>
-        <Image
+        <img
           src={imgSrc}
           alt={destination.nama_wisata}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 410px"
-          loading={priority ? undefined : 'lazy'}
-          priority={priority}
+          width={407}
+          height={265}
+          loading={priority ? 'eager' : 'lazy'}
+          decoding={priority ? 'sync' : 'async'}
+          fetchPriority={priority ? 'high' : undefined}
           className="card-img"
-          style={{ objectFit: 'cover' }}
           onError={() => setImgSrc(FALLBACK_CARD_IMG)}
         />
       </div>
@@ -155,14 +154,14 @@ export function PlaceholderSlotCard({
           <span className="material-symbols-outlined">{badgeIcon}</span>
           <span>{badgeLabel}</span>
         </span>
-        <Image
+        <img
           src={FALLBACK_CARD_IMG}
           alt="Slot Data Survei Belum Tersedia"
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 410px"
+          width={407}
+          height={265}
           loading="lazy"
+          decoding="async"
           className="card-img"
-          style={{ objectFit: 'cover' }}
         />
       </div>
       <div className="card-body">

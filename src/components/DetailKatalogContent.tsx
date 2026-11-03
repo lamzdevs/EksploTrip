@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Destination } from '@/types/destination';
 import {
   formatBogorLocation,
@@ -226,17 +225,18 @@ export default function DetailKatalogContent({
         {/* 1. Hero Banner Section */}
         <section className="hero-detail-section">
           <div className="hero-detail-bg">
-            <Image
+            <img
               src={
                 normalizeAssetUrl(destination.foto_banner) ||
                 '/assets/visual/curug_cibulao/banner_curug_cibulao.webp'
               }
               alt={`${destination.nama_wisata} ${shortKecamatan}`}
-              fill
-              priority
-              sizes="100vw"
+              width={1440}
+              height={360}
+              fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               className="hero-detail-img"
-              style={{ objectFit: 'cover' }}
             />
             <div className="hero-detail-overlay"></div>
           </div>
@@ -749,13 +749,14 @@ export default function DetailKatalogContent({
                     style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
                   >
                     <div className="visual-thumb-wrapper">
-                      <Image
+                      <img
                         src={normalizeAssetUrl(item.thumb) || '/assets/images/detail_katalog/list_visual_katalog.webp'}
                         alt={`${item.title} ${destination.nama_wisata}`}
-                        fill
-                        sizes="(max-width: 768px) 50vw, 220px"
+                        width={199}
+                        height={110}
+                        loading="lazy"
+                        decoding="async"
                         className="visual-thumb-img"
-                        style={{ objectFit: 'cover' }}
                       />
                     </div>
                     <div className="visual-item-info">
