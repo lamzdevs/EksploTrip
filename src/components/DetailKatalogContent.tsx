@@ -136,7 +136,7 @@ export default function DetailKatalogContent({
         ? 'Kondisi fisik jalan dan kelayakan akses kendaraan menuju lokasi telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/menuju%20gapura%20trekking.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/menuju%20gapura%20trekking.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -145,7 +145,7 @@ export default function DetailKatalogContent({
         ? 'Area parkir kendaraan telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20parkir%20mobil.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/area%20parkir%20mobil.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -154,7 +154,7 @@ export default function DetailKatalogContent({
         ? 'Ketersediaan fasilitas umum telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/ruang%20medis%20basecamp.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/ruang%20medis%20basecamp.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -163,7 +163,7 @@ export default function DetailKatalogContent({
         ? 'Kondisi fisik jalur trekking telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/trek%20anak%20tangga.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/trek%20anak%20tangga.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -172,7 +172,7 @@ export default function DetailKatalogContent({
         ? 'Kondisi spot utama wisata telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/area%20camp.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/area%20camp.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -181,7 +181,7 @@ export default function DetailKatalogContent({
         ? 'Kondisi sanitasi dan kamar bilas telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/toilet%20di%20musholla.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/toilet%20di%20musholla.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -190,7 +190,7 @@ export default function DetailKatalogContent({
         ? 'Kondisi mushola dan fasilitas ibadah telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/mushola%20panggung%20kayu%20area%20camp.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/mushola%20panggung%20kayu%20area%20camp.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -199,7 +199,7 @@ export default function DetailKatalogContent({
         ? 'Ketersediaan warung makan dan logistik telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/warung%20basecamp.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/warung%20basecamp.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
     {
@@ -208,7 +208,7 @@ export default function DetailKatalogContent({
         ? 'Kondisi spot foto dan panorama alam telah diverifikasi.'
         : 'Belum tersedia — menunggu dokumentasi survei lapangan.',
       thumb: destination.slug === 'gunung-luhur-sukamakmur'
-        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/spot%20foto%20bunga.webp'
+        ? '/assets/visual/gunung_luhur_sukamakmur/survei%20gunung%20luhur/thumbs/spot%20foto%20bunga.webp'
         : '/assets/images/detail_katalog/list_visual_katalog.webp',
     },
   ];
@@ -225,19 +225,37 @@ export default function DetailKatalogContent({
         {/* 1. Hero Banner Section */}
         <section className="hero-detail-section">
           <div className="hero-detail-bg">
-            <img
-              src={
-                normalizeAssetUrl(destination.foto_banner) ||
-                '/assets/visual/curug_cibulao/banner_curug_cibulao.webp'
-              }
-              alt={`${destination.nama_wisata} ${shortKecamatan}`}
-              width={1440}
-              height={360}
-              fetchPriority="high"
-              loading="eager"
-              decoding="sync"
-              className="hero-detail-img"
-            />
+            <picture className="hero-detail-picture">
+              {destination.slug === 'gunung-luhur-sukamakmur' ? (
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/assets/visual/gunung_luhur_sukamakmur/banner_gunung_luhur_sukamakmur_mobile.webp"
+                />
+              ) : destination.slug === 'curug-cibulao' ? (
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/assets/visual/curug_cibulao/banner_curug_cibulao_mobile.webp"
+                />
+              ) : destination.slug === 'situ-tamansari' ? (
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/assets/visual/situ_tamansari/banner_situ_tamansari_mobile.webp"
+                />
+              ) : null}
+              <img
+                src={
+                  normalizeAssetUrl(destination.foto_banner) ||
+                  '/assets/visual/curug_cibulao/banner_curug_cibulao.webp'
+                }
+                alt={`${destination.nama_wisata} ${shortKecamatan}`}
+                width={1440}
+                height={360}
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
+                className="hero-detail-img"
+              />
+            </picture>
             <div className="hero-detail-overlay"></div>
           </div>
 

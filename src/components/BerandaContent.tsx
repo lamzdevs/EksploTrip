@@ -36,16 +36,22 @@ export default function BerandaContent({
         {/* Hero Banner */}
         <section className="hero-section">
           <div className="hero-bg-wrapper">
-            <img
-              src="/assets/images/beranda/banner_atas.webp"
-              alt="Pemandangan danau dan gunung di Bogor"
-              width={1440}
-              height={280}
-              fetchPriority="high"
-              loading="eager"
-              decoding="sync"
-              className="hero-banner-img"
-            />
+            <picture className="hero-banner-picture">
+              <source
+                media="(max-width: 640px)"
+                srcSet="/assets/images/beranda/banner_atas_mobile.webp"
+              />
+              <img
+                src="/assets/images/beranda/banner_atas.webp"
+                alt="Pemandangan danau dan gunung di Bogor"
+                width={1440}
+                height={280}
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
+                className="hero-banner-img"
+              />
+            </picture>
             <div className="hero-overlay"></div>
           </div>
 
@@ -184,15 +190,21 @@ export default function BerandaContent({
             </Link>
           </div>
           <div className="cta-banner-wrapper">
-            <img
-              src="/assets/images/beranda/banner_bawah.webp"
-              alt="Pemandangan pegunungan berkabut"
-              width={1440}
-              height={233}
-              loading="lazy"
-              decoding="async"
-              className="cta-banner-img"
-            />
+            <picture className="cta-banner-picture">
+              <source
+                media="(max-width: 640px)"
+                srcSet="/assets/images/beranda/banner_bawah_mobile.webp"
+              />
+              <img
+                src="/assets/images/beranda/banner_bawah.webp"
+                alt="Pemandangan pegunungan berkabut"
+                width={1440}
+                height={233}
+                loading="lazy"
+                decoding="async"
+                className="cta-banner-img"
+              />
+            </picture>
           </div>
         </section>
       </main>

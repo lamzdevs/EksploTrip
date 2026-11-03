@@ -31,6 +31,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={poppins.variable}>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/beranda/banner_atas_mobile.webp"
+          media="(max-width: 640px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/beranda/banner_atas.webp"
+          media="(min-width: 641px)"
+          fetchPriority="high"
+        />
+      </head>
       <body className={poppins.className}>
         <DeferredClarity />
         {children}
