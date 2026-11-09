@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -52,7 +52,17 @@ export default function HubungiTimKamiContent() {
     pesan: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+
+  // Auto-dismiss toast notification after 5 seconds
+  useEffect(() => {
+    if (showToast) {
+      const timer = setTimeout(() => {
+        setShowToast(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [showToast]);
 
   // Accordion State: index of expanded FAQ (null if none, default 0 for preview)
   const [expandedFaq, setExpandedFaq] = useState<number | null>(0);
@@ -71,10 +81,10 @@ export default function HubungiTimKamiContent() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate instantaneous smooth UX
+    // Smooth simulation of submission
     setTimeout(() => {
       setIsSubmitting(false);
-      setIsSubmitted(true);
+      setShowToast(true);
       setFormData({
         nama: '',
         email: '',
@@ -248,114 +258,94 @@ export default function HubungiTimKamiContent() {
                 </div>
               </div>
 
-              {isSubmitted ? (
-                <div className="form-success-banner" role="status">
-                  <span className="material-symbols-outlined success-icon">check_circle</span>
-                  <div className="success-text-box">
-                    <h4 className="success-title">Pesan Berhasil Terkirim!</h4>
-                    <p className="success-desc">
-                      Terima kasih atas pesan kamu. Tim EksploTrip akan segera menghubungi kamu melalui
-                      email dalam waktu maksimal 1x24 jam kerja.
-                    </p>
-                    <button
-                      type="button"
-                      className="btn-reset-form"
-                      onClick={() => setIsSubmitted(false)}
-                    >
-                      Kirim Pesan Baru
-                    </button>
+              <form className="contact-form" onSubmit={handleSubmit}>
+                {/* Row 1: Nama & Email */}
+                <div className="form-fields-row">
+                  <div className="form-field-group">
+                    <label htmlFor="input-nama" className="form-label">
+                      Nama Lengkap <span className="required-star">*</span>
+                    </label>
+                    <input
+                      id="input-nama"
+                      type="text"
+                      name="nama"
+                      required
+                      value={formData.nama}
+                      onChange={handleInputChange}
+                      placeholder="Masukkan nama kamu"
+                      className="form-input"
+                    />
+                  </div>
+
+                  <div className="form-field-group">
+                    <label htmlFor="input-email" className="form-label">
+                      Email <span className="required-star">*</span>
+                    </label>
+                    <input
+                      id="input-email"
+                      type="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="contoh@email.com"
+                      className="form-input"
+                    />
                   </div>
                 </div>
-              ) : (
-                <form className="contact-form" onSubmit={handleSubmit}>
-                  {/* Row 1: Nama & Email */}
-                  <div className="form-fields-row">
-                    <div className="form-field-group">
-                      <label htmlFor="input-nama" className="form-label">
-                        Nama Lengkap <span className="required-star">*</span>
-                      </label>
-                      <input
-                        id="input-nama"
-                        type="text"
-                        name="nama"
-                        required
-                        value={formData.nama}
-                        onChange={handleInputChange}
-                        placeholder="Masukkan nama kamu"
-                        className="form-input"
-                      />
-                    </div>
 
-                    <div className="form-field-group">
-                      <label htmlFor="input-email" className="form-label">
-                        Email <span className="required-star">*</span>
-                      </label>
-                      <input
-                        id="input-email"
-                        type="email"
-                        name="email"
-                        required
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        placeholder="contoh@email.com"
-                        className="form-input"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Row 2: Kategori */}
-                  <div className="form-field-group">
-                    <label htmlFor="select-kategori" className="form-label">
-                      Kategori <span className="required-star">*</span>
-                    </label>
-                    <div className="select-wrapper">
-                      <select
-                        id="select-kategori"
-                        name="kategori"
-                        required
-                        value={formData.kategori}
-                        onChange={handleInputChange}
-                        className="form-select"
-                      >
-                        <option value="">Pilih kategori</option>
-                        <option value="pertanyaan_umum">Pertanyaan Umum</option>
-                        <option value="aduan_keamanan">Aduan Keamanan / Pungli</option>
-                        <option value="saran_destinasi">Saran & Masukan Destinasi</option>
-                        <option value="kendala_teknis">Kendala Teknis Website</option>
-                        <option value="kerjasama">Kerjasama / Sponsorship</option>
-                      </select>
-                      <span className="material-symbols-outlined select-chevron">expand_more</span>
-                    </div>
-                  </div>
-
-                  {/* Row 3: Pesan */}
-                  <div className="form-field-group">
-                    <label htmlFor="textarea-pesan" className="form-label">
-                      Pesan <span className="required-star">*</span>
-                    </label>
-                    <textarea
-                      id="textarea-pesan"
-                      name="pesan"
+                {/* Row 2: Kategori */}
+                <div className="form-field-group">
+                  <label htmlFor="select-kategori" className="form-label">
+                    Kategori <span className="required-star">*</span>
+                  </label>
+                  <div className="select-wrapper">
+                    <select
+                      id="select-kategori"
+                      name="kategori"
                       required
-                      rows={4}
-                      value={formData.pesan}
+                      value={formData.kategori}
                       onChange={handleInputChange}
-                      placeholder="Tulis pesan kamu di sini..."
-                      className="form-textarea"
-                    ></textarea>
+                      className="form-select"
+                    >
+                      <option value="">Pilih kategori</option>
+                      <option value="pertanyaan_umum">Pertanyaan Umum</option>
+                      <option value="aduan_keamanan">Aduan Keamanan / Pungli</option>
+                      <option value="saran_destinasi">Saran & Masukan Destinasi</option>
+                      <option value="kendala_teknis">Kendala Teknis Website</option>
+                      <option value="kerjasama">Kerjasama / Sponsorship</option>
+                    </select>
+                    <span className="material-symbols-outlined select-chevron" aria-hidden="true">expand_more</span>
                   </div>
+                </div>
 
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="btn-submit-message"
-                  >
-                    <span className="material-symbols-outlined btn-send-icon">send</span>
-                    <span>{isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}</span>
-                  </button>
-                </form>
-              )}
+                {/* Row 3: Pesan */}
+                <div className="form-field-group">
+                  <label htmlFor="textarea-pesan" className="form-label">
+                    Pesan <span className="required-star">*</span>
+                  </label>
+                  <textarea
+                    id="textarea-pesan"
+                    name="pesan"
+                    required
+                    rows={4}
+                    value={formData.pesan}
+                    onChange={handleInputChange}
+                    placeholder="Tulis pesan kamu di sini..."
+                    className="form-textarea"
+                  ></textarea>
+                </div>
+
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="btn-submit-message"
+                >
+                  <span className="material-symbols-outlined btn-send-icon" aria-hidden="true">send</span>
+                  <span>{isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}</span>
+                </button>
+              </form>
             </div>
 
             {/* Column 2: Pertanyaan yang Sering Diajukan (FAQ Accordion) */}
@@ -468,6 +458,55 @@ export default function HubungiTimKamiContent() {
           </section>
         </div>
       </main>
+
+      {/* Toast Notification: Pesan Berhasil Terkirim */}
+      {showToast && (
+        <div className="toast-notification-container" role="status" aria-live="polite">
+          <div className="toast-notification">
+            <div className="toast-icon-wrap" aria-hidden="true">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+            </div>
+            <div className="toast-body">
+              <h4 className="toast-title">Pesan Berhasil Terkirim!</h4>
+              <p className="toast-desc">
+                Terima kasih atas pesan kamu. Tim EksploTrip akan segera menghubungi kamu melalui email dalam waktu maksimal 1x24 jam kerja.
+              </p>
+            </div>
+            <button
+              type="button"
+              className="toast-close-btn"
+              onClick={() => setShowToast(false)}
+              aria-label="Tutup notifikasi"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+            <div className="toast-progress-bar" />
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <Footer />
