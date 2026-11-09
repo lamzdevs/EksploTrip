@@ -13731,4 +13731,100 @@ button {
     }
 }
 
+/* =========================================================
+   LOADING SKELETON SYSTEM (Modern Shimmer for Slow Network & Lag)
+   ========================================================= */
+
+@keyframes skeleton-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.skeleton-shimmer {
+    background: linear-gradient(
+        90deg,
+        #ebeef2 0%,
+        #f8fafc 50%,
+        #ebeef2 100%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+.skeleton-box {
+    display: block;
+    background-color: #ebeef2;
+}
+
+.skeleton-pill {
+    display: inline-block;
+    background-color: #ebeef2;
+}
+
+.skeleton-circle {
+    display: inline-block;
+    background-color: #ebeef2;
+    border-radius: 50%;
+}
+
+.card-media-skeleton {
+    background-color: #e2e8f0;
+}
+
+.card-img.card-img-loading {
+    opacity: 0;
+}
+
+.card-img.card-img-loaded {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skeleton-page-root {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-bg, #F4F4F4);
+}
+
+.skeleton-navbar-container {
+    background-color: var(--color-card, #FFFFFF);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 4px rgba(4, 8, 17, 0.06);
+}
+
+.skeleton-hero-wrapper {
+    position: relative;
+    background: #d9e3ea;
+    overflow: hidden;
+}
+
+.skeleton-card-item {
+    background: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+}
+
+.skeleton-cards-grid {
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .skeleton-hero-wrapper {
+        min-height: 220px !important;
+    }
+
+    .skeleton-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 

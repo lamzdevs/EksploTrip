@@ -25,6 +25,14 @@ export function DestinationCard({
   const [imgSrc, setImgSrc] = useState(
     normalizeAssetUrl(destination.foto_utama) || FALLBACK_CARD_IMG
   );
+  const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = React.useRef<HTMLImageElement | null>(null);
+
+  React.useEffect(() => {
+    if (imgRef.current && imgRef.current.complete) {
+      setIsLoaded(true);
+    }
+  }, [imgSrc]);
 
   const isVerified =
     !destination.is_dummy && destination.status_verifikasi === 'terverifikasi';
@@ -53,12 +61,13 @@ export function DestinationCard({
       className="destination-card"
       prefetch={false}
     >
-      <div className="card-media">
+      <div className={`card-media ${!isLoaded ? 'card-media-skeleton skeleton-shimmer' : ''}`}>
         <span className="card-badge">
           <span className="material-symbols-outlined">{badgeIcon}</span>
           <span>{badgeLabel}</span>
         </span>
         <img
+          ref={imgRef}
           src={imgSrc}
           alt={destination.nama_wisata}
           width={407}
@@ -66,8 +75,12 @@ export function DestinationCard({
           loading={priority ? 'eager' : 'lazy'}
           decoding={priority ? 'sync' : 'async'}
           fetchPriority={priority ? 'high' : undefined}
-          className="card-img"
-          onError={() => setImgSrc(FALLBACK_CARD_IMG)}
+          className={`card-img ${isLoaded ? 'card-img-loaded' : 'card-img-loading'}`}
+          onLoad={() => setIsLoaded(true)}
+          onError={() => {
+            setImgSrc(FALLBACK_CARD_IMG);
+            setIsLoaded(true);
+          }}
         />
       </div>
       <div className="card-body">
