@@ -311,10 +311,13 @@ ul, ol {
     outline-offset: -2px;
 }
 
-.search-submit-btn .search-icon {
-    font-size: 18px;
+.search-submit-btn .search-icon-svg {
+    width: 18px;
+    height: 18px;
+    display: block;
     color: var(--color-text);
     pointer-events: none;
+    flex-shrink: 0;
 }
 
 .search-input {
@@ -1512,10 +1515,13 @@ ul, ol {
     outline-offset: -2px;
 }
 
-.search-submit-btn .search-icon {
-    font-size: 18px;
+.search-submit-btn .search-icon-svg {
+    width: 18px;
+    height: 18px;
+    display: block;
     color: var(--color-text);
     pointer-events: none;
+    flex-shrink: 0;
 }
 
 .search-input {
@@ -2709,10 +2715,13 @@ ul, ol {
     outline-offset: -2px;
 }
 
-.search-submit-btn .search-icon {
-    font-size: 18px;
+.search-submit-btn .search-icon-svg {
+    width: 18px;
+    height: 18px;
+    display: block;
     color: var(--color-text);
     pointer-events: none;
+    flex-shrink: 0;
 }
 
 .search-input {
@@ -6793,10 +6802,13 @@ button {
     outline-offset: -2px;
 }
 
-.search-submit-btn .search-icon {
-    font-size: 18px;
+.search-submit-btn .search-icon-svg {
+    width: 18px;
+    height: 18px;
+    display: block;
     color: var(--color-text);
     pointer-events: none;
+    flex-shrink: 0;
 }
 
 .search-input {
@@ -8489,12 +8501,13 @@ button {
         -webkit-tap-highlight-color: transparent !important;
     }
 
-    .mobile-search-form .search-submit-btn .search-icon.material-symbols-outlined {
-        position: static !important;
-        font-size: 20px !important;
+    .mobile-search-form .search-submit-btn .search-icon-svg {
+        width: 18px !important;
+        height: 18px !important;
+        display: block !important;
         color: #1C1C1E !important;
-        font-weight: 500 !important;
         pointer-events: none !important;
+        flex-shrink: 0 !important;
     }
 
     .mobile-search-form .search-input {

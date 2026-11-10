@@ -341,12 +341,21 @@ export default function Navbar({
                     className="search-submit-btn"
                     aria-label="Cari destinasi"
                   >
-                    <span
-                      className="material-symbols-outlined search-icon"
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       aria-hidden="true"
+                      className="search-icon-svg"
                     >
-                      search
-                    </span>
+                      <circle cx="11" cy="11" r="7" />
+                      <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                    </svg>
                   </button>
                   <input
                     type="search"
@@ -416,12 +425,21 @@ export default function Navbar({
                 className="search-submit-btn"
                 aria-label="Cari destinasi"
               >
-                <span
-                  className="material-symbols-outlined search-icon"
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   aria-hidden="true"
+                  className="search-icon-svg"
                 >
-                  search
-                </span>
+                  <circle cx="11" cy="11" r="7" />
+                  <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                </svg>
               </button>
               <input
                 type="search"
