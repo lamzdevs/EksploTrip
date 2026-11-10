@@ -50,6 +50,10 @@ export default function Navbar({
   }, [initialSearchQuery]);
 
   useEffect(() => {
+    router.prefetch('/search');
+  }, [router]);
+
+  useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
@@ -139,9 +143,17 @@ export default function Navbar({
     }
   };
 
-  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const trimmed = searchValue.trim();
+  const triggerSearch = (queryVal?: string) => {
+    // Dismiss soft keyboard on iOS Safari & Android so the viewport unfreezes cleanly
+    if (
+      typeof document !== 'undefined' &&
+      document.activeElement instanceof HTMLElement
+    ) {
+      document.activeElement.blur();
+    }
+
+    const queryToUse = queryVal !== undefined ? queryVal : searchValue;
+    const trimmed = queryToUse.trim();
 
     const fromTab: 'beranda' | 'eksplorasi' =
       currentTab === 'beranda' ? 'beranda' : 'eksplorasi';
@@ -171,6 +183,21 @@ export default function Navbar({
     }
 
     router.push(`/search?q=${encodeURIComponent(trimmed)}&from=${fromTab}`);
+  };
+
+  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const inputEl = form.elements.namedItem('q') as HTMLInputElement | null;
+    const rawVal = inputEl?.value !== undefined ? inputEl.value : searchValue;
+    triggerSearch(rawVal);
+  };
+
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      triggerSearch(e.currentTarget.value);
+    }
   };
 
   if (variant === 'detail-back') {
@@ -298,13 +325,29 @@ export default function Navbar({
             ) : (
               <>
                 <form
+                  action="/search"
+                  method="GET"
                   onSubmit={handleSearchSubmit}
                   role="search"
                   className="search-form desktop-search-form"
                 >
-                  <span className="material-symbols-outlined search-icon">
-                    search
-                  </span>
+                  <input
+                    type="hidden"
+                    name="from"
+                    value={currentTab === 'beranda' ? 'beranda' : 'eksplorasi'}
+                  />
+                  <button
+                    type="submit"
+                    className="search-submit-btn"
+                    aria-label="Cari destinasi"
+                  >
+                    <span
+                      className="material-symbols-outlined search-icon"
+                      aria-hidden="true"
+                    >
+                      search
+                    </span>
+                  </button>
                   <input
                     type="search"
                     name="q"
@@ -313,6 +356,11 @@ export default function Navbar({
                     className="search-input"
                     value={searchValue}
                     onChange={(e) => setSearchValue(e.target.value)}
+                    onKeyDown={handleInputKeyDown}
+                    enterKeyHint="search"
+                    autoCapitalize="none"
+                    autoCorrect="off"
+                    spellCheck={false}
                   />
                 </form>
 
@@ -352,13 +400,29 @@ export default function Navbar({
         {variant === 'main' && (
           <div className="navbar-mobile-search">
             <form
+              action="/search"
+              method="GET"
               onSubmit={handleSearchSubmit}
               role="search"
               className="search-form mobile-search-form"
             >
-              <span className="material-symbols-outlined search-icon">
-                search
-              </span>
+              <input
+                type="hidden"
+                name="from"
+                value={currentTab === 'beranda' ? 'beranda' : 'eksplorasi'}
+              />
+              <button
+                type="submit"
+                className="search-submit-btn"
+                aria-label="Cari destinasi"
+              >
+                <span
+                  className="material-symbols-outlined search-icon"
+                  aria-hidden="true"
+                >
+                  search
+                </span>
+              </button>
               <input
                 type="search"
                 name="q"
@@ -367,6 +431,11 @@ export default function Navbar({
                 className="search-input"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
+                onKeyDown={handleInputKeyDown}
+                enterKeyHint="search"
+                autoCapitalize="none"
+                autoCorrect="off"
+                spellCheck={false}
               />
             </form>
           </div>
