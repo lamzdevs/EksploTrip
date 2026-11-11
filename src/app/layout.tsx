@@ -35,15 +35,17 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
+          type="image/webp"
           href="/assets/images/beranda/banner_atas_mobile.webp"
-          media="(max-width: 640px)"
+          media="(max-width: 768px)"
           fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
+          type="image/webp"
           href="/assets/images/beranda/banner_atas.webp"
-          media="(min-width: 641px)"
+          media="(min-width: 769px)"
           fetchPriority="high"
         />
       </head>

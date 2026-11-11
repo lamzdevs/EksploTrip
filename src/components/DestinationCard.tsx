@@ -73,7 +73,7 @@ export function DestinationCard({
           width={407}
           height={265}
           loading={priority ? 'eager' : 'lazy'}
-          decoding={priority ? 'sync' : 'async'}
+          decoding="async"
           fetchPriority={priority ? 'high' : undefined}
           className={`card-img ${isLoaded ? 'card-img-loaded' : 'card-img-loading'}`}
           onLoad={() => setIsLoaded(true)}

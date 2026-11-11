@@ -126,7 +126,7 @@ export default function BantuanDaruratContent() {
                 height={280}
                 fetchPriority="high"
                 loading="eager"
-                decoding="sync"
+                decoding="auto"
                 className="hero-banner-img"
               />
             </picture>

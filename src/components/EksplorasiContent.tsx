@@ -116,7 +116,7 @@ export default function EksplorasiContent({
                 height={280}
                 fetchPriority="high"
                 loading="eager"
-                decoding="sync"
+                decoding="auto"
                 className="hero-banner-img"
               />
             </picture>

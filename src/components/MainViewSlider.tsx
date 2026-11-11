@@ -1,11 +1,20 @@
 'use client';
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import Navbar from '@/components/Navbar';
 import BerandaContent from '@/components/BerandaContent';
-import EksplorasiContent from '@/components/EksplorasiContent';
-import BantuanDaruratContent from '@/components/BantuanDaruratContent';
 import { Destination } from '@/types/destination';
+
+const EksplorasiContent = dynamic(
+  () => import('@/components/EksplorasiContent'),
+  { ssr: true }
+);
+
+const BantuanDaruratContent = dynamic(
+  () => import('@/components/BantuanDaruratContent'),
+  { ssr: true }
+);
 
 export type MainTabKey = 'beranda' | 'eksplorasi' | 'bantuan';
 
@@ -47,11 +56,9 @@ export default function MainViewSlider({
     bantuan: initialTab === 'bantuan',
   });
   const [isSliding, setIsSliding] = useState<boolean>(false);
-  const [isMounted, setIsMounted] = useState<boolean>(false);
   const slideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    setIsMounted(true);
     return () => {
       if (slideTimeoutRef.current) {
         clearTimeout(slideTimeoutRef.current);
@@ -168,9 +175,6 @@ export default function MainViewSlider({
           id="slider-track"
           style={{
             transform: TAB_POSITIONS[currentTab],
-            transition: isMounted
-              ? 'transform 0.52s cubic-bezier(0.25, 1, 0.35, 1)'
-              : 'none',
           }}
         >
           {/* View 1: Beranda */}

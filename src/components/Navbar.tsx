@@ -49,9 +49,10 @@ export default function Navbar({
     setSearchValue(initialSearchQuery);
   }, [initialSearchQuery]);
 
-  useEffect(() => {
+  // Prefetch search route lazily when user interacts with search rather than blocking initial page mount
+  const handleSearchFocus = () => {
     router.prefetch('/search');
-  }, [router]);
+  };
 
   useEffect(() => {
     setMobileMenuOpen(false);
@@ -210,7 +211,7 @@ export default function Navbar({
               alt="EksploTrip Logo"
               width={81}
               height={40}
-              decoding="sync"
+              decoding="async"
               className="navbar-brand-logo"
             />
           </Link>
@@ -240,7 +241,7 @@ export default function Navbar({
               alt="EksploTrip Logo"
               width={81}
               height={40}
-              decoding="sync"
+              decoding="async"
               className="navbar-logo"
             />
           </Link>
@@ -365,6 +366,7 @@ export default function Navbar({
                     className="search-input"
                     value={searchValue}
                     onChange={(e) => setSearchValue(e.target.value)}
+                    onFocus={handleSearchFocus}
                     onKeyDown={handleInputKeyDown}
                     enterKeyHint="search"
                     autoCapitalize="none"
@@ -449,6 +451,7 @@ export default function Navbar({
                 className="search-input"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
+                onFocus={handleSearchFocus}
                 onKeyDown={handleInputKeyDown}
                 enterKeyHint="search"
                 autoCapitalize="none"

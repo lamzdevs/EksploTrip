@@ -38,8 +38,10 @@ export default function BerandaContent({
           <div className="hero-bg-wrapper">
             <picture className="hero-banner-picture">
               <source
-                media="(max-width: 640px)"
+                media="(max-width: 768px)"
                 srcSet="/assets/images/beranda/banner_atas_mobile.webp"
+                width={750}
+                height={280}
               />
               <img
                 src="/assets/images/beranda/banner_atas.webp"
@@ -48,7 +50,7 @@ export default function BerandaContent({
                 height={280}
                 fetchPriority="high"
                 loading="eager"
-                decoding="sync"
+                decoding="auto"
                 className="hero-banner-img"
               />
             </picture>
