@@ -4243,8 +4243,13 @@ a.hero-meta-item:hover,
     transform: translateY(0);
 }
 
-.btn-recalc .material-symbols-outlined {
+.btn-recalc .material-symbols-outlined,
+.btn-recalc .btn-icon-svg {
     font-size: 18px;
+    width: 18px;
+    height: 18px;
+    color: inherit;
+    flex-shrink: 0;
 }
 
 .calc-disclaimer {
@@ -7007,10 +7012,14 @@ button {
     transition: all 0.2s ease;
 }
 
-.btn-reset-search .material-symbols-outlined {
+.btn-reset-search .material-symbols-outlined,
+.btn-reset-search .btn-icon-svg {
     font-size: 17px;
+    width: 17px;
+    height: 17px;
     color: var(--color-button);
     transition: transform 0.3s ease, color 0.2s ease;
+    flex-shrink: 0;
 }
 
 .btn-reset-search:hover {
@@ -7018,7 +7027,8 @@ button {
     transform: translateY(-2px);
 }
 
-.btn-reset-search:hover .material-symbols-outlined {
+.btn-reset-search:hover .material-symbols-outlined,
+.btn-reset-search:hover .btn-icon-svg {
     transform: rotate(-45deg);
 }
 
@@ -8210,6 +8220,12 @@ button {
     background: #32AAC6;
     color: #FFFFFF;
     transition: background 0.2s ease;
+}
+
+.eksplo-modal-btn .btn-icon-svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 .eksplo-modal-btn:hover {
