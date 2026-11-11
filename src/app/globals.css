@@ -10312,11 +10312,11 @@ button {
     }
 
     .safety-item-icon {
-        width: 32px !important;
-        height: 32px !important;
-        border-radius: 50% !important;
-        background-color: var(--color-text-highlight, #568942) !important;
-        color: #FFFFFF !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 12px !important;
+        background-color: rgba(55, 94, 39, 0.08) !important;
+        color: var(--color-footer, #375E27) !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -10324,8 +10324,8 @@ button {
     }
 
     .safety-item-icon .material-symbols-outlined {
-        font-size: 18px !important;
-        color: #FFFFFF !important;
+        font-size: 22px !important;
+        color: var(--color-footer, #375E27) !important;
     }
 
     .safety-item-text {
